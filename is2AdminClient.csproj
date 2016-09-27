@@ -1,843 +1,623 @@
-<VisualStudioProject>
-    <CSHARP
-        ProjectType = "Local"
-        ProductVersion = "7.10.6030"
-        SchemaVersion = "2.0"
-        ProjectGuid = "{10A100D1-9686-400A-8313-2AC9A8F13BD5}"
-    >
-        <Build>
-            <Settings
-                ApplicationIcon = "App.ico"
-                AssemblyKeyContainerName = ""
-                AssemblyName = "is2AdminClient"
-                AssemblyOriginatorKeyFile = ""
-                DefaultClientScript = "JScript"
-                DefaultHTMLPageLayout = "Grid"
-                DefaultTargetSchema = "IE50"
-                DelaySign = "false"
-                OutputType = "WinExe"
-                PreBuildEvent = ""
-                PostBuildEvent = ""
-                RootNamespace = "is2AdminClient"
-                RunPostBuildEvent = "OnBuildSuccess"
-                StartupObject = ""
-            >
-                <Config
-                    Name = "Debug"
-                    AllowUnsafeBlocks = "false"
-                    BaseAddress = "285212672"
-                    CheckForOverflowUnderflow = "false"
-                    ConfigurationOverrideFile = ""
-                    DefineConstants = "DEBUG;TRACE"
-                    DocumentationFile = ""
-                    DebugSymbols = "true"
-                    FileAlignment = "4096"
-                    IncrementalBuild = "false"
-                    NoStdLib = "false"
-                    NoWarn = ""
-                    Optimize = "false"
-                    OutputPath = "C:\Program Files\is-2ŠÇ—\App\"
-                    RegisterForComInterop = "false"
-                    RemoveIntegerChecks = "false"
-                    TreatWarningsAsErrors = "false"
-                    WarningLevel = "4"
-                />
-                <Config
-                    Name = "Release"
-                    AllowUnsafeBlocks = "false"
-                    BaseAddress = "285212672"
-                    CheckForOverflowUnderflow = "false"
-                    ConfigurationOverrideFile = ""
-                    DefineConstants = "TRACE"
-                    DocumentationFile = ""
-                    DebugSymbols = "false"
-                    FileAlignment = "4096"
-                    IncrementalBuild = "false"
-                    NoStdLib = "false"
-                    NoWarn = ""
-                    Optimize = "true"
-                    OutputPath = "bin\Release\"
-                    RegisterForComInterop = "false"
-                    RemoveIntegerChecks = "false"
-                    TreatWarningsAsErrors = "false"
-                    WarningLevel = "4"
-                />
-            </Settings>
-            <References>
-                <Reference
-                    Name = "System"
-                    AssemblyName = "System"
-                    HintPath = "..\..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.dll"
-                />
-                <Reference
-                    Name = "System.Data"
-                    AssemblyName = "System.Data"
-                    HintPath = "..\..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
-                />
-                <Reference
-                    Name = "System.Drawing"
-                    AssemblyName = "System.Drawing"
-                    HintPath = "..\..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
-                />
-                <Reference
-                    Name = "System.Windows.Forms"
-                    AssemblyName = "System.Windows.Forms"
-                    HintPath = "..\..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
-                />
-                <Reference
-                    Name = "System.XML"
-                    AssemblyName = "System.Xml"
-                    HintPath = "..\..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
-                />
-                <Reference
-                    Name = "MSDATASRC"
-                    Guid = "{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}"
-                    VersionMajor = "1"
-                    VersionMinor = "0"
-                    Lcid = "0"
-                    WrapperTool = "primary"
-                />
-                <Reference
-                    Name = "stdole"
-                    Guid = "{00020430-0000-0000-C000-000000000046}"
-                    VersionMajor = "2"
-                    VersionMinor = "0"
-                    Lcid = "0"
-                    WrapperTool = "primary"
-                />
-                <Reference
-                    Name = "GTABLE32V2Lib"
-                    Guid = "{3BA63D60-AE52-11CF-968C-00000E4A0ADF}"
-                    VersionMajor = "2"
-                    VersionMinor = "0"
-                    Lcid = "0"
-                    WrapperTool = "tlbimp"
-                />
-                <Reference
-                    Name = "AxGTABLE32V2Lib"
-                    Guid = "{3BA63D60-AE52-11CF-968C-00000E4A0ADF}"
-                    VersionMajor = "2"
-                    VersionMinor = "0"
-                    Lcid = "0"
-                    WrapperTool = "aximp"
-                />
-                <Reference
-                    Name = "System.Web.Services"
-                    AssemblyName = "System.Web.Services"
-                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
-                />
-                <Reference
-                    Name = "CrystalDecisions.CrystalReports.Engine"
-                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
-                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.CrystalReports.Engine.dll"
-                    AssemblyFolderKey = "hklm\crystal.net"
-                />
-                <Reference
-                    Name = "CrystalDecisions.ReportSource"
-                    AssemblyName = "CrystalDecisions.ReportSource"
-                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.ReportSource.dll"
-                    AssemblyFolderKey = "hklm\crystal.net"
-                />
-                <Reference
-                    Name = "CrystalDecisions.Shared"
-                    AssemblyName = "CrystalDecisions.Shared"
-                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Shared.dll"
-                    AssemblyFolderKey = "hklm\crystal.net"
-                />
-                <Reference
-                    Name = "CrystalDecisions.Windows.Forms"
-                    AssemblyName = "CrystalDecisions.Windows.Forms"
-                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Windows.Forms.dll"
-                    AssemblyFolderKey = "hklm\crystal.net"
-                />
-                <Reference
-                    Name = "Microsoft.VisualBasic"
-                    AssemblyName = "Microsoft.VisualBasic"
-                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\Microsoft.VisualBasic.dll"
-                />
-                <Reference
-                    Name = "CharConvUtility"
-                    AssemblyName = "CharConvUtility"
-                    HintPath = "CharConvUtility.dll"
-                />
-            </References>
-        </Build>
-        <Files>
-            <Include>
-                <File
-                    RelPath = "app.config"
-                    BuildAction = "None"
-                />
-                <File
-                    RelPath = "App.ico"
-                    BuildAction = "Content"
-                />
-                <File
-                    RelPath = "AssemblyInfo.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‚¨’m‚ç‚¹Œf¦.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‚¨’m‚ç‚¹Œf¦.resx"
-                    DependentUpon = "‚¨’m‚ç‚¹Œf¦.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‚¨’m‚ç‚¹ŒŸõ.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‚¨’m‚ç‚¹ŒŸõ.resx"
-                    DependentUpon = "‚¨’m‚ç‚¹ŒŸõ.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‚¨’m‚ç‚¹ŒŸõ‚Q.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‚¨’m‚ç‚¹ŒŸõ‚Q.resx"
-                    DependentUpon = "‚¨’m‚ç‚¹ŒŸõ‚Q.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‚¨’m‚ç‚¹‘èƒ{ƒ^ƒ“.cs"
-                    SubType = "UserControl"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‚¨’m‚ç‚¹‘èƒ{ƒ^ƒ“.resx"
-                    DependentUpon = "‚¨’m‚ç‚¹‘èƒ{ƒ^ƒ“.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‚¨’m‚ç‚¹“o˜^.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‚¨’m‚ç‚¹“o˜^.resx"
-                    DependentUpon = "‚¨’m‚ç‚¹“o˜^.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‚¨’m‚ç‚¹“o˜^‚Q.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‚¨’m‚ç‚¹“o˜^‚Q.resx"
-                    DependentUpon = "‚¨’m‚ç‚¹“o˜^‚Q.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‚²ˆË—ŠåŒŸõ‚Q.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‚²ˆË—ŠåŒŸõ‚Q.resx"
-                    DependentUpon = "‚²ˆË—ŠåŒŸõ‚Q.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "ƒpƒX“ü—Í.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "ƒpƒX“ü—Í.resx"
-                    DependentUpon = "ƒpƒX“ü—Í.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "ƒvƒŒƒrƒ…[‰æ–Ê.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "ƒvƒŒƒrƒ…[‰æ–Ê.resx"
-                    DependentUpon = "ƒvƒŒƒrƒ…[‰æ–Ê.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "ƒ}ƒjƒ…ƒAƒ‹ƒ_ƒEƒ“ƒ[ƒh.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "ƒ}ƒjƒ…ƒAƒ‹ƒ_ƒEƒ“ƒ[ƒh.resx"
-                    DependentUpon = "ƒ}ƒjƒ…ƒAƒ‹ƒ_ƒEƒ“ƒ[ƒh.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "ƒƒbƒZ[ƒW“o˜^.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "ƒƒbƒZ[ƒW“o˜^.resx"
-                    DependentUpon = "ƒƒbƒZ[ƒW“o˜^.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "ƒƒjƒ…[.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "ƒƒjƒ…[.resx"
-                    DependentUpon = "ƒƒjƒ…[.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "ƒƒOƒCƒ“.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "ƒƒOƒCƒ“.resx"
-                    DependentUpon = "ƒƒOƒCƒ“.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‰Á“üŒŸõ.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‰Á“üŒŸõ.resx"
-                    DependentUpon = "‰Á“üŒŸõ.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‰Ò“­ó‹µˆê——ƒŒƒ|[ƒg.rpt"
-                    BuildAction = "EmbeddedResource"
-                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
-                    LastGenOutput = "‰Ò“­ó‹µˆê——ƒŒƒ|[ƒg.cs"
-                />
-                <File
-                    RelPath = "‰Ò“­ó‹µˆê——ƒŒƒ|[ƒg.cs"
-                    DependentUpon = "‰Ò“­ó‹µˆê——ƒŒƒ|[ƒg.rpt"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "‰Ò“­“ú“o˜^.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‰Ò“­“ú“o˜^.resx"
-                    DependentUpon = "‰Ò“­“ú“o˜^.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‰Ò“­—¦î.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‰Ò“­—¦î.resx"
-                    DependentUpon = "‰Ò“­—¦î.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‰Ò“®ó‹µƒf[ƒ^.xsd"
-                    BuildAction = "Content"
-                    Generator = "MSDataSetGenerator"
-                    LastGenOutput = "‰Ò“®ó‹µƒf[ƒ^.cs"
-                />
-                <File
-                    RelPath = "‰Ò“®ó‹µƒf[ƒ^.cs"
-                    DependentUpon = "‰Ò“®ó‹µƒf[ƒ^.xsd"
-                    SubType = "code"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "‰Ò“®ó‹µƒf[ƒ^.xsx"
-                    DependentUpon = "‰Ò“®ó‹µƒf[ƒ^.xsd"
-                    BuildAction = "None"
-                />
-                <File
-                    RelPath = "‰×‘—lŒŸõ.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‰×‘—lŒŸõ.resx"
-                    DependentUpon = "‰×‘—lŒŸõ.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‰ïˆõƒ}ƒXƒ^.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‰ïˆõƒ}ƒXƒ^.resx"
-                    DependentUpon = "‰ïˆõƒ}ƒXƒ^.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‰ïˆõ‰Á“ü.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‰ïˆõ‰Á“ü.resx"
-                    DependentUpon = "‰ïˆõ‰Á“ü.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‰ïˆõŒŸõ.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‰ïˆõŒŸõ.resx"
-                    DependentUpon = "‰ïˆõŒŸõ.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‰ïˆõŒŸõ‚Q.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‰ïˆõŒŸõ‚Q.resx"
-                    DependentUpon = "‰ïˆõŒŸõ‚Q.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‰ïˆõî•ñ‚b‚r‚uo—Í.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‰ïˆõî•ñ‚b‚r‚uo—Í.resx"
-                    DependentUpon = "‰ïˆõî•ñ‚b‚r‚uo—Í.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‹L–“o˜^.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‹L–“o˜^.resx"
-                    DependentUpon = "‹L–“o˜^.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‹¤’ÊƒeƒLƒXƒgƒ{ƒbƒNƒX.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‹¤’ÊƒeƒLƒXƒgƒ{ƒbƒNƒX.resx"
-                    DependentUpon = "‹¤’ÊƒeƒLƒXƒgƒ{ƒbƒNƒX.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‹¤’ÊƒtƒH[ƒ€.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "‹¤’ÊƒtƒH[ƒ€.resx"
-                    DependentUpon = "‹¤’ÊƒtƒH[ƒ€.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Œ_–ñ‘ƒf[ƒ^.xsd"
-                    BuildAction = "Content"
-                    Generator = "MSDataSetGenerator"
-                    LastGenOutput = "Œ_–ñ‘ƒf[ƒ^.cs"
-                />
-                <File
-                    RelPath = "Œ_–ñ‘ƒf[ƒ^.cs"
-                    DependentUpon = "Œ_–ñ‘ƒf[ƒ^.xsd"
-                    SubType = "code"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "Œ_–ñ‘ƒf[ƒ^.xsx"
-                    DependentUpon = "Œ_–ñ‘ƒf[ƒ^.xsd"
-                    BuildAction = "None"
-                />
-                <File
-                    RelPath = "Œ_–ñ‘ƒŒƒ|[ƒg.rpt"
-                    BuildAction = "EmbeddedResource"
-                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
-                    LastGenOutput = "Œ_–ñ‘ƒŒƒ|[ƒg.cs"
-                />
-                <File
-                    RelPath = "Œ_–ñ‘ƒŒƒ|[ƒg.cs"
-                    DependentUpon = "Œ_–ñ‘ƒŒƒ|[ƒg.rpt"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "Œ_–ñ‘ƒŒƒ|[ƒg_‰¤q‰^‘—.rpt"
-                    BuildAction = "EmbeddedResource"
-                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
-                    LastGenOutput = "Œ_–ñ‘ƒŒƒ|[ƒg_‰¤q‰^‘—.cs"
-                />
-                <File
-                    RelPath = "Œ_–ñ‘ƒŒƒ|[ƒg_‰¤q‰^‘—.cs"
-                    DependentUpon = "Œ_–ñ‘ƒŒƒ|[ƒg_‰¤q‰^‘—.rpt"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "g—p‘ƒŒƒ|[ƒg.rpt"
-                    BuildAction = "EmbeddedResource"
-                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
-                    LastGenOutput = "g—p‘ƒŒƒ|[ƒg.cs"
-                />
-                <File
-                    RelPath = "g—p‘ƒŒƒ|[ƒg.cs"
-                    DependentUpon = "g—p‘ƒŒƒ|[ƒg.rpt"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "g—p‘ƒŒƒ|[ƒg_‰¤q‰^‘—.rpt"
-                    BuildAction = "EmbeddedResource"
-                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
-                    LastGenOutput = "g—p‘ƒŒƒ|[ƒg_‰¤q‰^‘—.cs"
-                />
-                <File
-                    RelPath = "g—p‘ƒŒƒ|[ƒg_‰¤q‰^‘—.cs"
-                    DependentUpon = "g—p‘ƒŒƒ|[ƒg_‰¤q‰^‘—.rpt"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "Ğ“à“`‰ïˆõ”­“Xƒ}ƒXƒ^.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Ğ“à“`‰ïˆõ”­“Xƒ}ƒXƒ^.resx"
-                    DependentUpon = "Ğ“à“`‰ïˆõ”­“Xƒ}ƒXƒ^.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "W–ñ“Xƒ}ƒXƒ^.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "W–ñ“Xƒ}ƒXƒ^.resx"
-                    DependentUpon = "W–ñ“Xƒ}ƒXƒ^.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "ZŠŒŸõ.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "ZŠŒŸõ.resx"
-                    DependentUpon = "ZŠŒŸõ.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "o‰×ÀÑƒf[ƒ^.xsd"
-                    BuildAction = "Content"
-                    Generator = "MSDataSetGenerator"
-                    LastGenOutput = "o‰×ÀÑƒf[ƒ^.cs"
-                />
-                <File
-                    RelPath = "o‰×ÀÑƒf[ƒ^.cs"
-                    DependentUpon = "o‰×ÀÑƒf[ƒ^.xsd"
-                    SubType = "code"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "o‰×ÀÑƒf[ƒ^.xsx"
-                    DependentUpon = "o‰×ÀÑƒf[ƒ^.xsd"
-                    BuildAction = "None"
-                />
-                <File
-                    RelPath = "o‰×ÀÑ’ •[.rpt"
-                    BuildAction = "EmbeddedResource"
-                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
-                    LastGenOutput = "o‰×ÀÑ’ •[.cs"
-                />
-                <File
-                    RelPath = "o‰×ÀÑ’ •[.cs"
-                    DependentUpon = "o‰×ÀÑ’ •[.rpt"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "o‰×ÀÑ’ •[‚Q.rpt"
-                    BuildAction = "EmbeddedResource"
-                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
-                    LastGenOutput = "o‰×ÀÑ’ •[‚Q.cs"
-                />
-                <File
-                    RelPath = "o‰×ÀÑ’ •[‚Q.cs"
-                    DependentUpon = "o‰×ÀÑ’ •[‚Q.rpt"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "o‰×Æ‰ï.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "o‰×Æ‰ï.resx"
-                    DependentUpon = "o‰×Æ‰ï.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "o‰×ó‹µ.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "o‰×ó‹µ.resx"
-                    DependentUpon = "o‰×ó‹µ.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "o‰×ó‹µƒf[ƒ^.xsd"
-                    BuildAction = "Content"
-                    Generator = "MSDataSetGenerator"
-                    LastGenOutput = "o‰×ó‹µƒf[ƒ^.cs"
-                />
-                <File
-                    RelPath = "o‰×ó‹µƒf[ƒ^.cs"
-                    DependentUpon = "o‰×ó‹µƒf[ƒ^.xsd"
-                    SubType = "code"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "o‰×ó‹µƒf[ƒ^.xsx"
-                    DependentUpon = "o‰×ó‹µƒf[ƒ^.xsd"
-                    BuildAction = "None"
-                />
-                <File
-                    RelPath = "o‰×ó‹µˆê——ƒŒƒ|[ƒg.rpt"
-                    BuildAction = "EmbeddedResource"
-                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
-                    LastGenOutput = "o‰×ó‹µˆê——ƒŒƒ|[ƒg.cs"
-                />
-                <File
-                    RelPath = "o‰×ó‹µˆê——ƒŒƒ|[ƒg.cs"
-                    DependentUpon = "o‰×ó‹µˆê——ƒŒƒ|[ƒg.rpt"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "¿‹æƒ}ƒXƒ^.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "¿‹æƒ}ƒXƒ^.resx"
-                    DependentUpon = "¿‹æƒ}ƒXƒ^.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "‘—‚èóƒf[ƒ^.xsd"
-                    BuildAction = "Content"
-                    Generator = "MSDataSetGenerator"
-                    LastGenOutput = "‘—‚èóƒf[ƒ^.cs"
-                />
-                <File
-                    RelPath = "‘—‚èóƒf[ƒ^.cs"
-                    DependentUpon = "‘—‚èóƒf[ƒ^.xsd"
-                    SubType = "code"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "‘—‚èóƒf[ƒ^.xsx"
-                    DependentUpon = "‘—‚èóƒf[ƒ^.xsd"
-                    BuildAction = "None"
-                />
-                <File
-                    RelPath = "‘—‚èóT‚¦‚`‚S’ •[.rpt"
-                    BuildAction = "EmbeddedResource"
-                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
-                    LastGenOutput = "‘—‚èóT‚¦‚`‚S’ •[.cs"
-                />
-                <File
-                    RelPath = "‘—‚èóT‚¦‚`‚S’ •[.cs"
-                    DependentUpon = "‘—‚èóT‚¦‚`‚S’ •[.rpt"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "“XŠŒŸõ.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "“XŠŒŸõ.resx"
-                    DependentUpon = "“XŠŒŸõ.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "“XŠî•ñ.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "“XŠî•ñ.resx"
-                    DependentUpon = "“XŠî•ñ.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "“XŠ“ü—Í.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "“XŠ“ü—Í.resx"
-                    DependentUpon = "“XŠ“ü—Í.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "”­“Xd•ª.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "”­“Xd•ª.resx"
-                    DependentUpon = "”­“Xd•ª.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Web References\is2maintenance\Reference.map"
-                    BuildAction = "None"
-                    Generator = "MSDiscoCodeGenerator"
-                    LastGenOutput = "Reference.cs"
-                />
-                <File
-                    RelPath = "Web References\is2maintenance\Reference.cs"
-                    DependentUpon = "Reference.map"
-                    SubType = "code"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "Web References\is2maintenance\Service1.disco"
-                    BuildAction = "None"
-                />
-                <File
-                    RelPath = "Web References\is2maintenance\Service1.wsdl"
-                    BuildAction = "None"
-                />
-                <Folder
-                    RelPath = "Web References\is2maintenance\"
-                    WebReferenceUrl = "http://wwwis2.fukutsu.co.jp/is2/is2Maintenance/Service1.asmx"
-                    UrlBehavior = "Dynamic"
-                />
-                <File
-                    RelPath = "Web References\is2oji\Reference.map"
-                    BuildAction = "None"
-                    Generator = "MSDiscoCodeGenerator"
-                    LastGenOutput = "Reference.cs"
-                />
-                <File
-                    RelPath = "Web References\is2oji\Reference.cs"
-                    DependentUpon = "Reference.map"
-                    SubType = "code"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "Web References\is2oji\Service1.disco"
-                    BuildAction = "None"
-                />
-                <File
-                    RelPath = "Web References\is2oji\Service1.wsdl"
-                    BuildAction = "None"
-                />
-                <Folder
-                    RelPath = "Web References\is2oji\"
-                    WebReferenceUrl = "http://wwwis2.fukutsu.co.jp/is2/is2oji/Service1.asmx"
-                    UrlBehavior = "Dynamic"
-                />
-                <File
-                    RelPath = "Web References\is2oshirase\Reference.map"
-                    BuildAction = "None"
-                    Generator = "MSDiscoCodeGenerator"
-                    LastGenOutput = "Reference.cs"
-                />
-                <File
-                    RelPath = "Web References\is2oshirase\Reference.cs"
-                    DependentUpon = "Reference.map"
-                    SubType = "code"
-                    BuildAction = "Compile"
-                    DesignTime = "True"
-                    AutoGen = "True"
-                />
-                <File
-                    RelPath = "Web References\is2oshirase\Service1.disco"
-                    BuildAction = "None"
-                />
-                <File
-                    RelPath = "Web References\is2oshirase\Service1.wsdl"
-                    BuildAction = "None"
-                />
-                <Folder
-                    RelPath = "Web References\is2oshirase\"
-                    WebReferenceUrl = "http://wwwis2.fukutsu.co.jp/is2/is2oshirase/Service1.asmx"
-                    UrlBehavior = "Dynamic"
-                />
-                <Folder
-                    RelPath = "Web References\"
-                    WebReferences = "TRUE"
-                />
-            </Include>
-        </Files>
-        <StartupServices>
-            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
-        </StartupServices>
-    </CSHARP>
-</VisualStudioProject>
-
+ï»¿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.6030</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10A100D1-9686-400A-8313-2AC9A8F13BD5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>is2AdminClient</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>is2AdminClient</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>C:\Program Files\is-2ç®¡ç†\App\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="AxGTABLE32V2Lib">
+      <Guid>{3BA63D60-AE52-11CF-968C-00000E4A0ADF}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="GTABLE32V2Lib">
+      <Guid>{3BA63D60-AE52-11CF-968C-00000E4A0ADF}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <Reference Include="CharConvUtility">
+      <Name>CharConvUtility</Name>
+      <HintPath>CharConvUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="MSDATASRC, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>obj\Debug\MSDATASRC.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\is2maintenance\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Web References\is2oji\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Web References\is2oshirase\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="ãŠçŸ¥ã‚‰ã›æ²ç¤º.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ãŠçŸ¥ã‚‰ã›æ¤œç´¢.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ãŠçŸ¥ã‚‰ã›æ¤œç´¢ï¼’.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ãŠçŸ¥ã‚‰ã›ç™»éŒ².cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ãŠçŸ¥ã‚‰ã›ç™»éŒ²ï¼’.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ãŠçŸ¥ã‚‰ã›é¡Œãƒœã‚¿ãƒ³.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ã”ä¾é ¼ä¸»æ¤œç´¢ï¼’.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ãƒ‘ã‚¹å…¥åŠ›.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼ç”»é¢.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ç™»éŒ².cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ãƒ¡ãƒ‹ãƒ¥ãƒ¼.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ãƒ­ã‚°ã‚¤ãƒ³.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ä¼šå“¡ãƒã‚¹ã‚¿.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ä¼šå“¡åŠ å…¥.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ä¼šå“¡æƒ…å ±ï¼£ï¼³ï¼¶å‡ºåŠ›.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ä¼šå“¡æ¤œç´¢.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ä¼šå“¡æ¤œç´¢ï¼’.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ä½æ‰€æ¤œç´¢.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ä½¿ç”¨æ›¸ãƒ¬ãƒãƒ¼ãƒˆ.cs">
+      <DependentUpon>ä½¿ç”¨æ›¸ãƒ¬ãƒãƒ¼ãƒˆ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="ä½¿ç”¨æ›¸ãƒ¬ãƒãƒ¼ãƒˆ_ç‹å­é‹é€.cs">
+      <DependentUpon>ä½¿ç”¨æ›¸ãƒ¬ãƒãƒ¼ãƒˆ_ç‹å­é‹é€.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="å…±é€šãƒ†ã‚­ã‚¹ãƒˆãƒœãƒƒã‚¯ã‚¹.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="å…±é€šãƒ•ã‚©ãƒ¼ãƒ .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="å‡ºè·å®Ÿç¸¾ãƒ‡ãƒ¼ã‚¿.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>å‡ºè·å®Ÿç¸¾ãƒ‡ãƒ¼ã‚¿.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="å‡ºè·å®Ÿç¸¾å¸³ç¥¨.cs">
+      <DependentUpon>å‡ºè·å®Ÿç¸¾å¸³ç¥¨.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="å‡ºè·å®Ÿç¸¾å¸³ç¥¨ï¼’.cs">
+      <DependentUpon>å‡ºè·å®Ÿç¸¾å¸³ç¥¨ï¼’.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="å‡ºè·ç…§ä¼š.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="å‡ºè·çŠ¶æ³.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="å‡ºè·çŠ¶æ³ãƒ‡ãƒ¼ã‚¿.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>å‡ºè·çŠ¶æ³ãƒ‡ãƒ¼ã‚¿.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="å‡ºè·çŠ¶æ³ä¸€è¦§ãƒ¬ãƒãƒ¼ãƒˆ.cs">
+      <DependentUpon>å‡ºè·çŠ¶æ³ä¸€è¦§ãƒ¬ãƒãƒ¼ãƒˆ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="åŠ å…¥æ¤œç´¢.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="å¥‘ç´„æ›¸ãƒ‡ãƒ¼ã‚¿.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>å¥‘ç´„æ›¸ãƒ‡ãƒ¼ã‚¿.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="å¥‘ç´„æ›¸ãƒ¬ãƒãƒ¼ãƒˆ.cs">
+      <DependentUpon>å¥‘ç´„æ›¸ãƒ¬ãƒãƒ¼ãƒˆ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="å¥‘ç´„æ›¸ãƒ¬ãƒãƒ¼ãƒˆ_ç‹å­é‹é€.cs">
+      <DependentUpon>å¥‘ç´„æ›¸ãƒ¬ãƒãƒ¼ãƒˆ_ç‹å­é‹é€.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="åº—æ‰€å…¥åŠ›.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="åº—æ‰€æƒ…å ±.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="åº—æ‰€æ¤œç´¢.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ç™ºåº—ä»•åˆ†.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ç¤¾å†…ä¼ä¼šå“¡ç™ºåº—ãƒã‚¹ã‚¿.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ç¨¼åƒæ—¥ç™»éŒ².cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ç¨¼åƒçŠ¶æ³ä¸€è¦§ãƒ¬ãƒãƒ¼ãƒˆ.cs">
+      <DependentUpon>ç¨¼åƒçŠ¶æ³ä¸€è¦§ãƒ¬ãƒãƒ¼ãƒˆ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="ç¨¼åƒç‡æƒ….cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ç¨¼å‹•çŠ¶æ³ãƒ‡ãƒ¼ã‚¿.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ç¨¼å‹•çŠ¶æ³ãƒ‡ãƒ¼ã‚¿.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="è·é€äººæ¤œç´¢.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="è¨˜äº‹ç™»éŒ².cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="è«‹æ±‚å…ˆãƒã‚¹ã‚¿.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="é€ã‚ŠçŠ¶ãƒ‡ãƒ¼ã‚¿.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>é€ã‚ŠçŠ¶ãƒ‡ãƒ¼ã‚¿.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="é€ã‚ŠçŠ¶æ§ãˆï¼¡ï¼”å¸³ç¥¨.cs">
+      <DependentUpon>é€ã‚ŠçŠ¶æ§ãˆï¼¡ï¼”å¸³ç¥¨.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="é›†ç´„åº—ãƒã‚¹ã‚¿.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="App.ico" />
+    <Content Include="å‡ºè·å®Ÿç¸¾ãƒ‡ãƒ¼ã‚¿.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>å‡ºè·å®Ÿç¸¾ãƒ‡ãƒ¼ã‚¿.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="å‡ºè·çŠ¶æ³ãƒ‡ãƒ¼ã‚¿.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>å‡ºè·çŠ¶æ³ãƒ‡ãƒ¼ã‚¿.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="å¥‘ç´„æ›¸ãƒ‡ãƒ¼ã‚¿.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>å¥‘ç´„æ›¸ãƒ‡ãƒ¼ã‚¿.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="ç¨¼å‹•çŠ¶æ³ãƒ‡ãƒ¼ã‚¿.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ç¨¼å‹•çŠ¶æ³ãƒ‡ãƒ¼ã‚¿.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="é€ã‚ŠçŠ¶ãƒ‡ãƒ¼ã‚¿.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>é€ã‚ŠçŠ¶ãƒ‡ãƒ¼ã‚¿.Designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="ãŠçŸ¥ã‚‰ã›æ²ç¤º.resx">
+      <DependentUpon>ãŠçŸ¥ã‚‰ã›æ²ç¤º.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ãŠçŸ¥ã‚‰ã›æ¤œç´¢.resx">
+      <DependentUpon>ãŠçŸ¥ã‚‰ã›æ¤œç´¢.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ãŠçŸ¥ã‚‰ã›æ¤œç´¢ï¼’.resx">
+      <DependentUpon>ãŠçŸ¥ã‚‰ã›æ¤œç´¢ï¼’.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ãŠçŸ¥ã‚‰ã›ç™»éŒ².resx">
+      <DependentUpon>ãŠçŸ¥ã‚‰ã›ç™»éŒ².cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ãŠçŸ¥ã‚‰ã›ç™»éŒ²ï¼’.resx">
+      <DependentUpon>ãŠçŸ¥ã‚‰ã›ç™»éŒ²ï¼’.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ãŠçŸ¥ã‚‰ã›é¡Œãƒœã‚¿ãƒ³.resx">
+      <DependentUpon>ãŠçŸ¥ã‚‰ã›é¡Œãƒœã‚¿ãƒ³.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ã”ä¾é ¼ä¸»æ¤œç´¢ï¼’.resx">
+      <DependentUpon>ã”ä¾é ¼ä¸»æ¤œç´¢ï¼’.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ãƒ‘ã‚¹å…¥åŠ›.resx">
+      <DependentUpon>ãƒ‘ã‚¹å…¥åŠ›.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼ç”»é¢.resx">
+      <DependentUpon>ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼ç”»é¢.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰.resx">
+      <DependentUpon>ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ç™»éŒ².resx">
+      <DependentUpon>ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ç™»éŒ².cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ãƒ¡ãƒ‹ãƒ¥ãƒ¼.resx">
+      <DependentUpon>ãƒ¡ãƒ‹ãƒ¥ãƒ¼.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ãƒ­ã‚°ã‚¤ãƒ³.resx">
+      <DependentUpon>ãƒ­ã‚°ã‚¤ãƒ³.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ä¼šå“¡ãƒã‚¹ã‚¿.resx">
+      <DependentUpon>ä¼šå“¡ãƒã‚¹ã‚¿.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ä¼šå“¡åŠ å…¥.resx">
+      <DependentUpon>ä¼šå“¡åŠ å…¥.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ä¼šå“¡æƒ…å ±ï¼£ï¼³ï¼¶å‡ºåŠ›.resx">
+      <DependentUpon>ä¼šå“¡æƒ…å ±ï¼£ï¼³ï¼¶å‡ºåŠ›.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ä¼šå“¡æ¤œç´¢.resx">
+      <DependentUpon>ä¼šå“¡æ¤œç´¢.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ä¼šå“¡æ¤œç´¢ï¼’.resx">
+      <DependentUpon>ä¼šå“¡æ¤œç´¢ï¼’.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ä½æ‰€æ¤œç´¢.resx">
+      <DependentUpon>ä½æ‰€æ¤œç´¢.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ä½¿ç”¨æ›¸ãƒ¬ãƒãƒ¼ãƒˆ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ä½¿ç”¨æ›¸ãƒ¬ãƒãƒ¼ãƒˆ.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ä½¿ç”¨æ›¸ãƒ¬ãƒãƒ¼ãƒˆ_ç‹å­é‹é€.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ä½¿ç”¨æ›¸ãƒ¬ãƒãƒ¼ãƒˆ_ç‹å­é‹é€.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="å…±é€šãƒ†ã‚­ã‚¹ãƒˆãƒœãƒƒã‚¯ã‚¹.resx">
+      <DependentUpon>å…±é€šãƒ†ã‚­ã‚¹ãƒˆãƒœãƒƒã‚¯ã‚¹.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="å…±é€šãƒ•ã‚©ãƒ¼ãƒ .resx">
+      <DependentUpon>å…±é€šãƒ•ã‚©ãƒ¼ãƒ .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="å‡ºè·å®Ÿç¸¾å¸³ç¥¨.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>å‡ºè·å®Ÿç¸¾å¸³ç¥¨.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="å‡ºè·å®Ÿç¸¾å¸³ç¥¨ï¼’.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>å‡ºè·å®Ÿç¸¾å¸³ç¥¨ï¼’.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="å‡ºè·ç…§ä¼š.resx">
+      <DependentUpon>å‡ºè·ç…§ä¼š.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="å‡ºè·çŠ¶æ³.resx">
+      <DependentUpon>å‡ºè·çŠ¶æ³.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="å‡ºè·çŠ¶æ³ä¸€è¦§ãƒ¬ãƒãƒ¼ãƒˆ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>å‡ºè·çŠ¶æ³ä¸€è¦§ãƒ¬ãƒãƒ¼ãƒˆ.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="åŠ å…¥æ¤œç´¢.resx">
+      <DependentUpon>åŠ å…¥æ¤œç´¢.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="å¥‘ç´„æ›¸ãƒ¬ãƒãƒ¼ãƒˆ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>å¥‘ç´„æ›¸ãƒ¬ãƒãƒ¼ãƒˆ.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="å¥‘ç´„æ›¸ãƒ¬ãƒãƒ¼ãƒˆ_ç‹å­é‹é€.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>å¥‘ç´„æ›¸ãƒ¬ãƒãƒ¼ãƒˆ_ç‹å­é‹é€.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="åº—æ‰€å…¥åŠ›.resx">
+      <DependentUpon>åº—æ‰€å…¥åŠ›.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="åº—æ‰€æƒ…å ±.resx">
+      <DependentUpon>åº—æ‰€æƒ…å ±.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="åº—æ‰€æ¤œç´¢.resx">
+      <DependentUpon>åº—æ‰€æ¤œç´¢.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ç™ºåº—ä»•åˆ†.resx">
+      <DependentUpon>ç™ºåº—ä»•åˆ†.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ç¤¾å†…ä¼ä¼šå“¡ç™ºåº—ãƒã‚¹ã‚¿.resx">
+      <DependentUpon>ç¤¾å†…ä¼ä¼šå“¡ç™ºåº—ãƒã‚¹ã‚¿.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ç¨¼åƒæ—¥ç™»éŒ².resx">
+      <DependentUpon>ç¨¼åƒæ—¥ç™»éŒ².cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ç¨¼åƒçŠ¶æ³ä¸€è¦§ãƒ¬ãƒãƒ¼ãƒˆ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ç¨¼åƒçŠ¶æ³ä¸€è¦§ãƒ¬ãƒãƒ¼ãƒˆ.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ç¨¼åƒç‡æƒ….resx">
+      <DependentUpon>ç¨¼åƒç‡æƒ….cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="è·é€äººæ¤œç´¢.resx">
+      <DependentUpon>è·é€äººæ¤œç´¢.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="è¨˜äº‹ç™»éŒ².resx">
+      <DependentUpon>è¨˜äº‹ç™»éŒ².cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="è«‹æ±‚å…ˆãƒã‚¹ã‚¿.resx">
+      <DependentUpon>è«‹æ±‚å…ˆãƒã‚¹ã‚¿.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="é€ã‚ŠçŠ¶æ§ãˆï¼¡ï¼”å¸³ç¥¨.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>é€ã‚ŠçŠ¶æ§ãˆï¼¡ï¼”å¸³ç¥¨.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="é›†ç´„åº—ãƒã‚¹ã‚¿.resx">
+      <DependentUpon>é›†ç´„åº—ãƒã‚¹ã‚¿.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\is2maintenance\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\is2maintenance\Service1.disco" />
+    <None Include="Web References\is2maintenance\Service1.wsdl" />
+    <None Include="Web References\is2oji\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\is2oji\Service1.disco" />
+    <None Include="Web References\is2oji\Service1.wsdl" />
+    <None Include="Web References\is2oshirase\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\is2oshirase\Service1.disco" />
+    <None Include="Web References\is2oshirase\Service1.wsdl" />
+    <None Include="å‡ºè·å®Ÿç¸¾ãƒ‡ãƒ¼ã‚¿.xsx">
+      <DependentUpon>å‡ºè·å®Ÿç¸¾ãƒ‡ãƒ¼ã‚¿.xsd</DependentUpon>
+    </None>
+    <None Include="å‡ºè·çŠ¶æ³ãƒ‡ãƒ¼ã‚¿.xsx">
+      <DependentUpon>å‡ºè·çŠ¶æ³ãƒ‡ãƒ¼ã‚¿.xsd</DependentUpon>
+    </None>
+    <None Include="å¥‘ç´„æ›¸ãƒ‡ãƒ¼ã‚¿.xsx">
+      <DependentUpon>å¥‘ç´„æ›¸ãƒ‡ãƒ¼ã‚¿.xsd</DependentUpon>
+    </None>
+    <None Include="ç¨¼å‹•çŠ¶æ³ãƒ‡ãƒ¼ã‚¿.xsx">
+      <DependentUpon>ç¨¼å‹•çŠ¶æ³ãƒ‡ãƒ¼ã‚¿.xsd</DependentUpon>
+    </None>
+    <None Include="é€ã‚ŠçŠ¶ãƒ‡ãƒ¼ã‚¿.xsx">
+      <DependentUpon>é€ã‚ŠçŠ¶ãƒ‡ãƒ¼ã‚¿.xsd</DependentUpon>
+    </None>
+    <WebReferences Include="Web References\" />
+    <WebReferenceUrl Include="http://wwwis2.fukutsu.co.jp/is2/is2Maintenance/Service1.asmx">
+      <RelPath>Web References\is2maintenance\</RelPath>
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <UpdateFromURL>http://wwwis2.fukutsu.co.jp/is2/is2Maintenance/Service1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>is2AdminClient_is2maintenance_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wwwis2.fukutsu.co.jp/is2/is2oji/Service1.asmx">
+      <RelPath>Web References\is2oji\</RelPath>
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <UpdateFromURL>http://wwwis2.fukutsu.co.jp/is2/is2oji/Service1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>is2AdminClient_is2oji_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wwwis2.fukutsu.co.jp/is2/is2oshirase/Service1.asmx">
+      <RelPath>Web References\is2oshirase\</RelPath>
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <UpdateFromURL>http://wwwis2.fukutsu.co.jp/is2/is2oshirase/Service1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>is2AdminClient_is2oshirase_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ãƒ¼ 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
