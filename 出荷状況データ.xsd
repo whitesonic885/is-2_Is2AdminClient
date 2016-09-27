@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="出荷状況データ" targetNamespace="http://tempuri.org/出荷状況データ.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/出荷状況データ.xsd" xmlns:mstns="http://tempuri.org/出荷状況データ.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="出荷状況データ" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="table出荷状況">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="地区_xFF11__xFF23__xFF24_" type="xs:string"></xs:element>
+							<xs:element name="地区_xFF12__xFF23__xFF24_" type="xs:string"></xs:element>
+							<xs:element name="店所_xFF23__xFF24_" type="xs:string" minOccurs="0" />
+							<xs:element name="店所名" type="xs:string" minOccurs="0" />
+							<xs:element name="開始日" type="xs:string"></xs:element>
+							<xs:element name="終了日" type="xs:string"></xs:element>
+							<xs:element name="会員_xFF23__xFF24_" type="xs:string" minOccurs="0" />
+							<xs:element name="会員名" type="xs:string" minOccurs="0" />
+							<xs:element name="部門_xFF23__xFF24_" type="xs:string" minOccurs="0" />
+							<xs:element name="部門名" type="xs:string" minOccurs="0" />
+							<xs:element name="件数" type="xs:decimal" minOccurs="0" />
+							<xs:element name="個数" type="xs:decimal" minOccurs="0" />
+							<xs:element name="重量" type="xs:decimal" minOccurs="0" />
+							<xs:element name="運賃" type="xs:decimal" minOccurs="0" />
+							<xs:element name="中継" type="xs:decimal" minOccurs="0" />
+							<xs:element name="保険" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

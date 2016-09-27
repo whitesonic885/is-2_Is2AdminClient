@@ -1,0 +1,843 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.6030"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{10A100D1-9686-400A-8313-2AC9A8F13BD5}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "is2AdminClient"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "is2AdminClient"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "C:\Program Files\is-2管理\App\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "MSDATASRC"
+                    Guid = "{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "stdole"
+                    Guid = "{00020430-0000-0000-C000-000000000046}"
+                    VersionMajor = "2"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+                <Reference
+                    Name = "GTABLE32V2Lib"
+                    Guid = "{3BA63D60-AE52-11CF-968C-00000E4A0ADF}"
+                    VersionMajor = "2"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "AxGTABLE32V2Lib"
+                    Guid = "{3BA63D60-AE52-11CF-968C-00000E4A0ADF}"
+                    VersionMajor = "2"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "aximp"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.CrystalReports.Engine"
+                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
+                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.CrystalReports.Engine.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.ReportSource"
+                    AssemblyName = "CrystalDecisions.ReportSource"
+                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.ReportSource.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Shared"
+                    AssemblyName = "CrystalDecisions.Shared"
+                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Shared.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Windows.Forms"
+                    AssemblyName = "CrystalDecisions.Windows.Forms"
+                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Windows.Forms.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "Microsoft.VisualBasic"
+                    AssemblyName = "Microsoft.VisualBasic"
+                    HintPath = "D:\WINNT\Microsoft.NET\Framework\v1.1.4322\Microsoft.VisualBasic.dll"
+                />
+                <Reference
+                    Name = "CharConvUtility"
+                    AssemblyName = "CharConvUtility"
+                    HintPath = "CharConvUtility.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "app.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "お知らせ掲示.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "お知らせ掲示.resx"
+                    DependentUpon = "お知らせ掲示.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "お知らせ検索.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "お知らせ検索.resx"
+                    DependentUpon = "お知らせ検索.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "お知らせ検索２.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "お知らせ検索２.resx"
+                    DependentUpon = "お知らせ検索２.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "お知らせ題ボタン.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "お知らせ題ボタン.resx"
+                    DependentUpon = "お知らせ題ボタン.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "お知らせ登録.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "お知らせ登録.resx"
+                    DependentUpon = "お知らせ登録.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "お知らせ登録２.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "お知らせ登録２.resx"
+                    DependentUpon = "お知らせ登録２.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ご依頼主検索２.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ご依頼主検索２.resx"
+                    DependentUpon = "ご依頼主検索２.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "パス入力.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "パス入力.resx"
+                    DependentUpon = "パス入力.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "プレビュー画面.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "プレビュー画面.resx"
+                    DependentUpon = "プレビュー画面.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "マニュアルダウンロード.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "マニュアルダウンロード.resx"
+                    DependentUpon = "マニュアルダウンロード.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "メッセージ登録.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "メッセージ登録.resx"
+                    DependentUpon = "メッセージ登録.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "メニュー.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "メニュー.resx"
+                    DependentUpon = "メニュー.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ログイン.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ログイン.resx"
+                    DependentUpon = "ログイン.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "加入検索.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "加入検索.resx"
+                    DependentUpon = "加入検索.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "稼働状況一覧レポート.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "稼働状況一覧レポート.cs"
+                />
+                <File
+                    RelPath = "稼働状況一覧レポート.cs"
+                    DependentUpon = "稼働状況一覧レポート.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "稼働日登録.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "稼働日登録.resx"
+                    DependentUpon = "稼働日登録.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "稼働率情.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "稼働率情.resx"
+                    DependentUpon = "稼働率情.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "稼動状況データ.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "稼動状況データ.cs"
+                />
+                <File
+                    RelPath = "稼動状況データ.cs"
+                    DependentUpon = "稼動状況データ.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "稼動状況データ.xsx"
+                    DependentUpon = "稼動状況データ.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "荷送人検索.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "荷送人検索.resx"
+                    DependentUpon = "荷送人検索.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "会員マスタ.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "会員マスタ.resx"
+                    DependentUpon = "会員マスタ.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "会員加入.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "会員加入.resx"
+                    DependentUpon = "会員加入.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "会員検索.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "会員検索.resx"
+                    DependentUpon = "会員検索.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "会員検索２.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "会員検索２.resx"
+                    DependentUpon = "会員検索２.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "会員情報ＣＳＶ出力.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "会員情報ＣＳＶ出力.resx"
+                    DependentUpon = "会員情報ＣＳＶ出力.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "記事登録.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "記事登録.resx"
+                    DependentUpon = "記事登録.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "共通テキストボックス.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "共通テキストボックス.resx"
+                    DependentUpon = "共通テキストボックス.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "共通フォーム.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "共通フォーム.resx"
+                    DependentUpon = "共通フォーム.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "契約書データ.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "契約書データ.cs"
+                />
+                <File
+                    RelPath = "契約書データ.cs"
+                    DependentUpon = "契約書データ.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "契約書データ.xsx"
+                    DependentUpon = "契約書データ.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "契約書レポート.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "契約書レポート.cs"
+                />
+                <File
+                    RelPath = "契約書レポート.cs"
+                    DependentUpon = "契約書レポート.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "契約書レポート_王子運送.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "契約書レポート_王子運送.cs"
+                />
+                <File
+                    RelPath = "契約書レポート_王子運送.cs"
+                    DependentUpon = "契約書レポート_王子運送.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "使用書レポート.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "使用書レポート.cs"
+                />
+                <File
+                    RelPath = "使用書レポート.cs"
+                    DependentUpon = "使用書レポート.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "使用書レポート_王子運送.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "使用書レポート_王子運送.cs"
+                />
+                <File
+                    RelPath = "使用書レポート_王子運送.cs"
+                    DependentUpon = "使用書レポート_王子運送.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "社内伝会員発店マスタ.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "社内伝会員発店マスタ.resx"
+                    DependentUpon = "社内伝会員発店マスタ.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "集約店マスタ.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "集約店マスタ.resx"
+                    DependentUpon = "集約店マスタ.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "住所検索.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "住所検索.resx"
+                    DependentUpon = "住所検索.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "出荷実績データ.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "出荷実績データ.cs"
+                />
+                <File
+                    RelPath = "出荷実績データ.cs"
+                    DependentUpon = "出荷実績データ.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "出荷実績データ.xsx"
+                    DependentUpon = "出荷実績データ.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "出荷実績帳票.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "出荷実績帳票.cs"
+                />
+                <File
+                    RelPath = "出荷実績帳票.cs"
+                    DependentUpon = "出荷実績帳票.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "出荷実績帳票２.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "出荷実績帳票２.cs"
+                />
+                <File
+                    RelPath = "出荷実績帳票２.cs"
+                    DependentUpon = "出荷実績帳票２.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "出荷照会.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "出荷照会.resx"
+                    DependentUpon = "出荷照会.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "出荷状況.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "出荷状況.resx"
+                    DependentUpon = "出荷状況.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "出荷状況データ.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "出荷状況データ.cs"
+                />
+                <File
+                    RelPath = "出荷状況データ.cs"
+                    DependentUpon = "出荷状況データ.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "出荷状況データ.xsx"
+                    DependentUpon = "出荷状況データ.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "出荷状況一覧レポート.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "出荷状況一覧レポート.cs"
+                />
+                <File
+                    RelPath = "出荷状況一覧レポート.cs"
+                    DependentUpon = "出荷状況一覧レポート.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "請求先マスタ.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "請求先マスタ.resx"
+                    DependentUpon = "請求先マスタ.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "送り状データ.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "送り状データ.cs"
+                />
+                <File
+                    RelPath = "送り状データ.cs"
+                    DependentUpon = "送り状データ.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "送り状データ.xsx"
+                    DependentUpon = "送り状データ.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "送り状控えＡ４帳票.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "送り状控えＡ４帳票.cs"
+                />
+                <File
+                    RelPath = "送り状控えＡ４帳票.cs"
+                    DependentUpon = "送り状控えＡ４帳票.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "店所検索.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "店所検索.resx"
+                    DependentUpon = "店所検索.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "店所情報.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "店所情報.resx"
+                    DependentUpon = "店所情報.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "店所入力.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "店所入力.resx"
+                    DependentUpon = "店所入力.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "発店仕分.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "発店仕分.resx"
+                    DependentUpon = "発店仕分.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Web References\is2maintenance\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2maintenance\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2maintenance\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2maintenance\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2maintenance\"
+                    WebReferenceUrl = "http://wwwis2.fukutsu.co.jp/is2/is2Maintenance/Service1.asmx"
+                    UrlBehavior = "Dynamic"
+                />
+                <File
+                    RelPath = "Web References\is2oji\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2oji\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2oji\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2oji\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2oji\"
+                    WebReferenceUrl = "http://wwwis2.fukutsu.co.jp/is2/is2oji/Service1.asmx"
+                    UrlBehavior = "Dynamic"
+                />
+                <File
+                    RelPath = "Web References\is2oshirase\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\is2oshirase\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\is2oshirase\Service1.disco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\is2oshirase\Service1.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\is2oshirase\"
+                    WebReferenceUrl = "http://wwwis2.fukutsu.co.jp/is2/is2oshirase/Service1.asmx"
+                    UrlBehavior = "Dynamic"
+                />
+                <Folder
+                    RelPath = "Web References\"
+                    WebReferences = "TRUE"
+                />
+            </Include>
+        </Files>
+        <StartupServices>
+            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
+        </StartupServices>
+    </CSHARP>
+</VisualStudioProject>
+
