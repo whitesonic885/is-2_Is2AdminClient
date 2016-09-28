@@ -57,8 +57,11 @@ namespace is2AdminClient
 			// crv’ •[
 			// 
 			this.crv’ •[.ActiveViewIndex = -1;
-			this.crv’ •[.DisplayGroupTree = false;
-			this.crv’ •[.Dock = System.Windows.Forms.DockStyle.Fill;
+// MOD 2016.9.27 Vivouac) ‹e’r Visual Studio 2013Œ`Ž®‘Î‰ž START
+            //this.crv’ •[.DisplayGroupTree = false;
+            this.crv’ •[.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+// MOD 2016.9.27 Vivouac) ‹e’r Visual Studio 2013Œ`Ž®‘Î‰ž END
+            this.crv’ •[.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.crv’ •[.Location = new System.Drawing.Point(0, 0);
 			this.crv’ •[.Name = "crv’ •[";
 			this.crv’ •[.ReportSource = null;

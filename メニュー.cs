@@ -42,6 +42,8 @@ namespace is2AdminClient
 	//--------------------------------------------------------------------------
 	// MOD 2016.06.10 BEVAS) 松本 WiFi設定した端末でIPアドレスが正常に取得できない不具合対応
 	//--------------------------------------------------------------------------
+    // MOD 2016.9.27 Vivouac) 菊池 Visual Studio 2013形式対応
+    //--------------------------------------------------------------------------
 	public class メニュー : 共通フォーム
 	{
 		private static System.Threading.Mutex mutex;
@@ -623,7 +625,10 @@ namespace is2AdminClient
 			{
 				string sMName = System.Environment.MachineName;
 				// ＩＰアドレス
-				System.Net.IPHostEntry iph = System.Net.Dns.GetHostByName(sMName);
+// MOD 2016.9.27 Vivouac) 菊池 Visual Studio 2013形式対応 START
+                //System.Net.IPHostEntry iph = System.Net.Dns.GetHostByName(sMName);
+                System.Net.IPHostEntry iph = System.Net.Dns.GetHostEntry(sMName);
+// MOD 2016.9.27 Vivouac) 菊池 Visual Studio 2013形式対応 END
 #if DEBUG
 				iph.AddressList = new System.Net.IPAddress[3];
 				try
@@ -1392,7 +1397,9 @@ namespace is2AdminClient
 // ADD 2009.04.07 東都）高木 稼働日の管理機能の追加 END
 
 // ADD 2007.11.29 東都）高木 ログイン時のフォーカス障害対応 START
-			if(Fログイン != null) Fログイン.Focus();
+            // MOD 2016.9.27 Vivouac) 菊池 Visual Studio 2013形式対応 START
+			//if(Fログイン != null) Fログイン.Focus();
+            // MOD 2016.9.27 Vivouac) 菊池 Visual Studio 2013形式対応 END
 // ADD 2007.11.29 東都）高木 ログイン時のフォーカス障害対応 END
 		}
 // ADD 2005.05.25 東都）小童谷 スレッド化 END

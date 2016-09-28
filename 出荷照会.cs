@@ -921,9 +921,13 @@ namespace is2AdminClient
 			this.Name = "出荷照会";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
 			this.Text = "is-2 出荷照会";
-			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.エンター移動);
-			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.エンターキャンセル);
-			this.Load += new System.EventHandler(this.Form1_Load);
+// MOD 2016.9.27 Vivouac) 菊池 Visual Studio 2013形式対応 START
+            //this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.エンター移動);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Onエンター移動);
+            //this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.エンターキャンセル);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Onエンターキャンセル);
+// MOD 2016.9.27 Vivouac) 菊池 Visual Studio 2013形式対応 END
+            this.Load += new System.EventHandler(this.Form1_Load);
 			this.Closed += new System.EventHandler(this.出荷照会_Closed);
 			((System.ComponentModel.ISupportInitialize)(this.ds送り状)).EndInit();
 			this.panel2.ResumeLayout(false);
@@ -938,6 +942,18 @@ namespace is2AdminClient
 
 		}
 		#endregion
+
+        // MOD 2016.9.27 Vivouac) 菊池 Visual Studio 2013形式対応 START
+        protected void Onエンター移動(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            base.エンター移動(sender, e);
+        }
+
+        protected void Onエンターキャンセル(object sender, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            base.エンターキャンセル(sender, e);
+        }
+        // MOD 2016.9.27 Vivouac) 菊池 Visual Studio 2013形式対応 END
 
 		/// <summary>
 		/// アプリケーションのメイン エントリ ポイントです。

@@ -132,732 +132,743 @@ namespace is2AdminClient
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(請求先マスタ));
-			this.pnl請求先 = new System.Windows.Forms.Panel();
-			this.btn会員更新 = new System.Windows.Forms.Button();
-			this.cb出荷実績一覧運賃非表示 = new System.Windows.Forms.CheckBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.tex部門数 = new is2AdminClient.共通テキストボックス();
-			this.label5 = new System.Windows.Forms.Label();
-			this.tex郵便番号店所 = new is2AdminClient.共通テキストボックス();
-			this.btn住所検索 = new System.Windows.Forms.Button();
-			this.tex郵便番号２ = new is2AdminClient.共通テキストボックス();
-			this.tex郵便番号１ = new is2AdminClient.共通テキストボックス();
-			this.label10 = new System.Windows.Forms.Label();
-			this.lab郵便番号 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.tex得意先部課名 = new is2AdminClient.共通テキストボックス();
-			this.tex得意先部課コード = new is2AdminClient.共通テキストボックス();
-			this.tex得意先コード = new is2AdminClient.共通テキストボックス();
-			this.lab得意先部課コード = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.lab得意先コード = new System.Windows.Forms.Label();
-			this.axGT請求先 = new AxGTABLE32V2Lib.AxGTable32();
-			this.tex管理店所名 = new is2AdminClient.共通テキストボックス();
-			this.lab管理店所名 = new System.Windows.Forms.Label();
-			this.btn請求先取消 = new System.Windows.Forms.Button();
-			this.btn請求先削除 = new System.Windows.Forms.Button();
-			this.btn請求先登録 = new System.Windows.Forms.Button();
-			this.tex会員名 = new is2AdminClient.共通テキストボックス();
-			this.btn会員検索 = new System.Windows.Forms.Button();
-			this.lab得意先部課名 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label22 = new System.Windows.Forms.Label();
-			this.lab会員コード = new System.Windows.Forms.Label();
-			this.tex会員コード = new is2AdminClient.共通テキストボックス();
-			this.btn会員実行 = new System.Windows.Forms.Button();
-			this.gpお客様 = new System.Windows.Forms.GroupBox();
-			this.panel5 = new System.Windows.Forms.Panel();
-			this.btn管理店所検索 = new System.Windows.Forms.Button();
-			this.lab記事コード = new System.Windows.Forms.Label();
-			this.tex管理店所コード = new is2AdminClient.共通テキストボックス();
-			this.panel6 = new System.Windows.Forms.Panel();
-			this.tex認証利用者名 = new is2AdminClient.共通テキストボックス();
-			this.lab認証利用者名 = new System.Windows.Forms.Label();
-			this.lab認証会員名 = new System.Windows.Forms.Label();
-			this.tex認証会員名 = new is2AdminClient.共通テキストボックス();
-			this.panel7 = new System.Windows.Forms.Panel();
-			this.lab日時 = new System.Windows.Forms.Label();
-			this.lab請求先タイトル = new System.Windows.Forms.Label();
-			this.panel8 = new System.Windows.Forms.Panel();
-			this.texメッセージ = new is2AdminClient.共通テキストボックス();
-			this.btn閉じる = new System.Windows.Forms.Button();
-			this.button13 = new System.Windows.Forms.Button();
-			this.button12 = new System.Windows.Forms.Button();
-			this.timer1 = new System.Windows.Forms.Timer(this.components);
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.pnl請求先.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.axGT請求先)).BeginInit();
-			this.panel5.SuspendLayout();
-			this.panel6.SuspendLayout();
-			this.panel7.SuspendLayout();
-			this.panel8.SuspendLayout();
-			this.groupBox1.SuspendLayout();
-			this.groupBox2.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// pnl請求先
-			// 
-			this.pnl請求先.BackColor = System.Drawing.Color.Honeydew;
-			this.pnl請求先.Controls.Add(this.btn会員更新);
-			this.pnl請求先.Controls.Add(this.cb出荷実績一覧運賃非表示);
-			this.pnl請求先.Controls.Add(this.label4);
-			this.pnl請求先.Controls.Add(this.tex部門数);
-			this.pnl請求先.Controls.Add(this.label5);
-			this.pnl請求先.Controls.Add(this.tex郵便番号店所);
-			this.pnl請求先.Controls.Add(this.btn住所検索);
-			this.pnl請求先.Controls.Add(this.tex郵便番号２);
-			this.pnl請求先.Controls.Add(this.tex郵便番号１);
-			this.pnl請求先.Controls.Add(this.label10);
-			this.pnl請求先.Controls.Add(this.lab郵便番号);
-			this.pnl請求先.Controls.Add(this.label2);
-			this.pnl請求先.Controls.Add(this.tex得意先部課名);
-			this.pnl請求先.Controls.Add(this.tex得意先部課コード);
-			this.pnl請求先.Controls.Add(this.tex得意先コード);
-			this.pnl請求先.Controls.Add(this.lab得意先部課コード);
-			this.pnl請求先.Controls.Add(this.label3);
-			this.pnl請求先.Controls.Add(this.lab得意先コード);
-			this.pnl請求先.Controls.Add(this.axGT請求先);
-			this.pnl請求先.Controls.Add(this.tex管理店所名);
-			this.pnl請求先.Controls.Add(this.lab管理店所名);
-			this.pnl請求先.Controls.Add(this.btn請求先取消);
-			this.pnl請求先.Controls.Add(this.btn請求先削除);
-			this.pnl請求先.Controls.Add(this.btn請求先登録);
-			this.pnl請求先.Controls.Add(this.tex会員名);
-			this.pnl請求先.Controls.Add(this.btn会員検索);
-			this.pnl請求先.Controls.Add(this.lab得意先部課名);
-			this.pnl請求先.Controls.Add(this.label1);
-			this.pnl請求先.Controls.Add(this.label22);
-			this.pnl請求先.Controls.Add(this.lab会員コード);
-			this.pnl請求先.Controls.Add(this.tex会員コード);
-			this.pnl請求先.Controls.Add(this.btn会員実行);
-			this.pnl請求先.Controls.Add(this.gpお客様);
-			this.pnl請求先.Location = new System.Drawing.Point(1, 6);
-			this.pnl請求先.Name = "pnl請求先";
-			this.pnl請求先.Size = new System.Drawing.Size(667, 366);
-			this.pnl請求先.TabIndex = 1;
-			// 
-			// btn会員更新
-			// 
-			this.btn会員更新.BackColor = System.Drawing.Color.Blue;
-			this.btn会員更新.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn会員更新.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.btn会員更新.ForeColor = System.Drawing.Color.White;
-			this.btn会員更新.Location = new System.Drawing.Point(600, 64);
-			this.btn会員更新.Name = "btn会員更新";
-			this.btn会員更新.Size = new System.Drawing.Size(48, 22);
-			this.btn会員更新.TabIndex = 90;
-			this.btn会員更新.Text = "更新";
-			this.btn会員更新.Click += new System.EventHandler(this.btn会員更新_Click);
-			// 
-			// cb出荷実績一覧運賃非表示
-			// 
-			this.cb出荷実績一覧運賃非表示.ForeColor = System.Drawing.Color.LimeGreen;
-			this.cb出荷実績一覧運賃非表示.Location = new System.Drawing.Point(422, 64);
-			this.cb出荷実績一覧運賃非表示.Name = "cb出荷実績一覧運賃非表示";
-			this.cb出荷実績一覧運賃非表示.Size = new System.Drawing.Size(174, 22);
-			this.cb出荷実績一覧運賃非表示.TabIndex = 89;
-			this.cb出荷実績一覧運賃非表示.Text = "出荷実績一覧：運賃表示なし";
-			// 
-			// label4
-			// 
-			this.label4.ForeColor = System.Drawing.Color.Red;
-			this.label4.Location = new System.Drawing.Point(34, 310);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(16, 14);
-			this.label4.TabIndex = 88;
-			this.label4.Text = "※";
-			// 
-			// tex部門数
-			// 
-			this.tex部門数.BackColor = System.Drawing.Color.Honeydew;
-			this.tex部門数.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.tex部門数.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.tex部門数.ImeMode = System.Windows.Forms.ImeMode.Disable;
-			this.tex部門数.Location = new System.Drawing.Point(152, 332);
-			this.tex部門数.MaxLength = 10;
-			this.tex部門数.Name = "tex部門数";
-			this.tex部門数.ReadOnly = true;
-			this.tex部門数.Size = new System.Drawing.Size(28, 16);
-			this.tex部門数.TabIndex = 87;
-			this.tex部門数.TabStop = false;
-			this.tex部門数.Text = "";
-			this.tex部門数.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			// 
-			// label5
-			// 
-			this.label5.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.label5.ForeColor = System.Drawing.Color.LimeGreen;
-			this.label5.Location = new System.Drawing.Point(48, 334);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(95, 14);
-			this.label5.TabIndex = 86;
-			this.label5.Text = "セクション数";
-			// 
-			// tex郵便番号店所
-			// 
-			this.tex郵便番号店所.BackColor = System.Drawing.Color.Honeydew;
-			this.tex郵便番号店所.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.tex郵便番号店所.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.tex郵便番号店所.ImeMode = System.Windows.Forms.ImeMode.Disable;
-			this.tex郵便番号店所.Location = new System.Drawing.Point(304, 308);
-			this.tex郵便番号店所.MaxLength = 6;
-			this.tex郵便番号店所.Name = "tex郵便番号店所";
-			this.tex郵便番号店所.ReadOnly = true;
-			this.tex郵便番号店所.Size = new System.Drawing.Size(74, 16);
-			this.tex郵便番号店所.TabIndex = 85;
-			this.tex郵便番号店所.TabStop = false;
-			this.tex郵便番号店所.Text = "";
-			// 
-			// btn住所検索
-			// 
-			this.btn住所検索.BackColor = System.Drawing.Color.SteelBlue;
-			this.btn住所検索.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn住所検索.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.btn住所検索.ForeColor = System.Drawing.Color.White;
-			this.btn住所検索.Location = new System.Drawing.Point(252, 304);
-			this.btn住所検索.Name = "btn住所検索";
-			this.btn住所検索.Size = new System.Drawing.Size(48, 22);
-			this.btn住所検索.TabIndex = 3;
-			this.btn住所検索.TabStop = false;
-			this.btn住所検索.Text = "検索";
-			this.btn住所検索.Click += new System.EventHandler(this.btn住所検索_Click);
-			// 
-			// tex郵便番号２
-			// 
-			this.tex郵便番号２.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.tex郵便番号２.ImeMode = System.Windows.Forms.ImeMode.Disable;
-			this.tex郵便番号２.Location = new System.Drawing.Point(200, 304);
-			this.tex郵便番号２.MaxLength = 4;
-			this.tex郵便番号２.Name = "tex郵便番号２";
-			this.tex郵便番号２.Size = new System.Drawing.Size(48, 23);
-			this.tex郵便番号２.TabIndex = 8;
-			this.tex郵便番号２.Text = "";
-			this.tex郵便番号２.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tex郵便番号２_KeyDown);
-			this.tex郵便番号２.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tex郵便番号２_KeyPress);
-			// 
-			// tex郵便番号１
-			// 
-			this.tex郵便番号１.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.tex郵便番号１.ImeMode = System.Windows.Forms.ImeMode.Disable;
-			this.tex郵便番号１.Location = new System.Drawing.Point(150, 304);
-			this.tex郵便番号１.MaxLength = 3;
-			this.tex郵便番号１.Name = "tex郵便番号１";
-			this.tex郵便番号１.Size = new System.Drawing.Size(38, 23);
-			this.tex郵便番号１.TabIndex = 7;
-			this.tex郵便番号１.Text = "";
-			// 
-			// label10
-			// 
-			this.label10.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.label10.Location = new System.Drawing.Point(188, 308);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(12, 16);
-			this.label10.TabIndex = 84;
-			this.label10.Text = "－";
-			this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// lab郵便番号
-			// 
-			this.lab郵便番号.ForeColor = System.Drawing.Color.LimeGreen;
-			this.lab郵便番号.Location = new System.Drawing.Point(48, 310);
-			this.lab郵便番号.Name = "lab郵便番号";
-			this.lab郵便番号.Size = new System.Drawing.Size(95, 14);
-			this.lab郵便番号.TabIndex = 79;
-			this.lab郵便番号.Text = "郵便番号";
-			// 
-			// label2
-			// 
-			this.label2.ForeColor = System.Drawing.Color.Red;
-			this.label2.Location = new System.Drawing.Point(34, 284);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(16, 14);
-			this.label2.TabIndex = 78;
-			this.label2.Text = "※";
-			// 
-			// tex得意先部課名
-			// 
-			this.tex得意先部課名.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.tex得意先部課名.ImeMode = System.Windows.Forms.ImeMode.Hiragana;
-			this.tex得意先部課名.Location = new System.Drawing.Point(150, 278);
-			this.tex得意先部課名.MaxLength = 10;
-			this.tex得意先部課名.Name = "tex得意先部課名";
-			this.tex得意先部課名.Size = new System.Drawing.Size(170, 23);
-			this.tex得意先部課名.TabIndex = 6;
-			this.tex得意先部課名.Text = "";
-			// 
-			// tex得意先部課コード
-			// 
-			this.tex得意先部課コード.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.tex得意先部課コード.ImeMode = System.Windows.Forms.ImeMode.Disable;
-			this.tex得意先部課コード.Location = new System.Drawing.Point(150, 254);
-			this.tex得意先部課コード.MaxLength = 6;
-			this.tex得意先部課コード.Name = "tex得意先部課コード";
-			this.tex得意先部課コード.Size = new System.Drawing.Size(82, 23);
-			this.tex得意先部課コード.TabIndex = 5;
-			this.tex得意先部課コード.Text = "";
-			// 
-			// tex得意先コード
-			// 
-			this.tex得意先コード.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.tex得意先コード.ImeMode = System.Windows.Forms.ImeMode.Disable;
-			this.tex得意先コード.Location = new System.Drawing.Point(150, 230);
-			this.tex得意先コード.MaxLength = 10;
-			this.tex得意先コード.Name = "tex得意先コード";
-			this.tex得意先コード.Size = new System.Drawing.Size(130, 23);
-			this.tex得意先コード.TabIndex = 4;
-			this.tex得意先コード.Text = "";
-			// 
-			// lab得意先部課コード
-			// 
-			this.lab得意先部課コード.ForeColor = System.Drawing.Color.LimeGreen;
-			this.lab得意先部課コード.Location = new System.Drawing.Point(48, 260);
-			this.lab得意先部課コード.Name = "lab得意先部課コード";
-			this.lab得意先部課コード.Size = new System.Drawing.Size(95, 14);
-			this.lab得意先部課コード.TabIndex = 77;
-			this.lab得意先部課コード.Text = "得意先部課コード";
-			// 
-			// label3
-			// 
-			this.label3.ForeColor = System.Drawing.Color.Red;
-			this.label3.Location = new System.Drawing.Point(34, 236);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(16, 14);
-			this.label3.TabIndex = 76;
-			this.label3.Text = "※";
-			// 
-			// lab得意先コード
-			// 
-			this.lab得意先コード.ForeColor = System.Drawing.Color.LimeGreen;
-			this.lab得意先コード.Location = new System.Drawing.Point(48, 236);
-			this.lab得意先コード.Name = "lab得意先コード";
-			this.lab得意先コード.Size = new System.Drawing.Size(95, 14);
-			this.lab得意先コード.TabIndex = 75;
-			this.lab得意先コード.Text = "得意先コード";
-			// 
-			// axGT請求先
-			// 
-			this.axGT請求先.ContainingControl = this;
-			this.axGT請求先.DataSource = null;
-			this.axGT請求先.Location = new System.Drawing.Point(30, 96);
-			this.axGT請求先.Name = "axGT請求先";
-			this.axGT請求先.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axGT請求先.OcxState")));
-			this.axGT請求先.Size = new System.Drawing.Size(624, 128);
-			this.axGT請求先.TabIndex = 3;
-			this.axGT請求先.KeyDownEvent += new AxGTABLE32V2Lib._DGTable32Events_KeyDownEventHandler(this.axGT請求先_KeyDownEvent);
-			this.axGT請求先.CelDblClick += new AxGTABLE32V2Lib._DGTable32Events_CelDblClickEventHandler(this.axGT請求先_CelDblClick);
-			this.axGT請求先.CurPlaceChanged += new AxGTABLE32V2Lib._DGTable32Events_CurPlaceChangedEventHandler(this.axGT請求先_CurPlaceChanged);
-			// 
-			// tex管理店所名
-			// 
-			this.tex管理店所名.BackColor = System.Drawing.Color.Honeydew;
-			this.tex管理店所名.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.tex管理店所名.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.tex管理店所名.ImeMode = System.Windows.Forms.ImeMode.Disable;
-			this.tex管理店所名.Location = new System.Drawing.Point(150, 10);
-			this.tex管理店所名.MaxLength = 6;
-			this.tex管理店所名.Name = "tex管理店所名";
-			this.tex管理店所名.ReadOnly = true;
-			this.tex管理店所名.Size = new System.Drawing.Size(74, 16);
-			this.tex管理店所名.TabIndex = 73;
-			this.tex管理店所名.TabStop = false;
-			this.tex管理店所名.Text = "";
-			// 
-			// lab管理店所名
-			// 
-			this.lab管理店所名.BackColor = System.Drawing.Color.Honeydew;
-			this.lab管理店所名.ForeColor = System.Drawing.Color.LimeGreen;
-			this.lab管理店所名.Location = new System.Drawing.Point(48, 12);
-			this.lab管理店所名.Name = "lab管理店所名";
-			this.lab管理店所名.Size = new System.Drawing.Size(95, 14);
-			this.lab管理店所名.TabIndex = 72;
-			this.lab管理店所名.Text = "管理店所名";
-			// 
-			// btn請求先取消
-			// 
-			this.btn請求先取消.BackColor = System.Drawing.Color.Blue;
-			this.btn請求先取消.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn請求先取消.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.btn請求先取消.ForeColor = System.Drawing.Color.White;
-			this.btn請求先取消.Location = new System.Drawing.Point(446, 336);
-			this.btn請求先取消.Name = "btn請求先取消";
-			this.btn請求先取消.Size = new System.Drawing.Size(48, 22);
-			this.btn請求先取消.TabIndex = 11;
-			this.btn請求先取消.Text = "取消";
-			this.btn請求先取消.Click += new System.EventHandler(this.btn請求先取消_Click);
-			// 
-			// btn請求先削除
-			// 
-			this.btn請求先削除.BackColor = System.Drawing.Color.Blue;
-			this.btn請求先削除.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn請求先削除.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.btn請求先削除.ForeColor = System.Drawing.Color.White;
-			this.btn請求先削除.Location = new System.Drawing.Point(392, 336);
-			this.btn請求先削除.Name = "btn請求先削除";
-			this.btn請求先削除.Size = new System.Drawing.Size(48, 22);
-			this.btn請求先削除.TabIndex = 10;
-			this.btn請求先削除.Text = "削除";
-			this.btn請求先削除.Click += new System.EventHandler(this.btn請求先削除_Click);
-			// 
-			// btn請求先登録
-			// 
-			this.btn請求先登録.BackColor = System.Drawing.Color.Blue;
-			this.btn請求先登録.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn請求先登録.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.btn請求先登録.ForeColor = System.Drawing.Color.White;
-			this.btn請求先登録.Location = new System.Drawing.Point(338, 336);
-			this.btn請求先登録.Name = "btn請求先登録";
-			this.btn請求先登録.Size = new System.Drawing.Size(48, 22);
-			this.btn請求先登録.TabIndex = 9;
-			this.btn請求先登録.Text = "登録";
-			this.btn請求先登録.Click += new System.EventHandler(this.btn請求先登録_Click);
-			// 
-			// tex会員名
-			// 
-			this.tex会員名.BackColor = System.Drawing.Color.Honeydew;
-			this.tex会員名.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.tex会員名.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.tex会員名.ImeMode = System.Windows.Forms.ImeMode.Disable;
-			this.tex会員名.Location = new System.Drawing.Point(392, 44);
-			this.tex会員名.MaxLength = 20;
-			this.tex会員名.Name = "tex会員名";
-			this.tex会員名.ReadOnly = true;
-			this.tex会員名.Size = new System.Drawing.Size(258, 16);
-			this.tex会員名.TabIndex = 9;
-			this.tex会員名.TabStop = false;
-			this.tex会員名.Text = "";
-			// 
-			// btn会員検索
-			// 
-			this.btn会員検索.BackColor = System.Drawing.Color.SteelBlue;
-			this.btn会員検索.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn会員検索.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.btn会員検索.ForeColor = System.Drawing.Color.White;
-			this.btn会員検索.Location = new System.Drawing.Point(286, 40);
-			this.btn会員検索.Name = "btn会員検索";
-			this.btn会員検索.Size = new System.Drawing.Size(48, 22);
-			this.btn会員検索.TabIndex = 1;
-			this.btn会員検索.TabStop = false;
-			this.btn会員検索.Text = "検索";
-			this.btn会員検索.Click += new System.EventHandler(this.btn会員検索_Click);
-			// 
-			// lab得意先部課名
-			// 
-			this.lab得意先部課名.ForeColor = System.Drawing.Color.LimeGreen;
-			this.lab得意先部課名.Location = new System.Drawing.Point(48, 284);
-			this.lab得意先部課名.Name = "lab得意先部課名";
-			this.lab得意先部課名.Size = new System.Drawing.Size(95, 14);
-			this.lab得意先部課名.TabIndex = 52;
-			this.lab得意先部課名.Text = "得意先部課名";
-			// 
-			// label1
-			// 
-			this.label1.ForeColor = System.Drawing.Color.Red;
-			this.label1.Location = new System.Drawing.Point(34, 46);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(16, 14);
-			this.label1.TabIndex = 51;
-			this.label1.Text = "※";
-			// 
-			// label22
-			// 
-			this.label22.BackColor = System.Drawing.Color.FromArgb(((System.Byte)(44)), ((System.Byte)(241)), ((System.Byte)(83)));
-			this.label22.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
-			this.label22.ForeColor = System.Drawing.Color.Blue;
-			this.label22.Location = new System.Drawing.Point(0, 0);
-			this.label22.Name = "label22";
-			this.label22.Size = new System.Drawing.Size(22, 366);
-			this.label22.TabIndex = 50;
-			this.label22.Text = "請求先情報";
-			this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// lab会員コード
-			// 
-			this.lab会員コード.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.lab会員コード.ForeColor = System.Drawing.Color.LimeGreen;
-			this.lab会員コード.Location = new System.Drawing.Point(50, 46);
-			this.lab会員コード.Name = "lab会員コード";
-			this.lab会員コード.Size = new System.Drawing.Size(95, 14);
-			this.lab会員コード.TabIndex = 19;
-			this.lab会員コード.Text = "お客様コード";
-			// 
-			// tex会員コード
-			// 
-			this.tex会員コード.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.tex会員コード.ImeMode = System.Windows.Forms.ImeMode.Disable;
-			this.tex会員コード.Location = new System.Drawing.Point(150, 40);
-			this.tex会員コード.MaxLength = 10;
-			this.tex会員コード.Name = "tex会員コード";
-			this.tex会員コード.Size = new System.Drawing.Size(130, 23);
-			this.tex会員コード.TabIndex = 0;
-			this.tex会員コード.Text = "";
-			this.tex会員コード.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tex会員コード_KeyDown);
-			this.tex会員コード.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tex会員コード_KeyPress);
-			// 
-			// btn会員実行
-			// 
-			this.btn会員実行.BackColor = System.Drawing.Color.Blue;
-			this.btn会員実行.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn会員実行.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.btn会員実行.ForeColor = System.Drawing.Color.White;
-			this.btn会員実行.Location = new System.Drawing.Point(338, 40);
-			this.btn会員実行.Name = "btn会員実行";
-			this.btn会員実行.Size = new System.Drawing.Size(48, 22);
-			this.btn会員実行.TabIndex = 2;
-			this.btn会員実行.Text = "実行";
-			this.btn会員実行.Click += new System.EventHandler(this.btn会員実行_Click);
-			// 
-			// gpお客様
-			// 
-			this.gpお客様.Location = new System.Drawing.Point(30, 28);
-			this.gpお客様.Name = "gpお客様";
-			this.gpお客様.Size = new System.Drawing.Size(624, 64);
-			this.gpお客様.TabIndex = 91;
-			this.gpお客様.TabStop = false;
-			// 
-			// panel5
-			// 
-			this.panel5.BackColor = System.Drawing.Color.Honeydew;
-			this.panel5.Controls.Add(this.btn管理店所検索);
-			this.panel5.Controls.Add(this.lab記事コード);
-			this.panel5.Controls.Add(this.tex管理店所コード);
-			this.panel5.Location = new System.Drawing.Point(1, 6);
-			this.panel5.Name = "panel5";
-			this.panel5.Size = new System.Drawing.Size(239, 32);
-			this.panel5.TabIndex = 0;
-			// 
-			// btn管理店所検索
-			// 
-			this.btn管理店所検索.BackColor = System.Drawing.Color.SteelBlue;
-			this.btn管理店所検索.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn管理店所検索.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.btn管理店所検索.ForeColor = System.Drawing.Color.White;
-			this.btn管理店所検索.Location = new System.Drawing.Point(178, 4);
-			this.btn管理店所検索.Name = "btn管理店所検索";
-			this.btn管理店所検索.Size = new System.Drawing.Size(48, 22);
-			this.btn管理店所検索.TabIndex = 1;
-			this.btn管理店所検索.TabStop = false;
-			this.btn管理店所検索.Text = "検索";
-			this.btn管理店所検索.Click += new System.EventHandler(this.btn管理店所検索_Click);
-			// 
-			// lab記事コード
-			// 
-			this.lab記事コード.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.lab記事コード.ForeColor = System.Drawing.Color.LimeGreen;
-			this.lab記事コード.Location = new System.Drawing.Point(8, 7);
-			this.lab記事コード.Name = "lab記事コード";
-			this.lab記事コード.Size = new System.Drawing.Size(110, 17);
-			this.lab記事コード.TabIndex = 6;
-			this.lab記事コード.Text = "管理店所コード";
-			// 
-			// tex管理店所コード
-			// 
-			this.tex管理店所コード.BackColor = System.Drawing.SystemColors.Window;
-			this.tex管理店所コード.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.tex管理店所コード.ImeMode = System.Windows.Forms.ImeMode.Disable;
-			this.tex管理店所コード.Location = new System.Drawing.Point(128, 4);
-			this.tex管理店所コード.MaxLength = 4;
-			this.tex管理店所コード.Name = "tex管理店所コード";
-			this.tex管理店所コード.Size = new System.Drawing.Size(42, 23);
-			this.tex管理店所コード.TabIndex = 0;
-			this.tex管理店所コード.Text = "";
-			this.tex管理店所コード.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tex管理店所コード_KeyDown);
-			this.tex管理店所コード.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tex管理店所コード_KeyPress);
-			// 
-			// panel6
-			// 
-			this.panel6.BackColor = System.Drawing.Color.PaleGreen;
-			this.panel6.Controls.Add(this.tex認証利用者名);
-			this.panel6.Controls.Add(this.lab認証利用者名);
-			this.panel6.Controls.Add(this.lab認証会員名);
-			this.panel6.Controls.Add(this.tex認証会員名);
-			this.panel6.Location = new System.Drawing.Point(0, 26);
-			this.panel6.Name = "panel6";
-			this.panel6.Size = new System.Drawing.Size(810, 26);
-			this.panel6.TabIndex = 12;
-			// 
-			// tex認証利用者名
-			// 
-			this.tex認証利用者名.BackColor = System.Drawing.Color.PaleGreen;
-			this.tex認証利用者名.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.tex認証利用者名.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.tex認証利用者名.ForeColor = System.Drawing.Color.Green;
-			this.tex認証利用者名.Location = new System.Drawing.Point(622, 5);
-			this.tex認証利用者名.Name = "tex認証利用者名";
-			this.tex認証利用者名.ReadOnly = true;
-			this.tex認証利用者名.Size = new System.Drawing.Size(162, 16);
-			this.tex認証利用者名.TabIndex = 3;
-			this.tex認証利用者名.TabStop = false;
-			this.tex認証利用者名.Text = "";
-			this.tex認証利用者名.Visible = false;
-			// 
-			// lab認証利用者名
-			// 
-			this.lab認証利用者名.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.lab認証利用者名.ForeColor = System.Drawing.Color.LimeGreen;
-			this.lab認証利用者名.Location = new System.Drawing.Point(564, 7);
-			this.lab認証利用者名.Name = "lab認証利用者名";
-			this.lab認証利用者名.Size = new System.Drawing.Size(54, 14);
-			this.lab認証利用者名.TabIndex = 4;
-			this.lab認証利用者名.Text = "ユーザー";
-			this.lab認証利用者名.Visible = false;
-			// 
-			// lab認証会員名
-			// 
-			this.lab認証会員名.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.lab認証会員名.ForeColor = System.Drawing.Color.LimeGreen;
-			this.lab認証会員名.Location = new System.Drawing.Point(12, 7);
-			this.lab認証会員名.Name = "lab認証会員名";
-			this.lab認証会員名.Size = new System.Drawing.Size(52, 14);
-			this.lab認証会員名.TabIndex = 1;
-			this.lab認証会員名.Text = "お客様名";
-			// 
-			// tex認証会員名
-			// 
-			this.tex認証会員名.BackColor = System.Drawing.Color.PaleGreen;
-			this.tex認証会員名.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.tex認証会員名.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.tex認証会員名.ForeColor = System.Drawing.Color.Green;
-			this.tex認証会員名.Location = new System.Drawing.Point(68, 5);
-			this.tex認証会員名.Name = "tex認証会員名";
-			this.tex認証会員名.ReadOnly = true;
-			this.tex認証会員名.Size = new System.Drawing.Size(328, 16);
-			this.tex認証会員名.TabIndex = 2;
-			this.tex認証会員名.TabStop = false;
-			this.tex認証会員名.Text = "";
-			// 
-			// panel7
-			// 
-			this.panel7.BackColor = System.Drawing.Color.FromArgb(((System.Byte)(44)), ((System.Byte)(241)), ((System.Byte)(83)));
-			this.panel7.Controls.Add(this.lab日時);
-			this.panel7.Controls.Add(this.lab請求先タイトル);
-			this.panel7.Location = new System.Drawing.Point(0, 0);
-			this.panel7.Name = "panel7";
-			this.panel7.Size = new System.Drawing.Size(792, 26);
-			this.panel7.TabIndex = 13;
-			// 
-			// lab日時
-			// 
-			this.lab日時.BackColor = System.Drawing.Color.FromArgb(((System.Byte)(44)), ((System.Byte)(241)), ((System.Byte)(83)));
-			this.lab日時.ForeColor = System.Drawing.Color.White;
-			this.lab日時.Location = new System.Drawing.Point(674, 8);
-			this.lab日時.Name = "lab日時";
-			this.lab日時.Size = new System.Drawing.Size(112, 14);
-			this.lab日時.TabIndex = 1;
-			this.lab日時.Text = "2005/xx/xx 12:00:00";
-			// 
-			// lab請求先タイトル
-			// 
-			this.lab請求先タイトル.BackColor = System.Drawing.Color.FromArgb(((System.Byte)(44)), ((System.Byte)(241)), ((System.Byte)(83)));
-			this.lab請求先タイトル.Font = new System.Drawing.Font("MS UI Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.lab請求先タイトル.ForeColor = System.Drawing.Color.White;
-			this.lab請求先タイトル.Location = new System.Drawing.Point(12, 2);
-			this.lab請求先タイトル.Name = "lab請求先タイトル";
-			this.lab請求先タイトル.Size = new System.Drawing.Size(264, 24);
-			this.lab請求先タイトル.TabIndex = 0;
-			this.lab請求先タイトル.Text = "請求先情報メンテナンス";
-			// 
-			// panel8
-			// 
-			this.panel8.BackColor = System.Drawing.Color.PaleGreen;
-			this.panel8.Controls.Add(this.texメッセージ);
-			this.panel8.Controls.Add(this.btn閉じる);
-			this.panel8.Location = new System.Drawing.Point(0, 516);
-			this.panel8.Name = "panel8";
-			this.panel8.Size = new System.Drawing.Size(792, 58);
-			this.panel8.TabIndex = 2;
-			// 
-			// texメッセージ
-			// 
-			this.texメッセージ.BackColor = System.Drawing.Color.PaleGreen;
-			this.texメッセージ.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(128)));
-			this.texメッセージ.ForeColor = System.Drawing.Color.Red;
-			this.texメッセージ.Location = new System.Drawing.Point(414, 4);
-			this.texメッセージ.Multiline = true;
-			this.texメッセージ.Name = "texメッセージ";
-			this.texメッセージ.ReadOnly = true;
-			this.texメッセージ.Size = new System.Drawing.Size(376, 50);
-			this.texメッセージ.TabIndex = 1;
-			this.texメッセージ.TabStop = false;
-			this.texメッセージ.Text = "";
-			// 
-			// btn閉じる
-			// 
-			this.btn閉じる.ForeColor = System.Drawing.Color.Red;
-			this.btn閉じる.Location = new System.Drawing.Point(8, 6);
-			this.btn閉じる.Name = "btn閉じる";
-			this.btn閉じる.Size = new System.Drawing.Size(54, 48);
-			this.btn閉じる.TabIndex = 0;
-			this.btn閉じる.TabStop = false;
-			this.btn閉じる.Text = "閉じる";
-			this.btn閉じる.Click += new System.EventHandler(this.btn閉じる_Click);
-			// 
-			// button13
-			// 
-			this.button13.Location = new System.Drawing.Point(0, 0);
-			this.button13.Name = "button13";
-			this.button13.TabIndex = 0;
-			// 
-			// button12
-			// 
-			this.button12.Location = new System.Drawing.Point(0, 0);
-			this.button12.Name = "button12";
-			this.button12.TabIndex = 0;
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.panel5);
-			this.groupBox1.Location = new System.Drawing.Point(43, 54);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(243, 40);
-			this.groupBox1.TabIndex = 0;
-			this.groupBox1.TabStop = false;
-			// 
-			// groupBox2
-			// 
-			this.groupBox2.Controls.Add(this.pnl請求先);
-			this.groupBox2.Location = new System.Drawing.Point(21, 94);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(671, 374);
-			this.groupBox2.TabIndex = 1;
-			this.groupBox2.TabStop = false;
-			// 
-			// 請求先マスタ
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 12);
-			this.BackColor = System.Drawing.Color.Honeydew;
-			this.ClientSize = new System.Drawing.Size(792, 574);
-			this.Controls.Add(this.groupBox2);
-			this.Controls.Add(this.groupBox1);
-			this.Controls.Add(this.panel8);
-			this.Controls.Add(this.panel7);
-			this.Controls.Add(this.panel6);
-			this.ForeColor = System.Drawing.Color.Black;
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.KeyPreview = true;
-			this.MaximizeBox = false;
-			this.MinimumSize = new System.Drawing.Size(800, 607);
-			this.Name = "請求先マスタ";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-			this.Text = "is-2 請求先情報メンテナンス";
-			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.エンター移動);
-			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.エンターキャンセル);
-			this.Load += new System.EventHandler(this.請求先マスタ_Load);
-			this.Closed += new System.EventHandler(this.請求先マスタ_Closed);
-			this.pnl請求先.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.axGT請求先)).EndInit();
-			this.panel5.ResumeLayout(false);
-			this.panel6.ResumeLayout(false);
-			this.panel7.ResumeLayout(false);
-			this.panel8.ResumeLayout(false);
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox2.ResumeLayout(false);
-			this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(請求先マスタ));
+            this.pnl請求先 = new System.Windows.Forms.Panel();
+            this.btn会員更新 = new System.Windows.Forms.Button();
+            this.cb出荷実績一覧運賃非表示 = new System.Windows.Forms.CheckBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tex部門数 = new is2AdminClient.共通テキストボックス();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tex郵便番号店所 = new is2AdminClient.共通テキストボックス();
+            this.btn住所検索 = new System.Windows.Forms.Button();
+            this.tex郵便番号２ = new is2AdminClient.共通テキストボックス();
+            this.tex郵便番号１ = new is2AdminClient.共通テキストボックス();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lab郵便番号 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tex得意先部課名 = new is2AdminClient.共通テキストボックス();
+            this.tex得意先部課コード = new is2AdminClient.共通テキストボックス();
+            this.tex得意先コード = new is2AdminClient.共通テキストボックス();
+            this.lab得意先部課コード = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lab得意先コード = new System.Windows.Forms.Label();
+            this.axGT請求先 = new AxGTABLE32V2Lib.AxGTable32();
+            this.tex管理店所名 = new is2AdminClient.共通テキストボックス();
+            this.lab管理店所名 = new System.Windows.Forms.Label();
+            this.btn請求先取消 = new System.Windows.Forms.Button();
+            this.btn請求先削除 = new System.Windows.Forms.Button();
+            this.btn請求先登録 = new System.Windows.Forms.Button();
+            this.tex会員名 = new is2AdminClient.共通テキストボックス();
+            this.btn会員検索 = new System.Windows.Forms.Button();
+            this.lab得意先部課名 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.lab会員コード = new System.Windows.Forms.Label();
+            this.tex会員コード = new is2AdminClient.共通テキストボックス();
+            this.btn会員実行 = new System.Windows.Forms.Button();
+            this.gpお客様 = new System.Windows.Forms.GroupBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btn管理店所検索 = new System.Windows.Forms.Button();
+            this.lab記事コード = new System.Windows.Forms.Label();
+            this.tex管理店所コード = new is2AdminClient.共通テキストボックス();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.tex認証利用者名 = new is2AdminClient.共通テキストボックス();
+            this.lab認証利用者名 = new System.Windows.Forms.Label();
+            this.lab認証会員名 = new System.Windows.Forms.Label();
+            this.tex認証会員名 = new is2AdminClient.共通テキストボックス();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.lab日時 = new System.Windows.Forms.Label();
+            this.lab請求先タイトル = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.texメッセージ = new is2AdminClient.共通テキストボックス();
+            this.btn閉じる = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pnl請求先.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axGT請求先)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // pnl請求先
+            // 
+            this.pnl請求先.BackColor = System.Drawing.Color.Honeydew;
+            this.pnl請求先.Controls.Add(this.btn会員更新);
+            this.pnl請求先.Controls.Add(this.cb出荷実績一覧運賃非表示);
+            this.pnl請求先.Controls.Add(this.label4);
+            this.pnl請求先.Controls.Add(this.tex部門数);
+            this.pnl請求先.Controls.Add(this.label5);
+            this.pnl請求先.Controls.Add(this.tex郵便番号店所);
+            this.pnl請求先.Controls.Add(this.btn住所検索);
+            this.pnl請求先.Controls.Add(this.tex郵便番号２);
+            this.pnl請求先.Controls.Add(this.tex郵便番号１);
+            this.pnl請求先.Controls.Add(this.label10);
+            this.pnl請求先.Controls.Add(this.lab郵便番号);
+            this.pnl請求先.Controls.Add(this.label2);
+            this.pnl請求先.Controls.Add(this.tex得意先部課名);
+            this.pnl請求先.Controls.Add(this.tex得意先部課コード);
+            this.pnl請求先.Controls.Add(this.tex得意先コード);
+            this.pnl請求先.Controls.Add(this.lab得意先部課コード);
+            this.pnl請求先.Controls.Add(this.label3);
+            this.pnl請求先.Controls.Add(this.lab得意先コード);
+            this.pnl請求先.Controls.Add(this.axGT請求先);
+            this.pnl請求先.Controls.Add(this.tex管理店所名);
+            this.pnl請求先.Controls.Add(this.lab管理店所名);
+            this.pnl請求先.Controls.Add(this.btn請求先取消);
+            this.pnl請求先.Controls.Add(this.btn請求先削除);
+            this.pnl請求先.Controls.Add(this.btn請求先登録);
+            this.pnl請求先.Controls.Add(this.tex会員名);
+            this.pnl請求先.Controls.Add(this.btn会員検索);
+            this.pnl請求先.Controls.Add(this.lab得意先部課名);
+            this.pnl請求先.Controls.Add(this.label1);
+            this.pnl請求先.Controls.Add(this.label22);
+            this.pnl請求先.Controls.Add(this.lab会員コード);
+            this.pnl請求先.Controls.Add(this.tex会員コード);
+            this.pnl請求先.Controls.Add(this.btn会員実行);
+            this.pnl請求先.Controls.Add(this.gpお客様);
+            this.pnl請求先.Location = new System.Drawing.Point(1, 6);
+            this.pnl請求先.Name = "pnl請求先";
+            this.pnl請求先.Size = new System.Drawing.Size(667, 366);
+            this.pnl請求先.TabIndex = 1;
+            // 
+            // btn会員更新
+            // 
+            this.btn会員更新.BackColor = System.Drawing.Color.Blue;
+            this.btn会員更新.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn会員更新.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn会員更新.ForeColor = System.Drawing.Color.White;
+            this.btn会員更新.Location = new System.Drawing.Point(600, 64);
+            this.btn会員更新.Name = "btn会員更新";
+            this.btn会員更新.Size = new System.Drawing.Size(48, 22);
+            this.btn会員更新.TabIndex = 90;
+            this.btn会員更新.Text = "更新";
+            this.btn会員更新.UseVisualStyleBackColor = false;
+            this.btn会員更新.Click += new System.EventHandler(this.btn会員更新_Click);
+            // 
+            // cb出荷実績一覧運賃非表示
+            // 
+            this.cb出荷実績一覧運賃非表示.ForeColor = System.Drawing.Color.LimeGreen;
+            this.cb出荷実績一覧運賃非表示.Location = new System.Drawing.Point(422, 64);
+            this.cb出荷実績一覧運賃非表示.Name = "cb出荷実績一覧運賃非表示";
+            this.cb出荷実績一覧運賃非表示.Size = new System.Drawing.Size(174, 22);
+            this.cb出荷実績一覧運賃非表示.TabIndex = 89;
+            this.cb出荷実績一覧運賃非表示.Text = "出荷実績一覧：運賃表示なし";
+            // 
+            // label4
+            // 
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(34, 310);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(16, 14);
+            this.label4.TabIndex = 88;
+            this.label4.Text = "※";
+            // 
+            // tex部門数
+            // 
+            this.tex部門数.BackColor = System.Drawing.Color.Honeydew;
+            this.tex部門数.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tex部門数.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tex部門数.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.tex部門数.Location = new System.Drawing.Point(152, 332);
+            this.tex部門数.MaxLength = 10;
+            this.tex部門数.Name = "tex部門数";
+            this.tex部門数.ReadOnly = true;
+            this.tex部門数.Size = new System.Drawing.Size(28, 16);
+            this.tex部門数.TabIndex = 87;
+            this.tex部門数.TabStop = false;
+            this.tex部門数.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label5.ForeColor = System.Drawing.Color.LimeGreen;
+            this.label5.Location = new System.Drawing.Point(48, 334);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 14);
+            this.label5.TabIndex = 86;
+            this.label5.Text = "セクション数";
+            // 
+            // tex郵便番号店所
+            // 
+            this.tex郵便番号店所.BackColor = System.Drawing.Color.Honeydew;
+            this.tex郵便番号店所.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tex郵便番号店所.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tex郵便番号店所.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.tex郵便番号店所.Location = new System.Drawing.Point(304, 308);
+            this.tex郵便番号店所.MaxLength = 6;
+            this.tex郵便番号店所.Name = "tex郵便番号店所";
+            this.tex郵便番号店所.ReadOnly = true;
+            this.tex郵便番号店所.Size = new System.Drawing.Size(74, 16);
+            this.tex郵便番号店所.TabIndex = 85;
+            this.tex郵便番号店所.TabStop = false;
+            // 
+            // btn住所検索
+            // 
+            this.btn住所検索.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn住所検索.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn住所検索.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn住所検索.ForeColor = System.Drawing.Color.White;
+            this.btn住所検索.Location = new System.Drawing.Point(252, 304);
+            this.btn住所検索.Name = "btn住所検索";
+            this.btn住所検索.Size = new System.Drawing.Size(48, 22);
+            this.btn住所検索.TabIndex = 3;
+            this.btn住所検索.TabStop = false;
+            this.btn住所検索.Text = "検索";
+            this.btn住所検索.UseVisualStyleBackColor = false;
+            this.btn住所検索.Click += new System.EventHandler(this.btn住所検索_Click);
+            // 
+            // tex郵便番号２
+            // 
+            this.tex郵便番号２.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tex郵便番号２.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.tex郵便番号２.Location = new System.Drawing.Point(200, 304);
+            this.tex郵便番号２.MaxLength = 4;
+            this.tex郵便番号２.Name = "tex郵便番号２";
+            this.tex郵便番号２.Size = new System.Drawing.Size(48, 23);
+            this.tex郵便番号２.TabIndex = 8;
+            this.tex郵便番号２.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tex郵便番号２_KeyDown);
+            this.tex郵便番号２.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tex郵便番号２_KeyPress);
+            // 
+            // tex郵便番号１
+            // 
+            this.tex郵便番号１.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tex郵便番号１.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.tex郵便番号１.Location = new System.Drawing.Point(150, 304);
+            this.tex郵便番号１.MaxLength = 3;
+            this.tex郵便番号１.Name = "tex郵便番号１";
+            this.tex郵便番号１.Size = new System.Drawing.Size(38, 23);
+            this.tex郵便番号１.TabIndex = 7;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label10.Location = new System.Drawing.Point(188, 308);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(12, 16);
+            this.label10.TabIndex = 84;
+            this.label10.Text = "－";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lab郵便番号
+            // 
+            this.lab郵便番号.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lab郵便番号.Location = new System.Drawing.Point(48, 310);
+            this.lab郵便番号.Name = "lab郵便番号";
+            this.lab郵便番号.Size = new System.Drawing.Size(95, 14);
+            this.lab郵便番号.TabIndex = 79;
+            this.lab郵便番号.Text = "郵便番号";
+            // 
+            // label2
+            // 
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(34, 284);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(16, 14);
+            this.label2.TabIndex = 78;
+            this.label2.Text = "※";
+            // 
+            // tex得意先部課名
+            // 
+            this.tex得意先部課名.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tex得意先部課名.ImeMode = System.Windows.Forms.ImeMode.Hiragana;
+            this.tex得意先部課名.Location = new System.Drawing.Point(150, 278);
+            this.tex得意先部課名.MaxLength = 10;
+            this.tex得意先部課名.Name = "tex得意先部課名";
+            this.tex得意先部課名.Size = new System.Drawing.Size(170, 23);
+            this.tex得意先部課名.TabIndex = 6;
+            // 
+            // tex得意先部課コード
+            // 
+            this.tex得意先部課コード.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tex得意先部課コード.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.tex得意先部課コード.Location = new System.Drawing.Point(150, 254);
+            this.tex得意先部課コード.MaxLength = 6;
+            this.tex得意先部課コード.Name = "tex得意先部課コード";
+            this.tex得意先部課コード.Size = new System.Drawing.Size(82, 23);
+            this.tex得意先部課コード.TabIndex = 5;
+            // 
+            // tex得意先コード
+            // 
+            this.tex得意先コード.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tex得意先コード.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.tex得意先コード.Location = new System.Drawing.Point(150, 230);
+            this.tex得意先コード.MaxLength = 10;
+            this.tex得意先コード.Name = "tex得意先コード";
+            this.tex得意先コード.Size = new System.Drawing.Size(130, 23);
+            this.tex得意先コード.TabIndex = 4;
+            // 
+            // lab得意先部課コード
+            // 
+            this.lab得意先部課コード.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lab得意先部課コード.Location = new System.Drawing.Point(48, 260);
+            this.lab得意先部課コード.Name = "lab得意先部課コード";
+            this.lab得意先部課コード.Size = new System.Drawing.Size(95, 14);
+            this.lab得意先部課コード.TabIndex = 77;
+            this.lab得意先部課コード.Text = "得意先部課コード";
+            // 
+            // label3
+            // 
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(34, 236);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(16, 14);
+            this.label3.TabIndex = 76;
+            this.label3.Text = "※";
+            // 
+            // lab得意先コード
+            // 
+            this.lab得意先コード.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lab得意先コード.Location = new System.Drawing.Point(48, 236);
+            this.lab得意先コード.Name = "lab得意先コード";
+            this.lab得意先コード.Size = new System.Drawing.Size(95, 14);
+            this.lab得意先コード.TabIndex = 75;
+            this.lab得意先コード.Text = "得意先コード";
+            // 
+            // axGT請求先
+            // 
+            this.axGT請求先.DataSource = null;
+            this.axGT請求先.Location = new System.Drawing.Point(30, 96);
+            this.axGT請求先.Name = "axGT請求先";
+            this.axGT請求先.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axGT請求先.OcxState")));
+            this.axGT請求先.Size = new System.Drawing.Size(624, 128);
+            this.axGT請求先.TabIndex = 3;
+            this.axGT請求先.CurPlaceChanged += new AxGTABLE32V2Lib._DGTable32Events_CurPlaceChangedEventHandler(this.axGT請求先_CurPlaceChanged);
+            this.axGT請求先.CelDblClick += new AxGTABLE32V2Lib._DGTable32Events_CelDblClickEventHandler(this.axGT請求先_CelDblClick);
+            this.axGT請求先.KeyDownEvent += new AxGTABLE32V2Lib._DGTable32Events_KeyDownEventHandler(this.axGT請求先_KeyDownEvent);
+            // 
+            // tex管理店所名
+            // 
+            this.tex管理店所名.BackColor = System.Drawing.Color.Honeydew;
+            this.tex管理店所名.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tex管理店所名.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tex管理店所名.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.tex管理店所名.Location = new System.Drawing.Point(150, 10);
+            this.tex管理店所名.MaxLength = 6;
+            this.tex管理店所名.Name = "tex管理店所名";
+            this.tex管理店所名.ReadOnly = true;
+            this.tex管理店所名.Size = new System.Drawing.Size(74, 16);
+            this.tex管理店所名.TabIndex = 73;
+            this.tex管理店所名.TabStop = false;
+            // 
+            // lab管理店所名
+            // 
+            this.lab管理店所名.BackColor = System.Drawing.Color.Honeydew;
+            this.lab管理店所名.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lab管理店所名.Location = new System.Drawing.Point(48, 12);
+            this.lab管理店所名.Name = "lab管理店所名";
+            this.lab管理店所名.Size = new System.Drawing.Size(95, 14);
+            this.lab管理店所名.TabIndex = 72;
+            this.lab管理店所名.Text = "管理店所名";
+            // 
+            // btn請求先取消
+            // 
+            this.btn請求先取消.BackColor = System.Drawing.Color.Blue;
+            this.btn請求先取消.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn請求先取消.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn請求先取消.ForeColor = System.Drawing.Color.White;
+            this.btn請求先取消.Location = new System.Drawing.Point(446, 336);
+            this.btn請求先取消.Name = "btn請求先取消";
+            this.btn請求先取消.Size = new System.Drawing.Size(48, 22);
+            this.btn請求先取消.TabIndex = 11;
+            this.btn請求先取消.Text = "取消";
+            this.btn請求先取消.UseVisualStyleBackColor = false;
+            this.btn請求先取消.Click += new System.EventHandler(this.btn請求先取消_Click);
+            // 
+            // btn請求先削除
+            // 
+            this.btn請求先削除.BackColor = System.Drawing.Color.Blue;
+            this.btn請求先削除.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn請求先削除.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn請求先削除.ForeColor = System.Drawing.Color.White;
+            this.btn請求先削除.Location = new System.Drawing.Point(392, 336);
+            this.btn請求先削除.Name = "btn請求先削除";
+            this.btn請求先削除.Size = new System.Drawing.Size(48, 22);
+            this.btn請求先削除.TabIndex = 10;
+            this.btn請求先削除.Text = "削除";
+            this.btn請求先削除.UseVisualStyleBackColor = false;
+            this.btn請求先削除.Click += new System.EventHandler(this.btn請求先削除_Click);
+            // 
+            // btn請求先登録
+            // 
+            this.btn請求先登録.BackColor = System.Drawing.Color.Blue;
+            this.btn請求先登録.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn請求先登録.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn請求先登録.ForeColor = System.Drawing.Color.White;
+            this.btn請求先登録.Location = new System.Drawing.Point(338, 336);
+            this.btn請求先登録.Name = "btn請求先登録";
+            this.btn請求先登録.Size = new System.Drawing.Size(48, 22);
+            this.btn請求先登録.TabIndex = 9;
+            this.btn請求先登録.Text = "登録";
+            this.btn請求先登録.UseVisualStyleBackColor = false;
+            this.btn請求先登録.Click += new System.EventHandler(this.btn請求先登録_Click);
+            // 
+            // tex会員名
+            // 
+            this.tex会員名.BackColor = System.Drawing.Color.Honeydew;
+            this.tex会員名.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tex会員名.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tex会員名.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.tex会員名.Location = new System.Drawing.Point(392, 44);
+            this.tex会員名.MaxLength = 20;
+            this.tex会員名.Name = "tex会員名";
+            this.tex会員名.ReadOnly = true;
+            this.tex会員名.Size = new System.Drawing.Size(258, 16);
+            this.tex会員名.TabIndex = 9;
+            this.tex会員名.TabStop = false;
+            // 
+            // btn会員検索
+            // 
+            this.btn会員検索.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn会員検索.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn会員検索.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn会員検索.ForeColor = System.Drawing.Color.White;
+            this.btn会員検索.Location = new System.Drawing.Point(286, 40);
+            this.btn会員検索.Name = "btn会員検索";
+            this.btn会員検索.Size = new System.Drawing.Size(48, 22);
+            this.btn会員検索.TabIndex = 1;
+            this.btn会員検索.TabStop = false;
+            this.btn会員検索.Text = "検索";
+            this.btn会員検索.UseVisualStyleBackColor = false;
+            this.btn会員検索.Click += new System.EventHandler(this.btn会員検索_Click);
+            // 
+            // lab得意先部課名
+            // 
+            this.lab得意先部課名.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lab得意先部課名.Location = new System.Drawing.Point(48, 284);
+            this.lab得意先部課名.Name = "lab得意先部課名";
+            this.lab得意先部課名.Size = new System.Drawing.Size(95, 14);
+            this.lab得意先部課名.TabIndex = 52;
+            this.lab得意先部課名.Text = "得意先部課名";
+            // 
+            // label1
+            // 
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(34, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(16, 14);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "※";
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(241)))), ((int)(((byte)(83)))));
+            this.label22.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Blue;
+            this.label22.Location = new System.Drawing.Point(0, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(22, 366);
+            this.label22.TabIndex = 50;
+            this.label22.Text = "請求先情報";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lab会員コード
+            // 
+            this.lab会員コード.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lab会員コード.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lab会員コード.Location = new System.Drawing.Point(50, 46);
+            this.lab会員コード.Name = "lab会員コード";
+            this.lab会員コード.Size = new System.Drawing.Size(95, 14);
+            this.lab会員コード.TabIndex = 19;
+            this.lab会員コード.Text = "お客様コード";
+            // 
+            // tex会員コード
+            // 
+            this.tex会員コード.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tex会員コード.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.tex会員コード.Location = new System.Drawing.Point(150, 40);
+            this.tex会員コード.MaxLength = 10;
+            this.tex会員コード.Name = "tex会員コード";
+            this.tex会員コード.Size = new System.Drawing.Size(130, 23);
+            this.tex会員コード.TabIndex = 0;
+            this.tex会員コード.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tex会員コード_KeyDown);
+            this.tex会員コード.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tex会員コード_KeyPress);
+            // 
+            // btn会員実行
+            // 
+            this.btn会員実行.BackColor = System.Drawing.Color.Blue;
+            this.btn会員実行.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn会員実行.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn会員実行.ForeColor = System.Drawing.Color.White;
+            this.btn会員実行.Location = new System.Drawing.Point(338, 40);
+            this.btn会員実行.Name = "btn会員実行";
+            this.btn会員実行.Size = new System.Drawing.Size(48, 22);
+            this.btn会員実行.TabIndex = 2;
+            this.btn会員実行.Text = "実行";
+            this.btn会員実行.UseVisualStyleBackColor = false;
+            this.btn会員実行.Click += new System.EventHandler(this.btn会員実行_Click);
+            // 
+            // gpお客様
+            // 
+            this.gpお客様.Location = new System.Drawing.Point(30, 28);
+            this.gpお客様.Name = "gpお客様";
+            this.gpお客様.Size = new System.Drawing.Size(624, 64);
+            this.gpお客様.TabIndex = 91;
+            this.gpお客様.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Honeydew;
+            this.panel5.Controls.Add(this.btn管理店所検索);
+            this.panel5.Controls.Add(this.lab記事コード);
+            this.panel5.Controls.Add(this.tex管理店所コード);
+            this.panel5.Location = new System.Drawing.Point(1, 6);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(239, 32);
+            this.panel5.TabIndex = 0;
+            // 
+            // btn管理店所検索
+            // 
+            this.btn管理店所検索.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn管理店所検索.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn管理店所検索.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn管理店所検索.ForeColor = System.Drawing.Color.White;
+            this.btn管理店所検索.Location = new System.Drawing.Point(178, 4);
+            this.btn管理店所検索.Name = "btn管理店所検索";
+            this.btn管理店所検索.Size = new System.Drawing.Size(48, 22);
+            this.btn管理店所検索.TabIndex = 1;
+            this.btn管理店所検索.TabStop = false;
+            this.btn管理店所検索.Text = "検索";
+            this.btn管理店所検索.UseVisualStyleBackColor = false;
+            this.btn管理店所検索.Click += new System.EventHandler(this.btn管理店所検索_Click);
+            // 
+            // lab記事コード
+            // 
+            this.lab記事コード.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lab記事コード.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lab記事コード.Location = new System.Drawing.Point(8, 7);
+            this.lab記事コード.Name = "lab記事コード";
+            this.lab記事コード.Size = new System.Drawing.Size(110, 17);
+            this.lab記事コード.TabIndex = 6;
+            this.lab記事コード.Text = "管理店所コード";
+            // 
+            // tex管理店所コード
+            // 
+            this.tex管理店所コード.BackColor = System.Drawing.SystemColors.Window;
+            this.tex管理店所コード.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tex管理店所コード.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.tex管理店所コード.Location = new System.Drawing.Point(128, 4);
+            this.tex管理店所コード.MaxLength = 4;
+            this.tex管理店所コード.Name = "tex管理店所コード";
+            this.tex管理店所コード.Size = new System.Drawing.Size(42, 23);
+            this.tex管理店所コード.TabIndex = 0;
+            this.tex管理店所コード.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tex管理店所コード_KeyDown);
+            this.tex管理店所コード.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tex管理店所コード_KeyPress);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.PaleGreen;
+            this.panel6.Controls.Add(this.tex認証利用者名);
+            this.panel6.Controls.Add(this.lab認証利用者名);
+            this.panel6.Controls.Add(this.lab認証会員名);
+            this.panel6.Controls.Add(this.tex認証会員名);
+            this.panel6.Location = new System.Drawing.Point(0, 26);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(810, 26);
+            this.panel6.TabIndex = 12;
+            // 
+            // tex認証利用者名
+            // 
+            this.tex認証利用者名.BackColor = System.Drawing.Color.PaleGreen;
+            this.tex認証利用者名.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tex認証利用者名.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tex認証利用者名.ForeColor = System.Drawing.Color.Green;
+            this.tex認証利用者名.Location = new System.Drawing.Point(622, 5);
+            this.tex認証利用者名.Name = "tex認証利用者名";
+            this.tex認証利用者名.ReadOnly = true;
+            this.tex認証利用者名.Size = new System.Drawing.Size(162, 16);
+            this.tex認証利用者名.TabIndex = 3;
+            this.tex認証利用者名.TabStop = false;
+            this.tex認証利用者名.Visible = false;
+            // 
+            // lab認証利用者名
+            // 
+            this.lab認証利用者名.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lab認証利用者名.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lab認証利用者名.Location = new System.Drawing.Point(564, 7);
+            this.lab認証利用者名.Name = "lab認証利用者名";
+            this.lab認証利用者名.Size = new System.Drawing.Size(54, 14);
+            this.lab認証利用者名.TabIndex = 4;
+            this.lab認証利用者名.Text = "ユーザー";
+            this.lab認証利用者名.Visible = false;
+            // 
+            // lab認証会員名
+            // 
+            this.lab認証会員名.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lab認証会員名.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lab認証会員名.Location = new System.Drawing.Point(12, 7);
+            this.lab認証会員名.Name = "lab認証会員名";
+            this.lab認証会員名.Size = new System.Drawing.Size(52, 14);
+            this.lab認証会員名.TabIndex = 1;
+            this.lab認証会員名.Text = "お客様名";
+            // 
+            // tex認証会員名
+            // 
+            this.tex認証会員名.BackColor = System.Drawing.Color.PaleGreen;
+            this.tex認証会員名.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tex認証会員名.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.tex認証会員名.ForeColor = System.Drawing.Color.Green;
+            this.tex認証会員名.Location = new System.Drawing.Point(68, 5);
+            this.tex認証会員名.Name = "tex認証会員名";
+            this.tex認証会員名.ReadOnly = true;
+            this.tex認証会員名.Size = new System.Drawing.Size(328, 16);
+            this.tex認証会員名.TabIndex = 2;
+            this.tex認証会員名.TabStop = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(241)))), ((int)(((byte)(83)))));
+            this.panel7.Controls.Add(this.lab日時);
+            this.panel7.Controls.Add(this.lab請求先タイトル);
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(792, 26);
+            this.panel7.TabIndex = 13;
+            // 
+            // lab日時
+            // 
+            this.lab日時.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(241)))), ((int)(((byte)(83)))));
+            this.lab日時.ForeColor = System.Drawing.Color.White;
+            this.lab日時.Location = new System.Drawing.Point(674, 8);
+            this.lab日時.Name = "lab日時";
+            this.lab日時.Size = new System.Drawing.Size(112, 14);
+            this.lab日時.TabIndex = 1;
+            this.lab日時.Text = "2005/xx/xx 12:00:00";
+            // 
+            // lab請求先タイトル
+            // 
+            this.lab請求先タイトル.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(241)))), ((int)(((byte)(83)))));
+            this.lab請求先タイトル.Font = new System.Drawing.Font("MS UI Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lab請求先タイトル.ForeColor = System.Drawing.Color.White;
+            this.lab請求先タイトル.Location = new System.Drawing.Point(12, 2);
+            this.lab請求先タイトル.Name = "lab請求先タイトル";
+            this.lab請求先タイトル.Size = new System.Drawing.Size(264, 24);
+            this.lab請求先タイトル.TabIndex = 0;
+            this.lab請求先タイトル.Text = "請求先情報メンテナンス";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.PaleGreen;
+            this.panel8.Controls.Add(this.texメッセージ);
+            this.panel8.Controls.Add(this.btn閉じる);
+            this.panel8.Location = new System.Drawing.Point(0, 516);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(792, 58);
+            this.panel8.TabIndex = 2;
+            // 
+            // texメッセージ
+            // 
+            this.texメッセージ.BackColor = System.Drawing.Color.PaleGreen;
+            this.texメッセージ.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.texメッセージ.ForeColor = System.Drawing.Color.Red;
+            this.texメッセージ.Location = new System.Drawing.Point(414, 4);
+            this.texメッセージ.Multiline = true;
+            this.texメッセージ.Name = "texメッセージ";
+            this.texメッセージ.ReadOnly = true;
+            this.texメッセージ.Size = new System.Drawing.Size(376, 50);
+            this.texメッセージ.TabIndex = 1;
+            this.texメッセージ.TabStop = false;
+            // 
+            // btn閉じる
+            // 
+            this.btn閉じる.ForeColor = System.Drawing.Color.Red;
+            this.btn閉じる.Location = new System.Drawing.Point(8, 6);
+            this.btn閉じる.Name = "btn閉じる";
+            this.btn閉じる.Size = new System.Drawing.Size(54, 48);
+            this.btn閉じる.TabIndex = 0;
+            this.btn閉じる.TabStop = false;
+            this.btn閉じる.Text = "閉じる";
+            this.btn閉じる.Click += new System.EventHandler(this.btn閉じる_Click);
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(0, 0);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(75, 23);
+            this.button13.TabIndex = 0;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(0, 0);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.panel5);
+            this.groupBox1.Location = new System.Drawing.Point(43, 54);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(243, 40);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.pnl請求先);
+            this.groupBox2.Location = new System.Drawing.Point(21, 94);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(671, 374);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            // 
+            // 請求先マスタ
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 12);
+            this.BackColor = System.Drawing.Color.Honeydew;
+            this.ClientSize = new System.Drawing.Size(792, 574);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel6);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(800, 607);
+            this.Name = "請求先マスタ";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "is-2 請求先情報メンテナンス";
+            this.Closed += new System.EventHandler(this.請求先マスタ_Closed);
+            this.Load += new System.EventHandler(this.請求先マスタ_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Onエンター移動);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Onエンターキャンセル);
+            this.pnl請求先.ResumeLayout(false);
+            this.pnl請求先.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axGT請求先)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.ResumeLayout(false);
 
 		}
 		#endregion
+
+// MOD 2016.9.27 Vivouac) 菊池 Visual Studio 2013形式対応 START
+        protected void Onエンター移動(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            base.エンター移動(sender, e);
+        }
+
+        protected void Onエンターキャンセル(object sender, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            base.エンターキャンセル(sender, e);
+        }
+// MOD 2016.9.27 Vivouac) 菊池 Visual Studio 2013形式対応 END
 
 		private void btn閉じる_Click(object sender, System.EventArgs e)
 		{

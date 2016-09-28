@@ -30,6 +30,32 @@ namespace is2AdminClient.is2maintenance {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(object[]))]
     public partial class Service1 : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
+        private System.Threading.SendOrPostCallback Get_UntinErrCntChkOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Upd_UntinErrKakuninFGOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Get_SyukkaEtcOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Get_SyukkaBiMinMaxOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Get_PublishedPrintData4OperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Get_InvoicePrintDataOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Get_hatuten3OperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Check_NonDeliveryAreaOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Get_HouseSlipMemberOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Sel_HouseSlipMemberOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Ins_HouseSlipMemberOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Upd_HouseSlipMemberOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Del_HouseSlipMemberOperationCompleted;
+        
         private System.Threading.SendOrPostCallback Sel_MemberOperationCompleted;
         
         private System.Threading.SendOrPostCallback Get_MemberOperationCompleted;
@@ -190,32 +216,6 @@ namespace is2AdminClient.is2maintenance {
         
         private System.Threading.SendOrPostCallback Get_csvwrite3OperationCompleted;
         
-        private System.Threading.SendOrPostCallback Get_UntinErrCntChkOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback Upd_UntinErrKakuninFGOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback Get_SyukkaEtcOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback Get_SyukkaBiMinMaxOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback Get_PublishedPrintData4OperationCompleted;
-        
-        private System.Threading.SendOrPostCallback Get_InvoicePrintDataOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback Get_hatuten3OperationCompleted;
-        
-        private System.Threading.SendOrPostCallback Check_NonDeliveryAreaOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback Get_HouseSlipMemberOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback Sel_HouseSlipMemberOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback Ins_HouseSlipMemberOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback Upd_HouseSlipMemberOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback Del_HouseSlipMemberOperationCompleted;
-        
         private System.Threading.SendOrPostCallback wakeupDBOperationCompleted;
         
         private System.Threading.SendOrPostCallback wakeupDB2OperationCompleted;
@@ -257,6 +257,45 @@ namespace is2AdminClient.is2maintenance {
                 this.useDefaultCredentialsSetExplicitly = true;
             }
         }
+        
+        /// <remarks/>
+        public event Get_UntinErrCntChkCompletedEventHandler Get_UntinErrCntChkCompleted;
+        
+        /// <remarks/>
+        public event Upd_UntinErrKakuninFGCompletedEventHandler Upd_UntinErrKakuninFGCompleted;
+        
+        /// <remarks/>
+        public event Get_SyukkaEtcCompletedEventHandler Get_SyukkaEtcCompleted;
+        
+        /// <remarks/>
+        public event Get_SyukkaBiMinMaxCompletedEventHandler Get_SyukkaBiMinMaxCompleted;
+        
+        /// <remarks/>
+        public event Get_PublishedPrintData4CompletedEventHandler Get_PublishedPrintData4Completed;
+        
+        /// <remarks/>
+        public event Get_InvoicePrintDataCompletedEventHandler Get_InvoicePrintDataCompleted;
+        
+        /// <remarks/>
+        public event Get_hatuten3CompletedEventHandler Get_hatuten3Completed;
+        
+        /// <remarks/>
+        public event Check_NonDeliveryAreaCompletedEventHandler Check_NonDeliveryAreaCompleted;
+        
+        /// <remarks/>
+        public event Get_HouseSlipMemberCompletedEventHandler Get_HouseSlipMemberCompleted;
+        
+        /// <remarks/>
+        public event Sel_HouseSlipMemberCompletedEventHandler Sel_HouseSlipMemberCompleted;
+        
+        /// <remarks/>
+        public event Ins_HouseSlipMemberCompletedEventHandler Ins_HouseSlipMemberCompleted;
+        
+        /// <remarks/>
+        public event Upd_HouseSlipMemberCompletedEventHandler Upd_HouseSlipMemberCompleted;
+        
+        /// <remarks/>
+        public event Del_HouseSlipMemberCompletedEventHandler Del_HouseSlipMemberCompleted;
         
         /// <remarks/>
         public event Sel_MemberCompletedEventHandler Sel_MemberCompleted;
@@ -499,49 +538,585 @@ namespace is2AdminClient.is2maintenance {
         public event Get_csvwrite3CompletedEventHandler Get_csvwrite3Completed;
         
         /// <remarks/>
-        public event Get_UntinErrCntChkCompletedEventHandler Get_UntinErrCntChkCompleted;
-        
-        /// <remarks/>
-        public event Upd_UntinErrKakuninFGCompletedEventHandler Upd_UntinErrKakuninFGCompleted;
-        
-        /// <remarks/>
-        public event Get_SyukkaEtcCompletedEventHandler Get_SyukkaEtcCompleted;
-        
-        /// <remarks/>
-        public event Get_SyukkaBiMinMaxCompletedEventHandler Get_SyukkaBiMinMaxCompleted;
-        
-        /// <remarks/>
-        public event Get_PublishedPrintData4CompletedEventHandler Get_PublishedPrintData4Completed;
-        
-        /// <remarks/>
-        public event Get_InvoicePrintDataCompletedEventHandler Get_InvoicePrintDataCompleted;
-        
-        /// <remarks/>
-        public event Get_hatuten3CompletedEventHandler Get_hatuten3Completed;
-        
-        /// <remarks/>
-        public event Check_NonDeliveryAreaCompletedEventHandler Check_NonDeliveryAreaCompleted;
-        
-        /// <remarks/>
-        public event Get_HouseSlipMemberCompletedEventHandler Get_HouseSlipMemberCompleted;
-        
-        /// <remarks/>
-        public event Sel_HouseSlipMemberCompletedEventHandler Sel_HouseSlipMemberCompleted;
-        
-        /// <remarks/>
-        public event Ins_HouseSlipMemberCompletedEventHandler Ins_HouseSlipMemberCompleted;
-        
-        /// <remarks/>
-        public event Upd_HouseSlipMemberCompletedEventHandler Upd_HouseSlipMemberCompleted;
-        
-        /// <remarks/>
-        public event Del_HouseSlipMemberCompletedEventHandler Del_HouseSlipMemberCompleted;
-        
-        /// <remarks/>
         public event wakeupDBCompletedEventHandler wakeupDBCompleted;
         
         /// <remarks/>
         public event wakeupDB2CompletedEventHandler wakeupDB2Completed;
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_UntinErrCntChk", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Get_UntinErrCntChk(string[] sUser, string[] sData) {
+            object[] results = this.Invoke("Get_UntinErrCntChk", new object[] {
+                        sUser,
+                        sData});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginGet_UntinErrCntChk(string[] sUser, string[] sData, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Get_UntinErrCntChk", new object[] {
+                        sUser,
+                        sData}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndGet_UntinErrCntChk(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Get_UntinErrCntChkAsync(string[] sUser, string[] sData) {
+            this.Get_UntinErrCntChkAsync(sUser, sData, null);
+        }
+        
+        /// <remarks/>
+        public void Get_UntinErrCntChkAsync(string[] sUser, string[] sData, object userState) {
+            if ((this.Get_UntinErrCntChkOperationCompleted == null)) {
+                this.Get_UntinErrCntChkOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_UntinErrCntChkOperationCompleted);
+            }
+            this.InvokeAsync("Get_UntinErrCntChk", new object[] {
+                        sUser,
+                        sData}, this.Get_UntinErrCntChkOperationCompleted, userState);
+        }
+        
+        private void OnGet_UntinErrCntChkOperationCompleted(object arg) {
+            if ((this.Get_UntinErrCntChkCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Get_UntinErrCntChkCompleted(this, new Get_UntinErrCntChkCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Upd_UntinErrKakuninFG", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Upd_UntinErrKakuninFG(string[] sUser, string[] sData) {
+            object[] results = this.Invoke("Upd_UntinErrKakuninFG", new object[] {
+                        sUser,
+                        sData});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginUpd_UntinErrKakuninFG(string[] sUser, string[] sData, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Upd_UntinErrKakuninFG", new object[] {
+                        sUser,
+                        sData}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndUpd_UntinErrKakuninFG(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Upd_UntinErrKakuninFGAsync(string[] sUser, string[] sData) {
+            this.Upd_UntinErrKakuninFGAsync(sUser, sData, null);
+        }
+        
+        /// <remarks/>
+        public void Upd_UntinErrKakuninFGAsync(string[] sUser, string[] sData, object userState) {
+            if ((this.Upd_UntinErrKakuninFGOperationCompleted == null)) {
+                this.Upd_UntinErrKakuninFGOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpd_UntinErrKakuninFGOperationCompleted);
+            }
+            this.InvokeAsync("Upd_UntinErrKakuninFG", new object[] {
+                        sUser,
+                        sData}, this.Upd_UntinErrKakuninFGOperationCompleted, userState);
+        }
+        
+        private void OnUpd_UntinErrKakuninFGOperationCompleted(object arg) {
+            if ((this.Upd_UntinErrKakuninFGCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Upd_UntinErrKakuninFGCompleted(this, new Upd_UntinErrKakuninFGCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_SyukkaEtc", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Get_SyukkaEtc(string[] sUser, string[] sKey) {
+            object[] results = this.Invoke("Get_SyukkaEtc", new object[] {
+                        sUser,
+                        sKey});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginGet_SyukkaEtc(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Get_SyukkaEtc", new object[] {
+                        sUser,
+                        sKey}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndGet_SyukkaEtc(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Get_SyukkaEtcAsync(string[] sUser, string[] sKey) {
+            this.Get_SyukkaEtcAsync(sUser, sKey, null);
+        }
+        
+        /// <remarks/>
+        public void Get_SyukkaEtcAsync(string[] sUser, string[] sKey, object userState) {
+            if ((this.Get_SyukkaEtcOperationCompleted == null)) {
+                this.Get_SyukkaEtcOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_SyukkaEtcOperationCompleted);
+            }
+            this.InvokeAsync("Get_SyukkaEtc", new object[] {
+                        sUser,
+                        sKey}, this.Get_SyukkaEtcOperationCompleted, userState);
+        }
+        
+        private void OnGet_SyukkaEtcOperationCompleted(object arg) {
+            if ((this.Get_SyukkaEtcCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Get_SyukkaEtcCompleted(this, new Get_SyukkaEtcCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_SyukkaBiMinMax", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Get_SyukkaBiMinMax(string[] sUser, string[] sKey) {
+            object[] results = this.Invoke("Get_SyukkaBiMinMax", new object[] {
+                        sUser,
+                        sKey});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginGet_SyukkaBiMinMax(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Get_SyukkaBiMinMax", new object[] {
+                        sUser,
+                        sKey}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndGet_SyukkaBiMinMax(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Get_SyukkaBiMinMaxAsync(string[] sUser, string[] sKey) {
+            this.Get_SyukkaBiMinMaxAsync(sUser, sKey, null);
+        }
+        
+        /// <remarks/>
+        public void Get_SyukkaBiMinMaxAsync(string[] sUser, string[] sKey, object userState) {
+            if ((this.Get_SyukkaBiMinMaxOperationCompleted == null)) {
+                this.Get_SyukkaBiMinMaxOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_SyukkaBiMinMaxOperationCompleted);
+            }
+            this.InvokeAsync("Get_SyukkaBiMinMax", new object[] {
+                        sUser,
+                        sKey}, this.Get_SyukkaBiMinMaxOperationCompleted, userState);
+        }
+        
+        private void OnGet_SyukkaBiMinMaxOperationCompleted(object arg) {
+            if ((this.Get_SyukkaBiMinMaxCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Get_SyukkaBiMinMaxCompleted(this, new Get_SyukkaBiMinMaxCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_PublishedPrintData4", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public object[] Get_PublishedPrintData4(string[] sUser, string[] sKey) {
+            object[] results = this.Invoke("Get_PublishedPrintData4", new object[] {
+                        sUser,
+                        sKey});
+            return ((object[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginGet_PublishedPrintData4(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Get_PublishedPrintData4", new object[] {
+                        sUser,
+                        sKey}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public object[] EndGet_PublishedPrintData4(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((object[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Get_PublishedPrintData4Async(string[] sUser, string[] sKey) {
+            this.Get_PublishedPrintData4Async(sUser, sKey, null);
+        }
+        
+        /// <remarks/>
+        public void Get_PublishedPrintData4Async(string[] sUser, string[] sKey, object userState) {
+            if ((this.Get_PublishedPrintData4OperationCompleted == null)) {
+                this.Get_PublishedPrintData4OperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_PublishedPrintData4OperationCompleted);
+            }
+            this.InvokeAsync("Get_PublishedPrintData4", new object[] {
+                        sUser,
+                        sKey}, this.Get_PublishedPrintData4OperationCompleted, userState);
+        }
+        
+        private void OnGet_PublishedPrintData4OperationCompleted(object arg) {
+            if ((this.Get_PublishedPrintData4Completed != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Get_PublishedPrintData4Completed(this, new Get_PublishedPrintData4CompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_InvoicePrintData", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Get_InvoicePrintData(string[] sUser, string[] sKey) {
+            object[] results = this.Invoke("Get_InvoicePrintData", new object[] {
+                        sUser,
+                        sKey});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginGet_InvoicePrintData(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Get_InvoicePrintData", new object[] {
+                        sUser,
+                        sKey}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndGet_InvoicePrintData(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Get_InvoicePrintDataAsync(string[] sUser, string[] sKey) {
+            this.Get_InvoicePrintDataAsync(sUser, sKey, null);
+        }
+        
+        /// <remarks/>
+        public void Get_InvoicePrintDataAsync(string[] sUser, string[] sKey, object userState) {
+            if ((this.Get_InvoicePrintDataOperationCompleted == null)) {
+                this.Get_InvoicePrintDataOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_InvoicePrintDataOperationCompleted);
+            }
+            this.InvokeAsync("Get_InvoicePrintData", new object[] {
+                        sUser,
+                        sKey}, this.Get_InvoicePrintDataOperationCompleted, userState);
+        }
+        
+        private void OnGet_InvoicePrintDataOperationCompleted(object arg) {
+            if ((this.Get_InvoicePrintDataCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Get_InvoicePrintDataCompleted(this, new Get_InvoicePrintDataCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_hatuten3", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Get_hatuten3(string[] sUser, string sKcode, string sBcode) {
+            object[] results = this.Invoke("Get_hatuten3", new object[] {
+                        sUser,
+                        sKcode,
+                        sBcode});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginGet_hatuten3(string[] sUser, string sKcode, string sBcode, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Get_hatuten3", new object[] {
+                        sUser,
+                        sKcode,
+                        sBcode}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndGet_hatuten3(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Get_hatuten3Async(string[] sUser, string sKcode, string sBcode) {
+            this.Get_hatuten3Async(sUser, sKcode, sBcode, null);
+        }
+        
+        /// <remarks/>
+        public void Get_hatuten3Async(string[] sUser, string sKcode, string sBcode, object userState) {
+            if ((this.Get_hatuten3OperationCompleted == null)) {
+                this.Get_hatuten3OperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_hatuten3OperationCompleted);
+            }
+            this.InvokeAsync("Get_hatuten3", new object[] {
+                        sUser,
+                        sKcode,
+                        sBcode}, this.Get_hatuten3OperationCompleted, userState);
+        }
+        
+        private void OnGet_hatuten3OperationCompleted(object arg) {
+            if ((this.Get_hatuten3Completed != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Get_hatuten3Completed(this, new Get_hatuten3CompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Check_NonDeliveryArea", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public object[] Check_NonDeliveryArea(string[] sUser, string sYubinNo) {
+            object[] results = this.Invoke("Check_NonDeliveryArea", new object[] {
+                        sUser,
+                        sYubinNo});
+            return ((object[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginCheck_NonDeliveryArea(string[] sUser, string sYubinNo, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Check_NonDeliveryArea", new object[] {
+                        sUser,
+                        sYubinNo}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public object[] EndCheck_NonDeliveryArea(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((object[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Check_NonDeliveryAreaAsync(string[] sUser, string sYubinNo) {
+            this.Check_NonDeliveryAreaAsync(sUser, sYubinNo, null);
+        }
+        
+        /// <remarks/>
+        public void Check_NonDeliveryAreaAsync(string[] sUser, string sYubinNo, object userState) {
+            if ((this.Check_NonDeliveryAreaOperationCompleted == null)) {
+                this.Check_NonDeliveryAreaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheck_NonDeliveryAreaOperationCompleted);
+            }
+            this.InvokeAsync("Check_NonDeliveryArea", new object[] {
+                        sUser,
+                        sYubinNo}, this.Check_NonDeliveryAreaOperationCompleted, userState);
+        }
+        
+        private void OnCheck_NonDeliveryAreaOperationCompleted(object arg) {
+            if ((this.Check_NonDeliveryAreaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Check_NonDeliveryAreaCompleted(this, new Check_NonDeliveryAreaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_HouseSlipMember", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Get_HouseSlipMember(string[] sUser, string[] sKey) {
+            object[] results = this.Invoke("Get_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginGet_HouseSlipMember(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Get_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndGet_HouseSlipMember(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Get_HouseSlipMemberAsync(string[] sUser, string[] sKey) {
+            this.Get_HouseSlipMemberAsync(sUser, sKey, null);
+        }
+        
+        /// <remarks/>
+        public void Get_HouseSlipMemberAsync(string[] sUser, string[] sKey, object userState) {
+            if ((this.Get_HouseSlipMemberOperationCompleted == null)) {
+                this.Get_HouseSlipMemberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_HouseSlipMemberOperationCompleted);
+            }
+            this.InvokeAsync("Get_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey}, this.Get_HouseSlipMemberOperationCompleted, userState);
+        }
+        
+        private void OnGet_HouseSlipMemberOperationCompleted(object arg) {
+            if ((this.Get_HouseSlipMemberCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Get_HouseSlipMemberCompleted(this, new Get_HouseSlipMemberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Sel_HouseSlipMember", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Sel_HouseSlipMember(string[] sUser, string[] sKey) {
+            object[] results = this.Invoke("Sel_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginSel_HouseSlipMember(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Sel_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndSel_HouseSlipMember(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Sel_HouseSlipMemberAsync(string[] sUser, string[] sKey) {
+            this.Sel_HouseSlipMemberAsync(sUser, sKey, null);
+        }
+        
+        /// <remarks/>
+        public void Sel_HouseSlipMemberAsync(string[] sUser, string[] sKey, object userState) {
+            if ((this.Sel_HouseSlipMemberOperationCompleted == null)) {
+                this.Sel_HouseSlipMemberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSel_HouseSlipMemberOperationCompleted);
+            }
+            this.InvokeAsync("Sel_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey}, this.Sel_HouseSlipMemberOperationCompleted, userState);
+        }
+        
+        private void OnSel_HouseSlipMemberOperationCompleted(object arg) {
+            if ((this.Sel_HouseSlipMemberCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Sel_HouseSlipMemberCompleted(this, new Sel_HouseSlipMemberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Ins_HouseSlipMember", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Ins_HouseSlipMember(string[] sUser, string[] sKey) {
+            object[] results = this.Invoke("Ins_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginIns_HouseSlipMember(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Ins_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndIns_HouseSlipMember(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Ins_HouseSlipMemberAsync(string[] sUser, string[] sKey) {
+            this.Ins_HouseSlipMemberAsync(sUser, sKey, null);
+        }
+        
+        /// <remarks/>
+        public void Ins_HouseSlipMemberAsync(string[] sUser, string[] sKey, object userState) {
+            if ((this.Ins_HouseSlipMemberOperationCompleted == null)) {
+                this.Ins_HouseSlipMemberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnIns_HouseSlipMemberOperationCompleted);
+            }
+            this.InvokeAsync("Ins_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey}, this.Ins_HouseSlipMemberOperationCompleted, userState);
+        }
+        
+        private void OnIns_HouseSlipMemberOperationCompleted(object arg) {
+            if ((this.Ins_HouseSlipMemberCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Ins_HouseSlipMemberCompleted(this, new Ins_HouseSlipMemberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Upd_HouseSlipMember", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Upd_HouseSlipMember(string[] sUser, string[] sKey) {
+            object[] results = this.Invoke("Upd_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginUpd_HouseSlipMember(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Upd_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndUpd_HouseSlipMember(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Upd_HouseSlipMemberAsync(string[] sUser, string[] sKey) {
+            this.Upd_HouseSlipMemberAsync(sUser, sKey, null);
+        }
+        
+        /// <remarks/>
+        public void Upd_HouseSlipMemberAsync(string[] sUser, string[] sKey, object userState) {
+            if ((this.Upd_HouseSlipMemberOperationCompleted == null)) {
+                this.Upd_HouseSlipMemberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpd_HouseSlipMemberOperationCompleted);
+            }
+            this.InvokeAsync("Upd_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey}, this.Upd_HouseSlipMemberOperationCompleted, userState);
+        }
+        
+        private void OnUpd_HouseSlipMemberOperationCompleted(object arg) {
+            if ((this.Upd_HouseSlipMemberCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Upd_HouseSlipMemberCompleted(this, new Upd_HouseSlipMemberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Del_HouseSlipMember", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Del_HouseSlipMember(string[] sUser, string[] sKey) {
+            object[] results = this.Invoke("Del_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginDel_HouseSlipMember(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Del_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndDel_HouseSlipMember(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Del_HouseSlipMemberAsync(string[] sUser, string[] sKey) {
+            this.Del_HouseSlipMemberAsync(sUser, sKey, null);
+        }
+        
+        /// <remarks/>
+        public void Del_HouseSlipMemberAsync(string[] sUser, string[] sKey, object userState) {
+            if ((this.Del_HouseSlipMemberOperationCompleted == null)) {
+                this.Del_HouseSlipMemberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDel_HouseSlipMemberOperationCompleted);
+            }
+            this.InvokeAsync("Del_HouseSlipMember", new object[] {
+                        sUser,
+                        sKey}, this.Del_HouseSlipMemberOperationCompleted, userState);
+        }
+        
+        private void OnDel_HouseSlipMemberOperationCompleted(object arg) {
+            if ((this.Del_HouseSlipMemberCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Del_HouseSlipMemberCompleted(this, new Del_HouseSlipMemberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Sel_Member", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -4111,581 +4686,6 @@ namespace is2AdminClient.is2maintenance {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_UntinErrCntChk", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string[] Get_UntinErrCntChk(string[] sUser, string[] sData) {
-            object[] results = this.Invoke("Get_UntinErrCntChk", new object[] {
-                        sUser,
-                        sData});
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginGet_UntinErrCntChk(string[] sUser, string[] sData, System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("Get_UntinErrCntChk", new object[] {
-                        sUser,
-                        sData}, callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public string[] EndGet_UntinErrCntChk(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void Get_UntinErrCntChkAsync(string[] sUser, string[] sData) {
-            this.Get_UntinErrCntChkAsync(sUser, sData, null);
-        }
-        
-        /// <remarks/>
-        public void Get_UntinErrCntChkAsync(string[] sUser, string[] sData, object userState) {
-            if ((this.Get_UntinErrCntChkOperationCompleted == null)) {
-                this.Get_UntinErrCntChkOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_UntinErrCntChkOperationCompleted);
-            }
-            this.InvokeAsync("Get_UntinErrCntChk", new object[] {
-                        sUser,
-                        sData}, this.Get_UntinErrCntChkOperationCompleted, userState);
-        }
-        
-        private void OnGet_UntinErrCntChkOperationCompleted(object arg) {
-            if ((this.Get_UntinErrCntChkCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Get_UntinErrCntChkCompleted(this, new Get_UntinErrCntChkCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Upd_UntinErrKakuninFG", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string[] Upd_UntinErrKakuninFG(string[] sUser, string[] sData) {
-            object[] results = this.Invoke("Upd_UntinErrKakuninFG", new object[] {
-                        sUser,
-                        sData});
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginUpd_UntinErrKakuninFG(string[] sUser, string[] sData, System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("Upd_UntinErrKakuninFG", new object[] {
-                        sUser,
-                        sData}, callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public string[] EndUpd_UntinErrKakuninFG(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void Upd_UntinErrKakuninFGAsync(string[] sUser, string[] sData) {
-            this.Upd_UntinErrKakuninFGAsync(sUser, sData, null);
-        }
-        
-        /// <remarks/>
-        public void Upd_UntinErrKakuninFGAsync(string[] sUser, string[] sData, object userState) {
-            if ((this.Upd_UntinErrKakuninFGOperationCompleted == null)) {
-                this.Upd_UntinErrKakuninFGOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpd_UntinErrKakuninFGOperationCompleted);
-            }
-            this.InvokeAsync("Upd_UntinErrKakuninFG", new object[] {
-                        sUser,
-                        sData}, this.Upd_UntinErrKakuninFGOperationCompleted, userState);
-        }
-        
-        private void OnUpd_UntinErrKakuninFGOperationCompleted(object arg) {
-            if ((this.Upd_UntinErrKakuninFGCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Upd_UntinErrKakuninFGCompleted(this, new Upd_UntinErrKakuninFGCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_SyukkaEtc", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string[] Get_SyukkaEtc(string[] sUser, string[] sKey) {
-            object[] results = this.Invoke("Get_SyukkaEtc", new object[] {
-                        sUser,
-                        sKey});
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginGet_SyukkaEtc(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("Get_SyukkaEtc", new object[] {
-                        sUser,
-                        sKey}, callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public string[] EndGet_SyukkaEtc(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void Get_SyukkaEtcAsync(string[] sUser, string[] sKey) {
-            this.Get_SyukkaEtcAsync(sUser, sKey, null);
-        }
-        
-        /// <remarks/>
-        public void Get_SyukkaEtcAsync(string[] sUser, string[] sKey, object userState) {
-            if ((this.Get_SyukkaEtcOperationCompleted == null)) {
-                this.Get_SyukkaEtcOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_SyukkaEtcOperationCompleted);
-            }
-            this.InvokeAsync("Get_SyukkaEtc", new object[] {
-                        sUser,
-                        sKey}, this.Get_SyukkaEtcOperationCompleted, userState);
-        }
-        
-        private void OnGet_SyukkaEtcOperationCompleted(object arg) {
-            if ((this.Get_SyukkaEtcCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Get_SyukkaEtcCompleted(this, new Get_SyukkaEtcCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_SyukkaBiMinMax", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string[] Get_SyukkaBiMinMax(string[] sUser, string[] sKey) {
-            object[] results = this.Invoke("Get_SyukkaBiMinMax", new object[] {
-                        sUser,
-                        sKey});
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginGet_SyukkaBiMinMax(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("Get_SyukkaBiMinMax", new object[] {
-                        sUser,
-                        sKey}, callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public string[] EndGet_SyukkaBiMinMax(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void Get_SyukkaBiMinMaxAsync(string[] sUser, string[] sKey) {
-            this.Get_SyukkaBiMinMaxAsync(sUser, sKey, null);
-        }
-        
-        /// <remarks/>
-        public void Get_SyukkaBiMinMaxAsync(string[] sUser, string[] sKey, object userState) {
-            if ((this.Get_SyukkaBiMinMaxOperationCompleted == null)) {
-                this.Get_SyukkaBiMinMaxOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_SyukkaBiMinMaxOperationCompleted);
-            }
-            this.InvokeAsync("Get_SyukkaBiMinMax", new object[] {
-                        sUser,
-                        sKey}, this.Get_SyukkaBiMinMaxOperationCompleted, userState);
-        }
-        
-        private void OnGet_SyukkaBiMinMaxOperationCompleted(object arg) {
-            if ((this.Get_SyukkaBiMinMaxCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Get_SyukkaBiMinMaxCompleted(this, new Get_SyukkaBiMinMaxCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_PublishedPrintData4", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public object[] Get_PublishedPrintData4(string[] sUser, string[] sKey) {
-            object[] results = this.Invoke("Get_PublishedPrintData4", new object[] {
-                        sUser,
-                        sKey});
-            return ((object[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginGet_PublishedPrintData4(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("Get_PublishedPrintData4", new object[] {
-                        sUser,
-                        sKey}, callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public object[] EndGet_PublishedPrintData4(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((object[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void Get_PublishedPrintData4Async(string[] sUser, string[] sKey) {
-            this.Get_PublishedPrintData4Async(sUser, sKey, null);
-        }
-        
-        /// <remarks/>
-        public void Get_PublishedPrintData4Async(string[] sUser, string[] sKey, object userState) {
-            if ((this.Get_PublishedPrintData4OperationCompleted == null)) {
-                this.Get_PublishedPrintData4OperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_PublishedPrintData4OperationCompleted);
-            }
-            this.InvokeAsync("Get_PublishedPrintData4", new object[] {
-                        sUser,
-                        sKey}, this.Get_PublishedPrintData4OperationCompleted, userState);
-        }
-        
-        private void OnGet_PublishedPrintData4OperationCompleted(object arg) {
-            if ((this.Get_PublishedPrintData4Completed != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Get_PublishedPrintData4Completed(this, new Get_PublishedPrintData4CompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_InvoicePrintData", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string[] Get_InvoicePrintData(string[] sUser, string[] sKey) {
-            object[] results = this.Invoke("Get_InvoicePrintData", new object[] {
-                        sUser,
-                        sKey});
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginGet_InvoicePrintData(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("Get_InvoicePrintData", new object[] {
-                        sUser,
-                        sKey}, callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public string[] EndGet_InvoicePrintData(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void Get_InvoicePrintDataAsync(string[] sUser, string[] sKey) {
-            this.Get_InvoicePrintDataAsync(sUser, sKey, null);
-        }
-        
-        /// <remarks/>
-        public void Get_InvoicePrintDataAsync(string[] sUser, string[] sKey, object userState) {
-            if ((this.Get_InvoicePrintDataOperationCompleted == null)) {
-                this.Get_InvoicePrintDataOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_InvoicePrintDataOperationCompleted);
-            }
-            this.InvokeAsync("Get_InvoicePrintData", new object[] {
-                        sUser,
-                        sKey}, this.Get_InvoicePrintDataOperationCompleted, userState);
-        }
-        
-        private void OnGet_InvoicePrintDataOperationCompleted(object arg) {
-            if ((this.Get_InvoicePrintDataCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Get_InvoicePrintDataCompleted(this, new Get_InvoicePrintDataCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_hatuten3", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string[] Get_hatuten3(string[] sUser, string sKcode, string sBcode) {
-            object[] results = this.Invoke("Get_hatuten3", new object[] {
-                        sUser,
-                        sKcode,
-                        sBcode});
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginGet_hatuten3(string[] sUser, string sKcode, string sBcode, System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("Get_hatuten3", new object[] {
-                        sUser,
-                        sKcode,
-                        sBcode}, callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public string[] EndGet_hatuten3(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void Get_hatuten3Async(string[] sUser, string sKcode, string sBcode) {
-            this.Get_hatuten3Async(sUser, sKcode, sBcode, null);
-        }
-        
-        /// <remarks/>
-        public void Get_hatuten3Async(string[] sUser, string sKcode, string sBcode, object userState) {
-            if ((this.Get_hatuten3OperationCompleted == null)) {
-                this.Get_hatuten3OperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_hatuten3OperationCompleted);
-            }
-            this.InvokeAsync("Get_hatuten3", new object[] {
-                        sUser,
-                        sKcode,
-                        sBcode}, this.Get_hatuten3OperationCompleted, userState);
-        }
-        
-        private void OnGet_hatuten3OperationCompleted(object arg) {
-            if ((this.Get_hatuten3Completed != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Get_hatuten3Completed(this, new Get_hatuten3CompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Check_NonDeliveryArea", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public object[] Check_NonDeliveryArea(string[] sUser, string sYubinNo) {
-            object[] results = this.Invoke("Check_NonDeliveryArea", new object[] {
-                        sUser,
-                        sYubinNo});
-            return ((object[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginCheck_NonDeliveryArea(string[] sUser, string sYubinNo, System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("Check_NonDeliveryArea", new object[] {
-                        sUser,
-                        sYubinNo}, callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public object[] EndCheck_NonDeliveryArea(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((object[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void Check_NonDeliveryAreaAsync(string[] sUser, string sYubinNo) {
-            this.Check_NonDeliveryAreaAsync(sUser, sYubinNo, null);
-        }
-        
-        /// <remarks/>
-        public void Check_NonDeliveryAreaAsync(string[] sUser, string sYubinNo, object userState) {
-            if ((this.Check_NonDeliveryAreaOperationCompleted == null)) {
-                this.Check_NonDeliveryAreaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCheck_NonDeliveryAreaOperationCompleted);
-            }
-            this.InvokeAsync("Check_NonDeliveryArea", new object[] {
-                        sUser,
-                        sYubinNo}, this.Check_NonDeliveryAreaOperationCompleted, userState);
-        }
-        
-        private void OnCheck_NonDeliveryAreaOperationCompleted(object arg) {
-            if ((this.Check_NonDeliveryAreaCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Check_NonDeliveryAreaCompleted(this, new Check_NonDeliveryAreaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_HouseSlipMember", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string[] Get_HouseSlipMember(string[] sUser, string[] sKey) {
-            object[] results = this.Invoke("Get_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey});
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginGet_HouseSlipMember(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("Get_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey}, callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public string[] EndGet_HouseSlipMember(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void Get_HouseSlipMemberAsync(string[] sUser, string[] sKey) {
-            this.Get_HouseSlipMemberAsync(sUser, sKey, null);
-        }
-        
-        /// <remarks/>
-        public void Get_HouseSlipMemberAsync(string[] sUser, string[] sKey, object userState) {
-            if ((this.Get_HouseSlipMemberOperationCompleted == null)) {
-                this.Get_HouseSlipMemberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_HouseSlipMemberOperationCompleted);
-            }
-            this.InvokeAsync("Get_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey}, this.Get_HouseSlipMemberOperationCompleted, userState);
-        }
-        
-        private void OnGet_HouseSlipMemberOperationCompleted(object arg) {
-            if ((this.Get_HouseSlipMemberCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Get_HouseSlipMemberCompleted(this, new Get_HouseSlipMemberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Sel_HouseSlipMember", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string[] Sel_HouseSlipMember(string[] sUser, string[] sKey) {
-            object[] results = this.Invoke("Sel_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey});
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginSel_HouseSlipMember(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("Sel_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey}, callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public string[] EndSel_HouseSlipMember(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void Sel_HouseSlipMemberAsync(string[] sUser, string[] sKey) {
-            this.Sel_HouseSlipMemberAsync(sUser, sKey, null);
-        }
-        
-        /// <remarks/>
-        public void Sel_HouseSlipMemberAsync(string[] sUser, string[] sKey, object userState) {
-            if ((this.Sel_HouseSlipMemberOperationCompleted == null)) {
-                this.Sel_HouseSlipMemberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSel_HouseSlipMemberOperationCompleted);
-            }
-            this.InvokeAsync("Sel_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey}, this.Sel_HouseSlipMemberOperationCompleted, userState);
-        }
-        
-        private void OnSel_HouseSlipMemberOperationCompleted(object arg) {
-            if ((this.Sel_HouseSlipMemberCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Sel_HouseSlipMemberCompleted(this, new Sel_HouseSlipMemberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Ins_HouseSlipMember", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string[] Ins_HouseSlipMember(string[] sUser, string[] sKey) {
-            object[] results = this.Invoke("Ins_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey});
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginIns_HouseSlipMember(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("Ins_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey}, callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public string[] EndIns_HouseSlipMember(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void Ins_HouseSlipMemberAsync(string[] sUser, string[] sKey) {
-            this.Ins_HouseSlipMemberAsync(sUser, sKey, null);
-        }
-        
-        /// <remarks/>
-        public void Ins_HouseSlipMemberAsync(string[] sUser, string[] sKey, object userState) {
-            if ((this.Ins_HouseSlipMemberOperationCompleted == null)) {
-                this.Ins_HouseSlipMemberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnIns_HouseSlipMemberOperationCompleted);
-            }
-            this.InvokeAsync("Ins_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey}, this.Ins_HouseSlipMemberOperationCompleted, userState);
-        }
-        
-        private void OnIns_HouseSlipMemberOperationCompleted(object arg) {
-            if ((this.Ins_HouseSlipMemberCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Ins_HouseSlipMemberCompleted(this, new Ins_HouseSlipMemberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Upd_HouseSlipMember", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string[] Upd_HouseSlipMember(string[] sUser, string[] sKey) {
-            object[] results = this.Invoke("Upd_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey});
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginUpd_HouseSlipMember(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("Upd_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey}, callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public string[] EndUpd_HouseSlipMember(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void Upd_HouseSlipMemberAsync(string[] sUser, string[] sKey) {
-            this.Upd_HouseSlipMemberAsync(sUser, sKey, null);
-        }
-        
-        /// <remarks/>
-        public void Upd_HouseSlipMemberAsync(string[] sUser, string[] sKey, object userState) {
-            if ((this.Upd_HouseSlipMemberOperationCompleted == null)) {
-                this.Upd_HouseSlipMemberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpd_HouseSlipMemberOperationCompleted);
-            }
-            this.InvokeAsync("Upd_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey}, this.Upd_HouseSlipMemberOperationCompleted, userState);
-        }
-        
-        private void OnUpd_HouseSlipMemberOperationCompleted(object arg) {
-            if ((this.Upd_HouseSlipMemberCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Upd_HouseSlipMemberCompleted(this, new Upd_HouseSlipMemberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Del_HouseSlipMember", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string[] Del_HouseSlipMember(string[] sUser, string[] sKey) {
-            object[] results = this.Invoke("Del_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey});
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginDel_HouseSlipMember(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("Del_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey}, callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public string[] EndDel_HouseSlipMember(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((string[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void Del_HouseSlipMemberAsync(string[] sUser, string[] sKey) {
-            this.Del_HouseSlipMemberAsync(sUser, sKey, null);
-        }
-        
-        /// <remarks/>
-        public void Del_HouseSlipMemberAsync(string[] sUser, string[] sKey, object userState) {
-            if ((this.Del_HouseSlipMemberOperationCompleted == null)) {
-                this.Del_HouseSlipMemberOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDel_HouseSlipMemberOperationCompleted);
-            }
-            this.InvokeAsync("Del_HouseSlipMember", new object[] {
-                        sUser,
-                        sKey}, this.Del_HouseSlipMemberOperationCompleted, userState);
-        }
-        
-        private void OnDel_HouseSlipMemberOperationCompleted(object arg) {
-            if ((this.Del_HouseSlipMemberCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.Del_HouseSlipMemberCompleted(this, new Del_HouseSlipMemberCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/wakeupDB", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public string wakeupDB() {
             object[] results = this.Invoke("wakeupDB", new object[0]);
@@ -4780,6 +4780,344 @@ namespace is2AdminClient.is2maintenance {
                 return true;
             }
             return false;
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Get_UntinErrCntChkCompletedEventHandler(object sender, Get_UntinErrCntChkCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Get_UntinErrCntChkCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Get_UntinErrCntChkCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Upd_UntinErrKakuninFGCompletedEventHandler(object sender, Upd_UntinErrKakuninFGCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Upd_UntinErrKakuninFGCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Upd_UntinErrKakuninFGCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Get_SyukkaEtcCompletedEventHandler(object sender, Get_SyukkaEtcCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Get_SyukkaEtcCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Get_SyukkaEtcCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Get_SyukkaBiMinMaxCompletedEventHandler(object sender, Get_SyukkaBiMinMaxCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Get_SyukkaBiMinMaxCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Get_SyukkaBiMinMaxCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Get_PublishedPrintData4CompletedEventHandler(object sender, Get_PublishedPrintData4CompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Get_PublishedPrintData4CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Get_PublishedPrintData4CompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public object[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((object[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Get_InvoicePrintDataCompletedEventHandler(object sender, Get_InvoicePrintDataCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Get_InvoicePrintDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Get_InvoicePrintDataCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Get_hatuten3CompletedEventHandler(object sender, Get_hatuten3CompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Get_hatuten3CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Get_hatuten3CompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Check_NonDeliveryAreaCompletedEventHandler(object sender, Check_NonDeliveryAreaCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Check_NonDeliveryAreaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Check_NonDeliveryAreaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public object[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((object[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Get_HouseSlipMemberCompletedEventHandler(object sender, Get_HouseSlipMemberCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Get_HouseSlipMemberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Get_HouseSlipMemberCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Sel_HouseSlipMemberCompletedEventHandler(object sender, Sel_HouseSlipMemberCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Sel_HouseSlipMemberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Sel_HouseSlipMemberCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Ins_HouseSlipMemberCompletedEventHandler(object sender, Ins_HouseSlipMemberCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Ins_HouseSlipMemberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Ins_HouseSlipMemberCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Upd_HouseSlipMemberCompletedEventHandler(object sender, Upd_HouseSlipMemberCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Upd_HouseSlipMemberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Upd_HouseSlipMemberCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Del_HouseSlipMemberCompletedEventHandler(object sender, Del_HouseSlipMemberCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Del_HouseSlipMemberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Del_HouseSlipMemberCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
         }
     }
     
@@ -6850,344 +7188,6 @@ namespace is2AdminClient.is2maintenance {
         private object[] results;
         
         internal Get_csvwrite3CompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    public delegate void Get_UntinErrCntChkCompletedEventHandler(object sender, Get_UntinErrCntChkCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Get_UntinErrCntChkCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal Get_UntinErrCntChkCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    public delegate void Upd_UntinErrKakuninFGCompletedEventHandler(object sender, Upd_UntinErrKakuninFGCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Upd_UntinErrKakuninFGCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal Upd_UntinErrKakuninFGCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    public delegate void Get_SyukkaEtcCompletedEventHandler(object sender, Get_SyukkaEtcCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Get_SyukkaEtcCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal Get_SyukkaEtcCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    public delegate void Get_SyukkaBiMinMaxCompletedEventHandler(object sender, Get_SyukkaBiMinMaxCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Get_SyukkaBiMinMaxCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal Get_SyukkaBiMinMaxCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    public delegate void Get_PublishedPrintData4CompletedEventHandler(object sender, Get_PublishedPrintData4CompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Get_PublishedPrintData4CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal Get_PublishedPrintData4CompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public object[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((object[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    public delegate void Get_InvoicePrintDataCompletedEventHandler(object sender, Get_InvoicePrintDataCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Get_InvoicePrintDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal Get_InvoicePrintDataCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    public delegate void Get_hatuten3CompletedEventHandler(object sender, Get_hatuten3CompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Get_hatuten3CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal Get_hatuten3CompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    public delegate void Check_NonDeliveryAreaCompletedEventHandler(object sender, Check_NonDeliveryAreaCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Check_NonDeliveryAreaCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal Check_NonDeliveryAreaCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public object[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((object[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    public delegate void Get_HouseSlipMemberCompletedEventHandler(object sender, Get_HouseSlipMemberCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Get_HouseSlipMemberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal Get_HouseSlipMemberCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    public delegate void Sel_HouseSlipMemberCompletedEventHandler(object sender, Sel_HouseSlipMemberCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Sel_HouseSlipMemberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal Sel_HouseSlipMemberCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    public delegate void Ins_HouseSlipMemberCompletedEventHandler(object sender, Ins_HouseSlipMemberCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Ins_HouseSlipMemberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal Ins_HouseSlipMemberCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    public delegate void Upd_HouseSlipMemberCompletedEventHandler(object sender, Upd_HouseSlipMemberCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Upd_HouseSlipMemberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal Upd_HouseSlipMemberCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public string[] Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((string[])(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    public delegate void Del_HouseSlipMemberCompletedEventHandler(object sender, Del_HouseSlipMemberCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class Del_HouseSlipMemberCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal Del_HouseSlipMemberCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }

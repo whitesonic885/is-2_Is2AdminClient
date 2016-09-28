@@ -27,6 +27,7 @@ namespace is2AdminClient.is2oji {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="Service1Soap", Namespace="http://Walkthrough/XmlWebServices/")]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(object[]))]
     public partial class Service1 : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
         private System.Threading.SendOrPostCallback Get_hatuten3OperationCompleted;
@@ -61,6 +62,8 @@ namespace is2AdminClient.is2oji {
         
         private System.Threading.SendOrPostCallback Set_InvoiceNoOperationCompleted;
         
+        private System.Threading.SendOrPostCallback Get_InvoiceNoOperationCompleted;
+        
         private System.Threading.SendOrPostCallback Get_hatuten2OperationCompleted;
         
         private System.Threading.SendOrPostCallback Get_syuuyakuten2OperationCompleted;
@@ -84,6 +87,16 @@ namespace is2AdminClient.is2oji {
         private System.Threading.SendOrPostCallback Upd_MosikomiOperationCompleted;
         
         private System.Threading.SendOrPostCallback Get_autoEntryPref3OperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Get_kijiCDOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Get_NotePrintDataOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Get_byPostcode2OperationCompleted;
+        
+        private System.Threading.SendOrPostCallback otodoke_Ins_uploadData2OperationCompleted;
+        
+        private System.Threading.SendOrPostCallback goirai_Ins_uploadData2OperationCompleted;
         
         private System.Threading.SendOrPostCallback wakeupDBOperationCompleted;
         
@@ -176,6 +189,9 @@ namespace is2AdminClient.is2oji {
         public event Set_InvoiceNoCompletedEventHandler Set_InvoiceNoCompleted;
         
         /// <remarks/>
+        public event Get_InvoiceNoCompletedEventHandler Get_InvoiceNoCompleted;
+        
+        /// <remarks/>
         public event Get_hatuten2CompletedEventHandler Get_hatuten2Completed;
         
         /// <remarks/>
@@ -210,6 +226,21 @@ namespace is2AdminClient.is2oji {
         
         /// <remarks/>
         public event Get_autoEntryPref3CompletedEventHandler Get_autoEntryPref3Completed;
+        
+        /// <remarks/>
+        public event Get_kijiCDCompletedEventHandler Get_kijiCDCompleted;
+        
+        /// <remarks/>
+        public event Get_NotePrintDataCompletedEventHandler Get_NotePrintDataCompleted;
+        
+        /// <remarks/>
+        public event Get_byPostcode2CompletedEventHandler Get_byPostcode2Completed;
+        
+        /// <remarks/>
+        public event otodoke_Ins_uploadData2CompletedEventHandler otodoke_Ins_uploadData2Completed;
+        
+        /// <remarks/>
+        public event goirai_Ins_uploadData2CompletedEventHandler goirai_Ins_uploadData2Completed;
         
         /// <remarks/>
         public event wakeupDBCompletedEventHandler wakeupDBCompleted;
@@ -937,6 +968,50 @@ namespace is2AdminClient.is2oji {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_InvoiceNo", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Get_InvoiceNo(string[] sUser, string[] sKey) {
+            object[] results = this.Invoke("Get_InvoiceNo", new object[] {
+                        sUser,
+                        sKey});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginGet_InvoiceNo(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Get_InvoiceNo", new object[] {
+                        sUser,
+                        sKey}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndGet_InvoiceNo(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Get_InvoiceNoAsync(string[] sUser, string[] sKey) {
+            this.Get_InvoiceNoAsync(sUser, sKey, null);
+        }
+        
+        /// <remarks/>
+        public void Get_InvoiceNoAsync(string[] sUser, string[] sKey, object userState) {
+            if ((this.Get_InvoiceNoOperationCompleted == null)) {
+                this.Get_InvoiceNoOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_InvoiceNoOperationCompleted);
+            }
+            this.InvokeAsync("Get_InvoiceNo", new object[] {
+                        sUser,
+                        sKey}, this.Get_InvoiceNoOperationCompleted, userState);
+        }
+        
+        private void OnGet_InvoiceNoOperationCompleted(object arg) {
+            if ((this.Get_InvoiceNoCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Get_InvoiceNoCompleted(this, new Get_InvoiceNoCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_hatuten2", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public string[] Get_hatuten2(string[] sUser, string sKcode, string sBcode) {
             object[] results = this.Invoke("Get_hatuten2", new object[] {
@@ -1495,6 +1570,229 @@ namespace is2AdminClient.is2oji {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_kijiCD", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Get_kijiCD(string[] sUser, string sBcode, string sKname) {
+            object[] results = this.Invoke("Get_kijiCD", new object[] {
+                        sUser,
+                        sBcode,
+                        sKname});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginGet_kijiCD(string[] sUser, string sBcode, string sKname, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Get_kijiCD", new object[] {
+                        sUser,
+                        sBcode,
+                        sKname}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndGet_kijiCD(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Get_kijiCDAsync(string[] sUser, string sBcode, string sKname) {
+            this.Get_kijiCDAsync(sUser, sBcode, sKname, null);
+        }
+        
+        /// <remarks/>
+        public void Get_kijiCDAsync(string[] sUser, string sBcode, string sKname, object userState) {
+            if ((this.Get_kijiCDOperationCompleted == null)) {
+                this.Get_kijiCDOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_kijiCDOperationCompleted);
+            }
+            this.InvokeAsync("Get_kijiCD", new object[] {
+                        sUser,
+                        sBcode,
+                        sKname}, this.Get_kijiCDOperationCompleted, userState);
+        }
+        
+        private void OnGet_kijiCDOperationCompleted(object arg) {
+            if ((this.Get_kijiCDCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Get_kijiCDCompleted(this, new Get_kijiCDCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_NotePrintData", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public object[] Get_NotePrintData(string[] sUser, string[] sKey) {
+            object[] results = this.Invoke("Get_NotePrintData", new object[] {
+                        sUser,
+                        sKey});
+            return ((object[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginGet_NotePrintData(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Get_NotePrintData", new object[] {
+                        sUser,
+                        sKey}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public object[] EndGet_NotePrintData(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((object[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Get_NotePrintDataAsync(string[] sUser, string[] sKey) {
+            this.Get_NotePrintDataAsync(sUser, sKey, null);
+        }
+        
+        /// <remarks/>
+        public void Get_NotePrintDataAsync(string[] sUser, string[] sKey, object userState) {
+            if ((this.Get_NotePrintDataOperationCompleted == null)) {
+                this.Get_NotePrintDataOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_NotePrintDataOperationCompleted);
+            }
+            this.InvokeAsync("Get_NotePrintData", new object[] {
+                        sUser,
+                        sKey}, this.Get_NotePrintDataOperationCompleted, userState);
+        }
+        
+        private void OnGet_NotePrintDataOperationCompleted(object arg) {
+            if ((this.Get_NotePrintDataCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Get_NotePrintDataCompleted(this, new Get_NotePrintDataCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_byPostcode2", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Get_byPostcode2(string[] sUser, string s郵便番号) {
+            object[] results = this.Invoke("Get_byPostcode2", new object[] {
+                        sUser,
+                        s郵便番号});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginGet_byPostcode2(string[] sUser, string s郵便番号, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Get_byPostcode2", new object[] {
+                        sUser,
+                        s郵便番号}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndGet_byPostcode2(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Get_byPostcode2Async(string[] sUser, string s郵便番号) {
+            this.Get_byPostcode2Async(sUser, s郵便番号, null);
+        }
+        
+        /// <remarks/>
+        public void Get_byPostcode2Async(string[] sUser, string s郵便番号, object userState) {
+            if ((this.Get_byPostcode2OperationCompleted == null)) {
+                this.Get_byPostcode2OperationCompleted = new System.Threading.SendOrPostCallback(this.OnGet_byPostcode2OperationCompleted);
+            }
+            this.InvokeAsync("Get_byPostcode2", new object[] {
+                        sUser,
+                        s郵便番号}, this.Get_byPostcode2OperationCompleted, userState);
+        }
+        
+        private void OnGet_byPostcode2OperationCompleted(object arg) {
+            if ((this.Get_byPostcode2Completed != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Get_byPostcode2Completed(this, new Get_byPostcode2CompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/otodoke_Ins_uploadData2", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] otodoke_Ins_uploadData2(string[] sUser, string[] sList) {
+            object[] results = this.Invoke("otodoke_Ins_uploadData2", new object[] {
+                        sUser,
+                        sList});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult Beginotodoke_Ins_uploadData2(string[] sUser, string[] sList, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("otodoke_Ins_uploadData2", new object[] {
+                        sUser,
+                        sList}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] Endotodoke_Ins_uploadData2(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void otodoke_Ins_uploadData2Async(string[] sUser, string[] sList) {
+            this.otodoke_Ins_uploadData2Async(sUser, sList, null);
+        }
+        
+        /// <remarks/>
+        public void otodoke_Ins_uploadData2Async(string[] sUser, string[] sList, object userState) {
+            if ((this.otodoke_Ins_uploadData2OperationCompleted == null)) {
+                this.otodoke_Ins_uploadData2OperationCompleted = new System.Threading.SendOrPostCallback(this.Onotodoke_Ins_uploadData2OperationCompleted);
+            }
+            this.InvokeAsync("otodoke_Ins_uploadData2", new object[] {
+                        sUser,
+                        sList}, this.otodoke_Ins_uploadData2OperationCompleted, userState);
+        }
+        
+        private void Onotodoke_Ins_uploadData2OperationCompleted(object arg) {
+            if ((this.otodoke_Ins_uploadData2Completed != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.otodoke_Ins_uploadData2Completed(this, new otodoke_Ins_uploadData2CompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/goirai_Ins_uploadData2", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] goirai_Ins_uploadData2(string[] sUser, string[] sList) {
+            object[] results = this.Invoke("goirai_Ins_uploadData2", new object[] {
+                        sUser,
+                        sList});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult Begingoirai_Ins_uploadData2(string[] sUser, string[] sList, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("goirai_Ins_uploadData2", new object[] {
+                        sUser,
+                        sList}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] Endgoirai_Ins_uploadData2(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void goirai_Ins_uploadData2Async(string[] sUser, string[] sList) {
+            this.goirai_Ins_uploadData2Async(sUser, sList, null);
+        }
+        
+        /// <remarks/>
+        public void goirai_Ins_uploadData2Async(string[] sUser, string[] sList, object userState) {
+            if ((this.goirai_Ins_uploadData2OperationCompleted == null)) {
+                this.goirai_Ins_uploadData2OperationCompleted = new System.Threading.SendOrPostCallback(this.Ongoirai_Ins_uploadData2OperationCompleted);
+            }
+            this.InvokeAsync("goirai_Ins_uploadData2", new object[] {
+                        sUser,
+                        sList}, this.goirai_Ins_uploadData2OperationCompleted, userState);
+        }
+        
+        private void Ongoirai_Ins_uploadData2OperationCompleted(object arg) {
+            if ((this.goirai_Ins_uploadData2Completed != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.goirai_Ins_uploadData2Completed(this, new goirai_Ins_uploadData2CompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/wakeupDB", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public string wakeupDB() {
             object[] results = this.Invoke("wakeupDB", new object[0]);
@@ -2010,6 +2308,32 @@ namespace is2AdminClient.is2oji {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Get_InvoiceNoCompletedEventHandler(object sender, Get_InvoiceNoCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Get_InvoiceNoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Get_InvoiceNoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void Get_hatuten2CompletedEventHandler(object sender, Get_hatuten2CompletedEventArgs e);
     
     /// <remarks/>
@@ -2307,6 +2631,136 @@ namespace is2AdminClient.is2oji {
         private object[] results;
         
         internal Get_autoEntryPref3CompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Get_kijiCDCompletedEventHandler(object sender, Get_kijiCDCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Get_kijiCDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Get_kijiCDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Get_NotePrintDataCompletedEventHandler(object sender, Get_NotePrintDataCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Get_NotePrintDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Get_NotePrintDataCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public object[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((object[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Get_byPostcode2CompletedEventHandler(object sender, Get_byPostcode2CompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Get_byPostcode2CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Get_byPostcode2CompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void otodoke_Ins_uploadData2CompletedEventHandler(object sender, otodoke_Ins_uploadData2CompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class otodoke_Ins_uploadData2CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal otodoke_Ins_uploadData2CompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void goirai_Ins_uploadData2CompletedEventHandler(object sender, goirai_Ins_uploadData2CompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class goirai_Ins_uploadData2CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal goirai_Ins_uploadData2CompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }

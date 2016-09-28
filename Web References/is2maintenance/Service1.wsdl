@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://Walkthrough/XmlWebServices/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://Walkthrough/XmlWebServices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://Walkthrough/XmlWebServices/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://Walkthrough/XmlWebServices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">is2maintenance</wsdl:documentation>
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://Walkthrough/XmlWebServices/">
       <s:import namespace="http://microsoft.com/wsdl/types/" />
-      <s:element name="Sel_Member">
+      <s:element name="Get_UntinErrCntChk">
         <s:complexType>
           <s:sequence>
             <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sData" type="tns:ArrayOfString" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -16,6 +17,207 @@
           <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
         </s:sequence>
       </s:complexType>
+      <s:element name="Get_UntinErrCntChkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_UntinErrCntChkResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Upd_UntinErrKakuninFG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sData" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Upd_UntinErrKakuninFGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Upd_UntinErrKakuninFGResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_SyukkaEtc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_SyukkaEtcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_SyukkaEtcResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_SyukkaBiMinMax">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_SyukkaBiMinMaxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_SyukkaBiMinMaxResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PublishedPrintData4">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PublishedPrintData4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_PublishedPrintData4Result" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Get_InvoicePrintData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_InvoicePrintDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_InvoicePrintDataResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_hatuten3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_hatuten3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_hatuten3Result" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Check_NonDeliveryArea">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sYubinNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Check_NonDeliveryAreaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Check_NonDeliveryAreaResult" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_HouseSlipMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_HouseSlipMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_HouseSlipMemberResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sel_HouseSlipMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sel_HouseSlipMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Sel_HouseSlipMemberResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Ins_HouseSlipMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Ins_HouseSlipMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Ins_HouseSlipMemberResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Upd_HouseSlipMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Upd_HouseSlipMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Upd_HouseSlipMemberResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Del_HouseSlipMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Del_HouseSlipMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Del_HouseSlipMemberResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sel_Member">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="Sel_MemberResponse">
         <s:complexType>
           <s:sequence>
@@ -1062,11 +1264,6 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:complexType name="ArrayOfAnyType">
-        <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
-        </s:sequence>
-      </s:complexType>
       <s:element name="Get_Sirainusi">
         <s:complexType>
           <s:sequence>
@@ -1238,202 +1435,6 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="Get_UntinErrCntChk">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sData" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Get_UntinErrCntChkResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="Get_UntinErrCntChkResult" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Upd_UntinErrKakuninFG">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sData" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Upd_UntinErrKakuninFGResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="Upd_UntinErrKakuninFGResult" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Get_SyukkaEtc">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Get_SyukkaEtcResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="Get_SyukkaEtcResult" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Get_SyukkaBiMinMax">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Get_SyukkaBiMinMaxResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="Get_SyukkaBiMinMaxResult" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Get_PublishedPrintData4">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Get_PublishedPrintData4Response">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="Get_PublishedPrintData4Result" type="tns:ArrayOfAnyType" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Get_InvoicePrintData">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Get_InvoicePrintDataResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="Get_InvoicePrintDataResult" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Get_hatuten3">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sKcode" type="s:string" />
-            <s:element minOccurs="0" maxOccurs="1" name="sBcode" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Get_hatuten3Response">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="Get_hatuten3Result" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Check_NonDeliveryArea">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sYubinNo" type="s:string" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Check_NonDeliveryAreaResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="Check_NonDeliveryAreaResult" type="tns:ArrayOfAnyType" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Get_HouseSlipMember">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Get_HouseSlipMemberResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="Get_HouseSlipMemberResult" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Sel_HouseSlipMember">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Sel_HouseSlipMemberResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="Sel_HouseSlipMemberResult" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Ins_HouseSlipMember">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Ins_HouseSlipMemberResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="Ins_HouseSlipMemberResult" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Upd_HouseSlipMember">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Upd_HouseSlipMemberResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="Upd_HouseSlipMemberResult" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Del_HouseSlipMember">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="tns:ArrayOfString" />
-            <s:element minOccurs="0" maxOccurs="1" name="sKey" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="Del_HouseSlipMemberResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="Del_HouseSlipMemberResult" type="tns:ArrayOfString" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
       <s:element name="wakeupDB">
         <s:complexType />
       </s:element>
@@ -1465,6 +1466,84 @@
       </s:simpleType>
     </s:schema>
   </wsdl:types>
+  <wsdl:message name="Get_UntinErrCntChkSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_UntinErrCntChk" />
+  </wsdl:message>
+  <wsdl:message name="Get_UntinErrCntChkSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_UntinErrCntChkResponse" />
+  </wsdl:message>
+  <wsdl:message name="Upd_UntinErrKakuninFGSoapIn">
+    <wsdl:part name="parameters" element="tns:Upd_UntinErrKakuninFG" />
+  </wsdl:message>
+  <wsdl:message name="Upd_UntinErrKakuninFGSoapOut">
+    <wsdl:part name="parameters" element="tns:Upd_UntinErrKakuninFGResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_SyukkaEtcSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_SyukkaEtc" />
+  </wsdl:message>
+  <wsdl:message name="Get_SyukkaEtcSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_SyukkaEtcResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_SyukkaBiMinMaxSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_SyukkaBiMinMax" />
+  </wsdl:message>
+  <wsdl:message name="Get_SyukkaBiMinMaxSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_SyukkaBiMinMaxResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_PublishedPrintData4SoapIn">
+    <wsdl:part name="parameters" element="tns:Get_PublishedPrintData4" />
+  </wsdl:message>
+  <wsdl:message name="Get_PublishedPrintData4SoapOut">
+    <wsdl:part name="parameters" element="tns:Get_PublishedPrintData4Response" />
+  </wsdl:message>
+  <wsdl:message name="Get_InvoicePrintDataSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_InvoicePrintData" />
+  </wsdl:message>
+  <wsdl:message name="Get_InvoicePrintDataSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_InvoicePrintDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_hatuten3SoapIn">
+    <wsdl:part name="parameters" element="tns:Get_hatuten3" />
+  </wsdl:message>
+  <wsdl:message name="Get_hatuten3SoapOut">
+    <wsdl:part name="parameters" element="tns:Get_hatuten3Response" />
+  </wsdl:message>
+  <wsdl:message name="Check_NonDeliveryAreaSoapIn">
+    <wsdl:part name="parameters" element="tns:Check_NonDeliveryArea" />
+  </wsdl:message>
+  <wsdl:message name="Check_NonDeliveryAreaSoapOut">
+    <wsdl:part name="parameters" element="tns:Check_NonDeliveryAreaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_HouseSlipMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_HouseSlipMember" />
+  </wsdl:message>
+  <wsdl:message name="Get_HouseSlipMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_HouseSlipMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="Sel_HouseSlipMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:Sel_HouseSlipMember" />
+  </wsdl:message>
+  <wsdl:message name="Sel_HouseSlipMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:Sel_HouseSlipMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ins_HouseSlipMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:Ins_HouseSlipMember" />
+  </wsdl:message>
+  <wsdl:message name="Ins_HouseSlipMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:Ins_HouseSlipMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="Upd_HouseSlipMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:Upd_HouseSlipMember" />
+  </wsdl:message>
+  <wsdl:message name="Upd_HouseSlipMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:Upd_HouseSlipMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="Del_HouseSlipMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:Del_HouseSlipMember" />
+  </wsdl:message>
+  <wsdl:message name="Del_HouseSlipMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:Del_HouseSlipMemberResponse" />
+  </wsdl:message>
   <wsdl:message name="Sel_MemberSoapIn">
     <wsdl:part name="parameters" element="tns:Sel_Member" />
   </wsdl:message>
@@ -1945,84 +2024,6 @@
   <wsdl:message name="Get_csvwrite3SoapOut">
     <wsdl:part name="parameters" element="tns:Get_csvwrite3Response" />
   </wsdl:message>
-  <wsdl:message name="Get_UntinErrCntChkSoapIn">
-    <wsdl:part name="parameters" element="tns:Get_UntinErrCntChk" />
-  </wsdl:message>
-  <wsdl:message name="Get_UntinErrCntChkSoapOut">
-    <wsdl:part name="parameters" element="tns:Get_UntinErrCntChkResponse" />
-  </wsdl:message>
-  <wsdl:message name="Upd_UntinErrKakuninFGSoapIn">
-    <wsdl:part name="parameters" element="tns:Upd_UntinErrKakuninFG" />
-  </wsdl:message>
-  <wsdl:message name="Upd_UntinErrKakuninFGSoapOut">
-    <wsdl:part name="parameters" element="tns:Upd_UntinErrKakuninFGResponse" />
-  </wsdl:message>
-  <wsdl:message name="Get_SyukkaEtcSoapIn">
-    <wsdl:part name="parameters" element="tns:Get_SyukkaEtc" />
-  </wsdl:message>
-  <wsdl:message name="Get_SyukkaEtcSoapOut">
-    <wsdl:part name="parameters" element="tns:Get_SyukkaEtcResponse" />
-  </wsdl:message>
-  <wsdl:message name="Get_SyukkaBiMinMaxSoapIn">
-    <wsdl:part name="parameters" element="tns:Get_SyukkaBiMinMax" />
-  </wsdl:message>
-  <wsdl:message name="Get_SyukkaBiMinMaxSoapOut">
-    <wsdl:part name="parameters" element="tns:Get_SyukkaBiMinMaxResponse" />
-  </wsdl:message>
-  <wsdl:message name="Get_PublishedPrintData4SoapIn">
-    <wsdl:part name="parameters" element="tns:Get_PublishedPrintData4" />
-  </wsdl:message>
-  <wsdl:message name="Get_PublishedPrintData4SoapOut">
-    <wsdl:part name="parameters" element="tns:Get_PublishedPrintData4Response" />
-  </wsdl:message>
-  <wsdl:message name="Get_InvoicePrintDataSoapIn">
-    <wsdl:part name="parameters" element="tns:Get_InvoicePrintData" />
-  </wsdl:message>
-  <wsdl:message name="Get_InvoicePrintDataSoapOut">
-    <wsdl:part name="parameters" element="tns:Get_InvoicePrintDataResponse" />
-  </wsdl:message>
-  <wsdl:message name="Get_hatuten3SoapIn">
-    <wsdl:part name="parameters" element="tns:Get_hatuten3" />
-  </wsdl:message>
-  <wsdl:message name="Get_hatuten3SoapOut">
-    <wsdl:part name="parameters" element="tns:Get_hatuten3Response" />
-  </wsdl:message>
-  <wsdl:message name="Check_NonDeliveryAreaSoapIn">
-    <wsdl:part name="parameters" element="tns:Check_NonDeliveryArea" />
-  </wsdl:message>
-  <wsdl:message name="Check_NonDeliveryAreaSoapOut">
-    <wsdl:part name="parameters" element="tns:Check_NonDeliveryAreaResponse" />
-  </wsdl:message>
-  <wsdl:message name="Get_HouseSlipMemberSoapIn">
-    <wsdl:part name="parameters" element="tns:Get_HouseSlipMember" />
-  </wsdl:message>
-  <wsdl:message name="Get_HouseSlipMemberSoapOut">
-    <wsdl:part name="parameters" element="tns:Get_HouseSlipMemberResponse" />
-  </wsdl:message>
-  <wsdl:message name="Sel_HouseSlipMemberSoapIn">
-    <wsdl:part name="parameters" element="tns:Sel_HouseSlipMember" />
-  </wsdl:message>
-  <wsdl:message name="Sel_HouseSlipMemberSoapOut">
-    <wsdl:part name="parameters" element="tns:Sel_HouseSlipMemberResponse" />
-  </wsdl:message>
-  <wsdl:message name="Ins_HouseSlipMemberSoapIn">
-    <wsdl:part name="parameters" element="tns:Ins_HouseSlipMember" />
-  </wsdl:message>
-  <wsdl:message name="Ins_HouseSlipMemberSoapOut">
-    <wsdl:part name="parameters" element="tns:Ins_HouseSlipMemberResponse" />
-  </wsdl:message>
-  <wsdl:message name="Upd_HouseSlipMemberSoapIn">
-    <wsdl:part name="parameters" element="tns:Upd_HouseSlipMember" />
-  </wsdl:message>
-  <wsdl:message name="Upd_HouseSlipMemberSoapOut">
-    <wsdl:part name="parameters" element="tns:Upd_HouseSlipMemberResponse" />
-  </wsdl:message>
-  <wsdl:message name="Del_HouseSlipMemberSoapIn">
-    <wsdl:part name="parameters" element="tns:Del_HouseSlipMember" />
-  </wsdl:message>
-  <wsdl:message name="Del_HouseSlipMemberSoapOut">
-    <wsdl:part name="parameters" element="tns:Del_HouseSlipMemberResponse" />
-  </wsdl:message>
   <wsdl:message name="wakeupDBSoapIn">
     <wsdl:part name="parameters" element="tns:wakeupDB" />
   </wsdl:message>
@@ -2036,6 +2037,58 @@
     <wsdl:part name="parameters" element="tns:wakeupDB2Response" />
   </wsdl:message>
   <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="Get_UntinErrCntChk">
+      <wsdl:input message="tns:Get_UntinErrCntChkSoapIn" />
+      <wsdl:output message="tns:Get_UntinErrCntChkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Upd_UntinErrKakuninFG">
+      <wsdl:input message="tns:Upd_UntinErrKakuninFGSoapIn" />
+      <wsdl:output message="tns:Upd_UntinErrKakuninFGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_SyukkaEtc">
+      <wsdl:input message="tns:Get_SyukkaEtcSoapIn" />
+      <wsdl:output message="tns:Get_SyukkaEtcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_SyukkaBiMinMax">
+      <wsdl:input message="tns:Get_SyukkaBiMinMaxSoapIn" />
+      <wsdl:output message="tns:Get_SyukkaBiMinMaxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_PublishedPrintData4">
+      <wsdl:input message="tns:Get_PublishedPrintData4SoapIn" />
+      <wsdl:output message="tns:Get_PublishedPrintData4SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_InvoicePrintData">
+      <wsdl:input message="tns:Get_InvoicePrintDataSoapIn" />
+      <wsdl:output message="tns:Get_InvoicePrintDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_hatuten3">
+      <wsdl:input message="tns:Get_hatuten3SoapIn" />
+      <wsdl:output message="tns:Get_hatuten3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Check_NonDeliveryArea">
+      <wsdl:input message="tns:Check_NonDeliveryAreaSoapIn" />
+      <wsdl:output message="tns:Check_NonDeliveryAreaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_HouseSlipMember">
+      <wsdl:input message="tns:Get_HouseSlipMemberSoapIn" />
+      <wsdl:output message="tns:Get_HouseSlipMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sel_HouseSlipMember">
+      <wsdl:input message="tns:Sel_HouseSlipMemberSoapIn" />
+      <wsdl:output message="tns:Sel_HouseSlipMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Ins_HouseSlipMember">
+      <wsdl:input message="tns:Ins_HouseSlipMemberSoapIn" />
+      <wsdl:output message="tns:Ins_HouseSlipMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Upd_HouseSlipMember">
+      <wsdl:input message="tns:Upd_HouseSlipMemberSoapIn" />
+      <wsdl:output message="tns:Upd_HouseSlipMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Del_HouseSlipMember">
+      <wsdl:input message="tns:Del_HouseSlipMemberSoapIn" />
+      <wsdl:output message="tns:Del_HouseSlipMemberSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="Sel_Member">
       <wsdl:input message="tns:Sel_MemberSoapIn" />
       <wsdl:output message="tns:Sel_MemberSoapOut" />
@@ -2356,58 +2409,6 @@
       <wsdl:input message="tns:Get_csvwrite3SoapIn" />
       <wsdl:output message="tns:Get_csvwrite3SoapOut" />
     </wsdl:operation>
-    <wsdl:operation name="Get_UntinErrCntChk">
-      <wsdl:input message="tns:Get_UntinErrCntChkSoapIn" />
-      <wsdl:output message="tns:Get_UntinErrCntChkSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="Upd_UntinErrKakuninFG">
-      <wsdl:input message="tns:Upd_UntinErrKakuninFGSoapIn" />
-      <wsdl:output message="tns:Upd_UntinErrKakuninFGSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="Get_SyukkaEtc">
-      <wsdl:input message="tns:Get_SyukkaEtcSoapIn" />
-      <wsdl:output message="tns:Get_SyukkaEtcSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="Get_SyukkaBiMinMax">
-      <wsdl:input message="tns:Get_SyukkaBiMinMaxSoapIn" />
-      <wsdl:output message="tns:Get_SyukkaBiMinMaxSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="Get_PublishedPrintData4">
-      <wsdl:input message="tns:Get_PublishedPrintData4SoapIn" />
-      <wsdl:output message="tns:Get_PublishedPrintData4SoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="Get_InvoicePrintData">
-      <wsdl:input message="tns:Get_InvoicePrintDataSoapIn" />
-      <wsdl:output message="tns:Get_InvoicePrintDataSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="Get_hatuten3">
-      <wsdl:input message="tns:Get_hatuten3SoapIn" />
-      <wsdl:output message="tns:Get_hatuten3SoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="Check_NonDeliveryArea">
-      <wsdl:input message="tns:Check_NonDeliveryAreaSoapIn" />
-      <wsdl:output message="tns:Check_NonDeliveryAreaSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="Get_HouseSlipMember">
-      <wsdl:input message="tns:Get_HouseSlipMemberSoapIn" />
-      <wsdl:output message="tns:Get_HouseSlipMemberSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="Sel_HouseSlipMember">
-      <wsdl:input message="tns:Sel_HouseSlipMemberSoapIn" />
-      <wsdl:output message="tns:Sel_HouseSlipMemberSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="Ins_HouseSlipMember">
-      <wsdl:input message="tns:Ins_HouseSlipMemberSoapIn" />
-      <wsdl:output message="tns:Ins_HouseSlipMemberSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="Upd_HouseSlipMember">
-      <wsdl:input message="tns:Upd_HouseSlipMemberSoapIn" />
-      <wsdl:output message="tns:Upd_HouseSlipMemberSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="Del_HouseSlipMember">
-      <wsdl:input message="tns:Del_HouseSlipMemberSoapIn" />
-      <wsdl:output message="tns:Del_HouseSlipMemberSoapOut" />
-    </wsdl:operation>
     <wsdl:operation name="wakeupDB">
       <wsdl:input message="tns:wakeupDBSoapIn" />
       <wsdl:output message="tns:wakeupDBSoapOut" />
@@ -2418,7 +2419,124 @@
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
-    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_UntinErrCntChk">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_UntinErrCntChk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_UntinErrKakuninFG">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Upd_UntinErrKakuninFG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_SyukkaEtc">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_SyukkaEtc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_SyukkaBiMinMax">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_SyukkaBiMinMax" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PublishedPrintData4">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_PublishedPrintData4" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_InvoicePrintData">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_InvoicePrintData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_hatuten3">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_hatuten3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Check_NonDeliveryArea">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Check_NonDeliveryArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_HouseSlipMember">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_HouseSlipMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_HouseSlipMember">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Sel_HouseSlipMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ins_HouseSlipMember">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Ins_HouseSlipMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_HouseSlipMember">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Upd_HouseSlipMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Del_HouseSlipMember">
+      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Del_HouseSlipMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="Sel_Member">
       <soap:operation soapAction="http://Walkthrough/XmlWebServices/Sel_Member" style="document" />
       <wsdl:input>
@@ -3139,123 +3257,6 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="Get_UntinErrCntChk">
-      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_UntinErrCntChk" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Upd_UntinErrKakuninFG">
-      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Upd_UntinErrKakuninFG" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Get_SyukkaEtc">
-      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_SyukkaEtc" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Get_SyukkaBiMinMax">
-      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_SyukkaBiMinMax" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Get_PublishedPrintData4">
-      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_PublishedPrintData4" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Get_InvoicePrintData">
-      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_InvoicePrintData" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Get_hatuten3">
-      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_hatuten3" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Check_NonDeliveryArea">
-      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Check_NonDeliveryArea" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Get_HouseSlipMember">
-      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Get_HouseSlipMember" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Sel_HouseSlipMember">
-      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Sel_HouseSlipMember" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Ins_HouseSlipMember">
-      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Ins_HouseSlipMember" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Upd_HouseSlipMember">
-      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Upd_HouseSlipMember" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="Del_HouseSlipMember">
-      <soap:operation soapAction="http://Walkthrough/XmlWebServices/Del_HouseSlipMember" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="wakeupDB">
       <soap:operation soapAction="http://Walkthrough/XmlWebServices/wakeupDB" style="document" />
       <wsdl:input>
@@ -3275,10 +3276,871 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_UntinErrCntChk">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_UntinErrCntChk" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_UntinErrKakuninFG">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_UntinErrKakuninFG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_SyukkaEtc">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_SyukkaEtc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_SyukkaBiMinMax">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_SyukkaBiMinMax" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PublishedPrintData4">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_PublishedPrintData4" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_InvoicePrintData">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_InvoicePrintData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_hatuten3">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_hatuten3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Check_NonDeliveryArea">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Check_NonDeliveryArea" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_HouseSlipMember">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_HouseSlipMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_HouseSlipMember">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_HouseSlipMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ins_HouseSlipMember">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Ins_HouseSlipMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_HouseSlipMember">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_HouseSlipMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Del_HouseSlipMember">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Del_HouseSlipMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_Member">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_Member" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Member">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Member" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ins_Member">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Ins_Member" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_Member">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_Member" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Del_Member">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Del_Member" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_Section">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_Section" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_SectionCount">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_SectionCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Section">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Section" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ins_Section">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Ins_Section" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_Section">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_Section" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Del_Section">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Del_Section" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_User">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_User" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_User2">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_User2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_User">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_User" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_User2">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_User2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ins_User">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Ins_User" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_User">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_User" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_User2">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_User2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Del_User">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Del_User" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_Shop">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_Shop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_GeneralDelivery">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_GeneralDelivery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Shop">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Shop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PrefShop">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_PrefShop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Claim">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Claim" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Claim2">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Claim2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ins_Claim">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Ins_Claim" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_Claim">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_Claim" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Del_Claim">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Del_Claim" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_Consignor">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_Consignor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Consignor">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Consignor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_Postcode">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_Postcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_byKen">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_byKen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_byKenShi">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_byKenShi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_byPostcode">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_byPostcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_ConnectShop">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_ConnectShop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ConnectShop">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_ConnectShop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ins_ConnectShop">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Ins_ConnectShop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_ConnectShop">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_ConnectShop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Del_ConnectShop">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Del_ConnectShop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_login">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Set_login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_Kiji">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_Kiji" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Kiji">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Kiji" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ins_Kiji">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Ins_Kiji" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_Kiji">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_Kiji" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Del_Kiji">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Del_Kiji" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_csvwrite">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_csvwrite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_Syskanri">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_Syskanri" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_Syskanri">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_Syskanri" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_Mosikomi">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_Mosikomi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Mosikomi">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Mosikomi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ins_Mosikomi">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Ins_Mosikomi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_Mosikomi">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_Mosikomi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Del_Mosikomi">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Del_Mosikomi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_KaniSaiban">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_KaniSaiban" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_Postcode1">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_Postcode1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ShopInf">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_ShopInf" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_ShopInf">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_ShopInf" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_MemberTn">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_MemberTn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_MemberTn">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_MemberTn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_MemberTn3">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_MemberTn3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_Hatuten">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_Hatuten" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Tyakusiwake">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Tyakusiwake" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ins_TyakuSiwake">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Ins_TyakuSiwake" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_jyotai">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_jyotai" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Goirainusi">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Goirainusi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Goirainusi2">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Goirainusi2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_syukka">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_syukka" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_kadouritu_csv2">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_kadouritu_csv2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_syuuka_Inf2">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_syuuka_Inf2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_syuuka_Prn2">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_syuuka_Prn2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Sirainusi">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Sirainusi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Sirainusi2">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Sirainusi2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_DBSessionCount">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_DBSessionCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PassUpdDate">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_PassUpdDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_PassUpdDate">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_PassUpdDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Kadobi">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_Kadobi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_Kadobi">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_Kadobi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upd_Member2">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Upd_Member2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sel_Haikan">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Sel_Haikan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_csvwrite3">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/Get_csvwrite3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wakeupDB">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/wakeupDB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wakeupDB2">
+      <soap12:operation soapAction="http://Walkthrough/XmlWebServices/wakeupDB2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
   <wsdl:service name="Service1">
-    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">is2maintenance</documentation>
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">is2maintenance</wsdl:documentation>
     <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
-      <soap:address location="http://wwwis2.fukutsu.co.jp/is2/is2Maintenance/Service1.asmx" />
+      <soap:address location="http://is2-ap-2012r2.japaneast.cloudapp.azure.com/is2/is2Maintenance/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://is2-ap-2012r2.japaneast.cloudapp.azure.com/is2/is2Maintenance/Service1.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

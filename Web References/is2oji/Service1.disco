@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<discovery xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.xmlsoap.org/disco/">
-  <contractRef ref="http://wwwis2.fukutsu.co.jp/is2/is2oji/Service1.asmx?wsdl" docRef="http://wwwis2.fukutsu.co.jp/is2/is2oji/Service1.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
-  <soap address="http://wwwis2.fukutsu.co.jp/is2/is2oji/Service1.asmx" xmlns:q1="http://Walkthrough/XmlWebServices/" binding="q1:Service1Soap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://is2-ap-2012r2.japaneast.cloudapp.azure.com/is2/is2oji/Service1.asmx?wsdl" docRef="http://is2-ap-2012r2.japaneast.cloudapp.azure.com/is2/is2oji/Service1.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://is2-ap-2012r2.japaneast.cloudapp.azure.com/is2/is2oji/Service1.asmx" xmlns:q1="http://Walkthrough/XmlWebServices/" binding="q1:Service1Soap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://is2-ap-2012r2.japaneast.cloudapp.azure.com/is2/is2oji/Service1.asmx" xmlns:q2="http://Walkthrough/XmlWebServices/" binding="q2:Service1Soap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
 </discovery>

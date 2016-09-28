@@ -41,7 +41,11 @@ namespace is2AdminClient.is2oshirase {
         
         private System.Threading.SendOrPostCallback Del_OshiraseOperationCompleted;
         
+        private System.Threading.SendOrPostCallback Upd_HyoujiFGOperationCompleted;
+        
         private System.Threading.SendOrPostCallback wakeupDBOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback wakeupDB2OperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -100,7 +104,13 @@ namespace is2AdminClient.is2oshirase {
         public event Del_OshiraseCompletedEventHandler Del_OshiraseCompleted;
         
         /// <remarks/>
+        public event Upd_HyoujiFGCompletedEventHandler Upd_HyoujiFGCompleted;
+        
+        /// <remarks/>
         public event wakeupDBCompletedEventHandler wakeupDBCompleted;
+        
+        /// <remarks/>
+        public event wakeupDB2CompletedEventHandler wakeupDB2Completed;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Get_Message", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -367,6 +377,50 @@ namespace is2AdminClient.is2oshirase {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/Upd_HyoujiFG", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string[] Upd_HyoujiFG(string[] sUser, string[] sKey) {
+            object[] results = this.Invoke("Upd_HyoujiFG", new object[] {
+                        sUser,
+                        sKey});
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginUpd_HyoujiFG(string[] sUser, string[] sKey, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("Upd_HyoujiFG", new object[] {
+                        sUser,
+                        sKey}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string[] EndUpd_HyoujiFG(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Upd_HyoujiFGAsync(string[] sUser, string[] sKey) {
+            this.Upd_HyoujiFGAsync(sUser, sKey, null);
+        }
+        
+        /// <remarks/>
+        public void Upd_HyoujiFGAsync(string[] sUser, string[] sKey, object userState) {
+            if ((this.Upd_HyoujiFGOperationCompleted == null)) {
+                this.Upd_HyoujiFGOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpd_HyoujiFGOperationCompleted);
+            }
+            this.InvokeAsync("Upd_HyoujiFG", new object[] {
+                        sUser,
+                        sKey}, this.Upd_HyoujiFGOperationCompleted, userState);
+        }
+        
+        private void OnUpd_HyoujiFGOperationCompleted(object arg) {
+            if ((this.Upd_HyoujiFGCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Upd_HyoujiFGCompleted(this, new Upd_HyoujiFGCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/wakeupDB", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public string wakeupDB() {
             object[] results = this.Invoke("wakeupDB", new object[0]);
@@ -401,6 +455,47 @@ namespace is2AdminClient.is2oshirase {
             if ((this.wakeupDBCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.wakeupDBCompleted(this, new wakeupDBCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://Walkthrough/XmlWebServices/wakeupDB2", RequestNamespace="http://Walkthrough/XmlWebServices/", ResponseNamespace="http://Walkthrough/XmlWebServices/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string wakeupDB2(int iConCnt) {
+            object[] results = this.Invoke("wakeupDB2", new object[] {
+                        iConCnt});
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginwakeupDB2(int iConCnt, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("wakeupDB2", new object[] {
+                        iConCnt}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public string EndwakeupDB2(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void wakeupDB2Async(int iConCnt) {
+            this.wakeupDB2Async(iConCnt, null);
+        }
+        
+        /// <remarks/>
+        public void wakeupDB2Async(int iConCnt, object userState) {
+            if ((this.wakeupDB2OperationCompleted == null)) {
+                this.wakeupDB2OperationCompleted = new System.Threading.SendOrPostCallback(this.OnwakeupDB2OperationCompleted);
+            }
+            this.InvokeAsync("wakeupDB2", new object[] {
+                        iConCnt}, this.wakeupDB2OperationCompleted, userState);
+        }
+        
+        private void OnwakeupDB2OperationCompleted(object arg) {
+            if ((this.wakeupDB2Completed != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.wakeupDB2Completed(this, new wakeupDB2CompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -581,6 +676,32 @@ namespace is2AdminClient.is2oshirase {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void Upd_HyoujiFGCompletedEventHandler(object sender, Upd_HyoujiFGCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Upd_HyoujiFGCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Upd_HyoujiFGCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
     public delegate void wakeupDBCompletedEventHandler(object sender, wakeupDBCompletedEventArgs e);
     
     /// <remarks/>
@@ -592,6 +713,32 @@ namespace is2AdminClient.is2oshirase {
         private object[] results;
         
         internal wakeupDBCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    public delegate void wakeupDB2CompletedEventHandler(object sender, wakeupDB2CompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.81.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class wakeupDB2CompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal wakeupDB2CompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }
